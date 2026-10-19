@@ -1356,6 +1356,3159 @@
    }
   ]
  },
+ "rosters": {
+  "7": [
+   {
+    "name": "Brock Purdy",
+    "pos": "QB",
+    "nfl": "SF",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": 19.6,
+    "last_proj": 21.25,
+    "season_pts": 145.8,
+    "games": 5,
+    "starts": 2,
+    "avg": 29.16,
+    "best": {
+     "pts": 41.4,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Braelon Allen",
+    "pos": "RB",
+    "nfl": "NYJ",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 18.1,
+    "last_proj": 13.06,
+    "season_pts": 41.0,
+    "games": 5,
+    "starts": 2,
+    "avg": 8.2,
+    "best": {
+     "pts": 18.1,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Javonte Williams",
+    "pos": "RB",
+    "nfl": "DAL",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 13.2,
+    "last_proj": 16.25,
+    "season_pts": 87.5,
+    "games": 5,
+    "starts": 5,
+    "avg": 17.5,
+    "best": {
+     "pts": 28.8,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Justin Jefferson",
+    "pos": "WR",
+    "nfl": "MIN",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 15.8,
+    "last_proj": 15.58,
+    "season_pts": 54.2,
+    "games": 5,
+    "starts": 4,
+    "avg": 10.84,
+    "best": {
+     "pts": 27.2,
+     "week": 1
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Zay Flowers",
+    "pos": "WR",
+    "nfl": "BAL",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 10.6,
+    "last_proj": 11.24,
+    "season_pts": 72.8,
+    "games": 5,
+    "starts": 4,
+    "avg": 14.56,
+    "best": {
+     "pts": 27.5,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Dallas Goedert",
+    "pos": "TE",
+    "nfl": "PHI",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": 6.8,
+    "last_proj": 8.53,
+    "season_pts": 30.4,
+    "games": 5,
+    "starts": 3,
+    "avg": 6.08,
+    "best": {
+     "pts": 22.7,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Hunter Henry",
+    "pos": "TE",
+    "nfl": "NE",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 11.9,
+    "last_proj": 6.25,
+    "season_pts": 21.6,
+    "games": 3,
+    "starts": 3,
+    "avg": 7.2,
+    "best": {
+     "pts": 11.9,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Texans D/ST",
+    "pos": "D/ST",
+    "nfl": "HOU",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": 17.0,
+    "last_proj": 7.59,
+    "season_pts": 32.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 6.4,
+    "best": {
+     "pts": 17.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Brandon Aubrey",
+    "pos": "K",
+    "nfl": "DAL",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 4.0,
+    "last_proj": 9.93,
+    "season_pts": 41.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 8.2,
+    "best": {
+     "pts": 15.0,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jalen Hurts",
+    "pos": "QB",
+    "nfl": "PHI",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 17.2,
+    "last_proj": 18.36,
+    "season_pts": 97.7,
+    "games": 5,
+    "starts": 3,
+    "avg": 19.54,
+    "best": {
+     "pts": 31.6,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Dontayvion Wicks",
+    "pos": "WR",
+    "nfl": "PHI",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 8.8,
+    "last_proj": 8.19,
+    "season_pts": 16.3,
+    "games": 3,
+    "starts": 0,
+    "avg": 5.43,
+    "best": {
+     "pts": 8.8,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Saquon Barkley",
+    "pos": "RB",
+    "nfl": "PHI",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 21.0,
+    "games": 5,
+    "starts": 4,
+    "avg": 4.2,
+    "best": {
+     "pts": 8.5,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Marvin Harrison Jr.",
+    "pos": "WR",
+    "nfl": "HOU",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 17.0,
+    "games": 5,
+    "starts": 3,
+    "avg": 3.4,
+    "best": {
+     "pts": 7.7,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jordan Addison",
+    "pos": "WR",
+    "nfl": "MIN",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 7.1,
+    "games": 2,
+    "starts": 1,
+    "avg": 3.55,
+    "best": {
+     "pts": 7.1,
+     "week": 4
+    },
+    "bye_next": true
+   }
+  ],
+  "9": [
+   {
+    "name": "Drake Maye",
+    "pos": "QB",
+    "nfl": "NE",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": 46.5,
+    "last_proj": 21.57,
+    "season_pts": 80.7,
+    "games": 3,
+    "starts": 1,
+    "avg": 26.9,
+    "best": {
+     "pts": 46.5,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Aaron Jones Sr.",
+    "pos": "RB",
+    "nfl": "MIN",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 17.2,
+    "last_proj": 16.09,
+    "season_pts": 64.2,
+    "games": 5,
+    "starts": 4,
+    "avg": 12.84,
+    "best": {
+     "pts": 17.2,
+     "week": 5
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Ashton Jeanty",
+    "pos": "RB",
+    "nfl": "LV",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 9.2,
+    "last_proj": 15.79,
+    "season_pts": 73.6,
+    "games": 5,
+    "starts": 5,
+    "avg": 14.72,
+    "best": {
+     "pts": 29.7,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Malik Nabers",
+    "pos": "WR",
+    "nfl": "NYG",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 23.6,
+    "last_proj": 11.2,
+    "season_pts": 59.4,
+    "games": 5,
+    "starts": 5,
+    "avg": 11.88,
+    "best": {
+     "pts": 23.6,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Amon-Ra St. Brown",
+    "pos": "WR",
+    "nfl": "DET",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 9.9,
+    "last_proj": 16.41,
+    "season_pts": 85.7,
+    "games": 5,
+    "starts": 5,
+    "avg": 17.14,
+    "best": {
+     "pts": 30.7,
+     "week": 2
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Colston Loveland",
+    "pos": "TE",
+    "nfl": "CHI",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": 2.9,
+    "last_proj": 7.88,
+    "season_pts": 17.5,
+    "games": 5,
+    "starts": 5,
+    "avg": 3.5,
+    "best": {
+     "pts": 8.7,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "DK Metcalf",
+    "pos": "WR",
+    "nfl": "PIT",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 3.8,
+    "last_proj": 10.42,
+    "season_pts": 39.1,
+    "games": 5,
+    "starts": 1,
+    "avg": 7.82,
+    "best": {
+     "pts": 14.0,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jaguars D/ST",
+    "pos": "D/ST",
+    "nfl": "JAX",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": 7.0,
+    "last_proj": 7.96,
+    "season_pts": 7.0,
+    "games": 1,
+    "starts": 1,
+    "avg": 7.0,
+    "best": {
+     "pts": 7.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Tyler Loop",
+    "pos": "K",
+    "nfl": "BAL",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 12.0,
+    "last_proj": 7.26,
+    "season_pts": 20.0,
+    "games": 2,
+    "starts": 2,
+    "avg": 10.0,
+    "best": {
+     "pts": 12.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Rome Odunze",
+    "pos": "WR",
+    "nfl": "CHI",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 3.5,
+    "last_proj": 9.22,
+    "season_pts": 33.8,
+    "games": 5,
+    "starts": 2,
+    "avg": 6.76,
+    "best": {
+     "pts": 12.4,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Romeo Doubs",
+    "pos": "WR",
+    "nfl": "NE",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 2.1,
+    "last_proj": 10.24,
+    "season_pts": 40.4,
+    "games": 5,
+    "starts": 0,
+    "avg": 8.08,
+    "best": {
+     "pts": 20.8,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Kyle Monangai",
+    "pos": "RB",
+    "nfl": "CHI",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 60.8,
+    "games": 5,
+    "starts": 0,
+    "avg": 12.16,
+    "best": {
+     "pts": 27.5,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Patrick Mahomes",
+    "pos": "QB",
+    "nfl": "KC",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 100.1,
+    "games": 5,
+    "starts": 2,
+    "avg": 20.02,
+    "best": {
+     "pts": 34.7,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jadarian Price",
+    "pos": "RB",
+    "nfl": "SEA",
+    "slot": "IR",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 12.0,
+    "games": 4,
+    "starts": 3,
+    "avg": 3.0,
+    "best": {
+     "pts": 6.8,
+     "week": 1
+    },
+    "bye_next": false
+   }
+  ],
+  "16": [
+   {
+    "name": "Jared Goff",
+    "pos": "QB",
+    "nfl": "DET",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": 34.1,
+    "last_proj": 24.25,
+    "season_pts": 136.6,
+    "games": 5,
+    "starts": 1,
+    "avg": 27.32,
+    "best": {
+     "pts": 37.7,
+     "week": 2
+    },
+    "bye_next": true
+   },
+   {
+    "name": "James Cook III",
+    "pos": "RB",
+    "nfl": "BUF",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 22.3,
+    "last_proj": 14.8,
+    "season_pts": 85.8,
+    "games": 5,
+    "starts": 5,
+    "avg": 17.16,
+    "best": {
+     "pts": 22.3,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "D'Andre Swift",
+    "pos": "RB",
+    "nfl": "CHI",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 15.3,
+    "last_proj": 15.96,
+    "season_pts": 73.8,
+    "games": 5,
+    "starts": 5,
+    "avg": 14.76,
+    "best": {
+     "pts": 31.9,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Parker Washington",
+    "pos": "WR",
+    "nfl": "JAX",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 31.4,
+    "last_proj": 11.93,
+    "season_pts": 74.5,
+    "games": 5,
+    "starts": 5,
+    "avg": 14.9,
+    "best": {
+     "pts": 31.4,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Nico Collins",
+    "pos": "WR",
+    "nfl": "HOU",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 8.1,
+    "last_proj": 13.56,
+    "season_pts": 53.1,
+    "games": 3,
+    "starts": 3,
+    "avg": 17.7,
+    "best": {
+     "pts": 27.3,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Tucker Kraft",
+    "pos": "TE",
+    "nfl": "GB",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": 9.1,
+    "last_proj": 8.28,
+    "season_pts": 37.7,
+    "games": 5,
+    "starts": 4,
+    "avg": 7.54,
+    "best": {
+     "pts": 13.5,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jaylen Waddle",
+    "pos": "WR",
+    "nfl": "DEN",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 3.8,
+    "last_proj": 9.19,
+    "season_pts": 39.7,
+    "games": 5,
+    "starts": 5,
+    "avg": 7.94,
+    "best": {
+     "pts": 17.8,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Broncos D/ST",
+    "pos": "D/ST",
+    "nfl": "DEN",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": 14.0,
+    "last_proj": 6.85,
+    "season_pts": 14.0,
+    "games": 1,
+    "starts": 1,
+    "avg": 14.0,
+    "best": {
+     "pts": 14.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Cam Little",
+    "pos": "K",
+    "nfl": "JAX",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 6.0,
+    "last_proj": 8.95,
+    "season_pts": 40.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 8.0,
+    "best": {
+     "pts": 12.0,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Joe Burrow",
+    "pos": "QB",
+    "nfl": "CIN",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 33.0,
+    "last_proj": 24.22,
+    "season_pts": 122.8,
+    "games": 5,
+    "starts": 4,
+    "avg": 24.56,
+    "best": {
+     "pts": 33.0,
+     "week": 5
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Mike Evans",
+    "pos": "WR",
+    "nfl": "SF",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 22.8,
+    "last_proj": 10.57,
+    "season_pts": 64.6,
+    "games": 5,
+    "starts": 2,
+    "avg": 12.92,
+    "best": {
+     "pts": 22.8,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jacory Croskey-Merritt",
+    "pos": "RB",
+    "nfl": "WAS",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 14.2,
+    "last_proj": 8.68,
+    "season_pts": 42.4,
+    "games": 5,
+    "starts": 0,
+    "avg": 8.48,
+    "best": {
+     "pts": 14.2,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Antonio Williams",
+    "pos": "WR",
+    "nfl": "WAS",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 4.6,
+    "last_proj": 8.06,
+    "season_pts": 4.6,
+    "games": 1,
+    "starts": 0,
+    "avg": 4.6,
+    "best": {
+     "pts": 4.6,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Juwan Johnson",
+    "pos": "TE",
+    "nfl": "NO",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 3.6,
+    "last_proj": 8.14,
+    "season_pts": 31.8,
+    "games": 3,
+    "starts": 1,
+    "avg": 10.6,
+    "best": {
+     "pts": 19.3,
+     "week": 3
+    },
+    "bye_next": false
+   }
+  ],
+  "8": [
+   {
+    "name": "Matthew Stafford",
+    "pos": "QB",
+    "nfl": "LAR",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": 33.0,
+    "last_proj": 22.35,
+    "season_pts": 42.0,
+    "games": 2,
+    "starts": 1,
+    "avg": 21.0,
+    "best": {
+     "pts": 33.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Cam Skattebo",
+    "pos": "RB",
+    "nfl": "NYG",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 6.1,
+    "last_proj": 12.44,
+    "season_pts": 46.3,
+    "games": 5,
+    "starts": 5,
+    "avg": 9.26,
+    "best": {
+     "pts": 14.1,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Alvin Kamara",
+    "pos": "RB",
+    "nfl": "NO",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 1.6,
+    "last_proj": 9.74,
+    "season_pts": 26.5,
+    "games": 3,
+    "starts": 2,
+    "avg": 8.83,
+    "best": {
+     "pts": 20.3,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Drake London",
+    "pos": "WR",
+    "nfl": "ATL",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 15.3,
+    "last_proj": 13.32,
+    "season_pts": 62.7,
+    "games": 5,
+    "starts": 5,
+    "avg": 12.54,
+    "best": {
+     "pts": 23.9,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Denzel Boston",
+    "pos": "WR",
+    "nfl": "CLE",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 12.1,
+    "last_proj": 9.86,
+    "season_pts": 30.1,
+    "games": 3,
+    "starts": 2,
+    "avg": 10.03,
+    "best": {
+     "pts": 12.1,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Tyler Warren",
+    "pos": "TE",
+    "nfl": "IND",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": 17.9,
+    "last_proj": 9.24,
+    "season_pts": 54.9,
+    "games": 5,
+    "starts": 5,
+    "avg": 10.98,
+    "best": {
+     "pts": 17.9,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Deebo Samuel Sr.",
+    "pos": "WR",
+    "nfl": "SF",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 1.5,
+    "last_proj": 9.34,
+    "season_pts": 56.4,
+    "games": 5,
+    "starts": 5,
+    "avg": 11.28,
+    "best": {
+     "pts": 19.4,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Bears D/ST",
+    "pos": "D/ST",
+    "nfl": "CHI",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": -3.0,
+    "last_proj": 6.11,
+    "season_pts": 9.0,
+    "games": 2,
+    "starts": 2,
+    "avg": 4.5,
+    "best": {
+     "pts": 12.0,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Spencer Shrader",
+    "pos": "K",
+    "nfl": "IND",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 18.0,
+    "last_proj": 8.12,
+    "season_pts": 62.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 12.4,
+    "best": {
+     "pts": 18.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Brenton Strange",
+    "pos": "TE",
+    "nfl": "JAX",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 10.3,
+    "last_proj": 7.88,
+    "season_pts": 10.3,
+    "games": 1,
+    "starts": 0,
+    "avg": 10.3,
+    "best": {
+     "pts": 10.3,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Keenan Allen",
+    "pos": "WR",
+    "nfl": "IND",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 7.0,
+    "last_proj": 7.81,
+    "season_pts": 29.5,
+    "games": 5,
+    "starts": 0,
+    "avg": 5.9,
+    "best": {
+     "pts": 15.3,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Kalif Raymond",
+    "pos": "WR",
+    "nfl": "CHI",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 1.9,
+    "last_proj": 6.16,
+    "season_pts": 3.5,
+    "games": 2,
+    "starts": 1,
+    "avg": 1.75,
+    "best": {
+     "pts": 1.9,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Brian Robinson Jr.",
+    "pos": "RB",
+    "nfl": "ATL",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 1.6,
+    "last_proj": 7.73,
+    "season_pts": 1.6,
+    "games": 1,
+    "starts": 0,
+    "avg": 1.6,
+    "best": {
+     "pts": 1.6,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Bryce Young",
+    "pos": "QB",
+    "nfl": "CAR",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 69.9,
+    "games": 4,
+    "starts": 1,
+    "avg": 17.48,
+    "best": {
+     "pts": 29.6,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Alec Pierce",
+    "pos": "WR",
+    "nfl": "IND",
+    "slot": "IR",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 9.7,
+    "games": 2,
+    "starts": 2,
+    "avg": 4.85,
+    "best": {
+     "pts": 8.1,
+     "week": 1
+    },
+    "bye_next": false
+   }
+  ],
+  "2": [
+   {
+    "name": "Jacoby Brissett",
+    "pos": "QB",
+    "nfl": "ARI",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": 30.1,
+    "last_proj": 22.91,
+    "season_pts": 30.1,
+    "games": 1,
+    "starts": 1,
+    "avg": 30.1,
+    "best": {
+     "pts": 30.1,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Derrick Henry",
+    "pos": "RB",
+    "nfl": "BAL",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 20.5,
+    "last_proj": 16.07,
+    "season_pts": 107.8,
+    "games": 5,
+    "starts": 5,
+    "avg": 21.56,
+    "best": {
+     "pts": 34.8,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Bhayshul Tuten",
+    "pos": "RB",
+    "nfl": "JAX",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 10.6,
+    "last_proj": 13.13,
+    "season_pts": 59.2,
+    "games": 5,
+    "starts": 5,
+    "avg": 11.84,
+    "best": {
+     "pts": 16.0,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Puka Nacua",
+    "pos": "WR",
+    "nfl": "LAR",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 29.2,
+    "last_proj": 18.13,
+    "season_pts": 62.3,
+    "games": 5,
+    "starts": 3,
+    "avg": 12.46,
+    "best": {
+     "pts": 29.2,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "George Pickens",
+    "pos": "WR",
+    "nfl": "DAL",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 23.5,
+    "last_proj": 10.94,
+    "season_pts": 55.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 11.0,
+    "best": {
+     "pts": 23.5,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Dalton Kincaid",
+    "pos": "TE",
+    "nfl": "BUF",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": 3.2,
+    "last_proj": 7.02,
+    "season_pts": 41.7,
+    "games": 5,
+    "starts": 3,
+    "avg": 8.34,
+    "best": {
+     "pts": 19.0,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Josh Downs",
+    "pos": "WR",
+    "nfl": "IND",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 6.2,
+    "last_proj": 9.63,
+    "season_pts": 34.9,
+    "games": 5,
+    "starts": 3,
+    "avg": 6.98,
+    "best": {
+     "pts": 10.7,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Bengals D/ST",
+    "pos": "D/ST",
+    "nfl": "CIN",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": 6.0,
+    "last_proj": 7.72,
+    "season_pts": 6.0,
+    "games": 1,
+    "starts": 1,
+    "avg": 6.0,
+    "best": {
+     "pts": 6.0,
+     "week": 5
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Jason Myers",
+    "pos": "K",
+    "nfl": "SEA",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 18.0,
+    "last_proj": 8.1,
+    "season_pts": 44.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 8.8,
+    "best": {
+     "pts": 18.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Kendre Miller",
+    "pos": "RB",
+    "nfl": "NO",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 9.0,
+    "last_proj": 7.15,
+    "season_pts": 9.9,
+    "games": 2,
+    "starts": 0,
+    "avg": 4.95,
+    "best": {
+     "pts": 9.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Luther Burden III",
+    "pos": "WR",
+    "nfl": "CHI",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 6.9,
+    "last_proj": 9.99,
+    "season_pts": 44.3,
+    "games": 5,
+    "starts": 1,
+    "avg": 8.86,
+    "best": {
+     "pts": 16.3,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Lamar Jackson",
+    "pos": "QB",
+    "nfl": "BAL",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 91.4,
+    "games": 5,
+    "starts": 4,
+    "avg": 18.28,
+    "best": {
+     "pts": 29.0,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jalen Coker",
+    "pos": "WR",
+    "nfl": "CAR",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 47.2,
+    "games": 5,
+    "starts": 2,
+    "avg": 9.44,
+    "best": {
+     "pts": 33.8,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Rams D/ST",
+    "pos": "D/ST",
+    "nfl": "LAR",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": -4.0,
+    "last_proj": 4.12,
+    "season_pts": 23.0,
+    "games": 5,
+    "starts": 2,
+    "avg": 4.6,
+    "best": {
+     "pts": 14.0,
+     "week": 2
+    },
+    "bye_next": false
+   }
+  ],
+  "12": [
+   {
+    "name": "Bo Nix",
+    "pos": "QB",
+    "nfl": "DEN",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": 9.0,
+    "last_proj": 19.01,
+    "season_pts": 74.5,
+    "games": 5,
+    "starts": 4,
+    "avg": 14.9,
+    "best": {
+     "pts": 27.7,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Bucky Irving",
+    "pos": "RB",
+    "nfl": "TB",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 30.5,
+    "last_proj": 14.09,
+    "season_pts": 71.2,
+    "games": 5,
+    "starts": 5,
+    "avg": 14.24,
+    "best": {
+     "pts": 30.5,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Kyren Williams",
+    "pos": "RB",
+    "nfl": "LAR",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 16.6,
+    "last_proj": 16.15,
+    "season_pts": 95.8,
+    "games": 5,
+    "starts": 5,
+    "avg": 19.16,
+    "best": {
+     "pts": 31.7,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Ja'Marr Chase",
+    "pos": "WR",
+    "nfl": "CIN",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 17.7,
+    "last_proj": 17.83,
+    "season_pts": 67.4,
+    "games": 5,
+    "starts": 5,
+    "avg": 13.48,
+    "best": {
+     "pts": 23.0,
+     "week": 2
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Devaughn Vele",
+    "pos": "WR",
+    "nfl": "NO",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 4.6,
+    "last_proj": 8.79,
+    "season_pts": 33.3,
+    "games": 4,
+    "starts": 3,
+    "avg": 8.33,
+    "best": {
+     "pts": 14.4,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Brock Bowers",
+    "pos": "TE",
+    "nfl": "LV",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": 19.0,
+    "last_proj": 13.11,
+    "season_pts": 59.2,
+    "games": 3,
+    "starts": 3,
+    "avg": 19.73,
+    "best": {
+     "pts": 22.6,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Rhamondre Stevenson",
+    "pos": "RB",
+    "nfl": "NE",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 16.0,
+    "last_proj": 11.97,
+    "season_pts": 53.3,
+    "games": 5,
+    "starts": 5,
+    "avg": 10.66,
+    "best": {
+     "pts": 16.9,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Cowboys D/ST",
+    "pos": "D/ST",
+    "nfl": "DAL",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": -2.0,
+    "last_proj": 7.73,
+    "season_pts": -2.0,
+    "games": 1,
+    "starts": 1,
+    "avg": -2.0,
+    "best": {
+     "pts": -2.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jake Bates",
+    "pos": "K",
+    "nfl": "DET",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 9.0,
+    "last_proj": 8.44,
+    "season_pts": 45.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 9.0,
+    "best": {
+     "pts": 15.0,
+     "week": 4
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Isaiah Likely",
+    "pos": "TE",
+    "nfl": "NYG",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 26.9,
+    "last_proj": 10.39,
+    "season_pts": 68.9,
+    "games": 5,
+    "starts": 2,
+    "avg": 13.78,
+    "best": {
+     "pts": 26.9,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "J.K. Dobbins",
+    "pos": "RB",
+    "nfl": "DEN",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 14.4,
+    "last_proj": 10.22,
+    "season_pts": 33.6,
+    "games": 5,
+    "starts": 0,
+    "avg": 6.72,
+    "best": {
+     "pts": 14.4,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Terry McLaurin",
+    "pos": "WR",
+    "nfl": "WAS",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 10.2,
+    "last_proj": 10.74,
+    "season_pts": 35.3,
+    "games": 5,
+    "starts": 2,
+    "avg": 7.06,
+    "best": {
+     "pts": 16.7,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Sam Darnold",
+    "pos": "QB",
+    "nfl": "SEA",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 9.5,
+    "last_proj": 18.52,
+    "season_pts": 26.1,
+    "games": 2,
+    "starts": 1,
+    "avg": 13.05,
+    "best": {
+     "pts": 16.6,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jordan Mason",
+    "pos": "RB",
+    "nfl": "MIN",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 0,
+    "games": 1,
+    "starts": 0,
+    "avg": 0,
+    "best": {
+     "pts": 0,
+     "week": 5
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Adonai Mitchell",
+    "pos": "WR",
+    "nfl": "NYJ",
+    "slot": "IR",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 16.8,
+    "games": 2,
+    "starts": 0,
+    "avg": 8.4,
+    "best": {
+     "pts": 9.3,
+     "week": 2
+    },
+    "bye_next": false
+   }
+  ],
+  "14": [
+   {
+    "name": "Kyler Murray",
+    "pos": "QB",
+    "nfl": "MIN",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": 20.1,
+    "last_proj": 20.97,
+    "season_pts": 42.3,
+    "games": 5,
+    "starts": 1,
+    "avg": 8.46,
+    "best": {
+     "pts": 20.1,
+     "week": 5
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Woody Marks",
+    "pos": "RB",
+    "nfl": "HOU",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 10.5,
+    "last_proj": 6.87,
+    "season_pts": 37.8,
+    "games": 5,
+    "starts": 2,
+    "avg": 7.56,
+    "best": {
+     "pts": 10.5,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Isaiah Davis",
+    "pos": "RB",
+    "nfl": "NYJ",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 2.2,
+    "last_proj": 7.36,
+    "season_pts": 2.2,
+    "games": 2,
+    "starts": 2,
+    "avg": 1.1,
+    "best": {
+     "pts": 2.2,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Matthew Golden",
+    "pos": "WR",
+    "nfl": "GB",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 17.3,
+    "last_proj": 10.68,
+    "season_pts": 66.3,
+    "games": 5,
+    "starts": 4,
+    "avg": 13.26,
+    "best": {
+     "pts": 18.5,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "CeeDee Lamb",
+    "pos": "WR",
+    "nfl": "DAL",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 1.9,
+    "last_proj": 15.5,
+    "season_pts": 95.6,
+    "games": 5,
+    "starts": 5,
+    "avg": 19.12,
+    "best": {
+     "pts": 32.8,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Harold Fannin Jr.",
+    "pos": "TE",
+    "nfl": "CLE",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": 0.9,
+    "last_proj": 9.63,
+    "season_pts": 42.7,
+    "games": 5,
+    "starts": 5,
+    "avg": 8.54,
+    "best": {
+     "pts": 20.6,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Carnell Tate",
+    "pos": "WR",
+    "nfl": "TEN",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 1.1,
+    "last_proj": 11.16,
+    "season_pts": 36.9,
+    "games": 5,
+    "starts": 1,
+    "avg": 7.38,
+    "best": {
+     "pts": 17.0,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Steelers D/ST",
+    "pos": "D/ST",
+    "nfl": "PIT",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": 1.0,
+    "last_proj": 6.79,
+    "season_pts": 35.0,
+    "games": 5,
+    "starts": 2,
+    "avg": 7.0,
+    "best": {
+     "pts": 20.0,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Ka'imi Fairbairn",
+    "pos": "K",
+    "nfl": "HOU",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 15.0,
+    "last_proj": 8.24,
+    "season_pts": 48.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 9.6,
+    "best": {
+     "pts": 15.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "49ers D/ST",
+    "pos": "D/ST",
+    "nfl": "SF",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 15.0,
+    "last_proj": 4.7,
+    "season_pts": 33.0,
+    "games": 4,
+    "starts": 3,
+    "avg": 8.25,
+    "best": {
+     "pts": 15.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Justin Herbert",
+    "pos": "QB",
+    "nfl": "LAC",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 11.4,
+    "last_proj": 15.83,
+    "season_pts": 61.2,
+    "games": 5,
+    "starts": 4,
+    "avg": 12.24,
+    "best": {
+     "pts": 14.9,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Breece Hall",
+    "pos": "RB",
+    "nfl": "NYJ",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 37.5,
+    "games": 5,
+    "starts": 3,
+    "avg": 7.5,
+    "best": {
+     "pts": 18.8,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Travis Etienne Jr.",
+    "pos": "RB",
+    "nfl": "NO",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 25.4,
+    "games": 5,
+    "starts": 3,
+    "avg": 5.08,
+    "best": {
+     "pts": 11.3,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Rico Dowdle",
+    "pos": "RB",
+    "nfl": "PIT",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 8.5,
+    "games": 5,
+    "starts": 4,
+    "avg": 1.7,
+    "best": {
+     "pts": 5.4,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "A.J. Brown",
+    "pos": "WR",
+    "nfl": "NE",
+    "slot": "IR",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 4.1,
+    "games": 1,
+    "starts": 1,
+    "avg": 4.1,
+    "best": {
+     "pts": 4.1,
+     "week": 1
+    },
+    "bye_next": false
+   }
+  ],
+  "17": [
+   {
+    "name": "Tyler Shough",
+    "pos": "QB",
+    "nfl": "NO",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": -1.0,
+    "last_proj": 19.3,
+    "season_pts": 101.2,
+    "games": 5,
+    "starts": 5,
+    "avg": 20.24,
+    "best": {
+     "pts": 31.6,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Emanuel Wilson",
+    "pos": "RB",
+    "nfl": "SEA",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 12.2,
+    "last_proj": 12.81,
+    "season_pts": 37.7,
+    "games": 2,
+    "starts": 1,
+    "avg": 18.85,
+    "best": {
+     "pts": 25.5,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Quinshon Judkins",
+    "pos": "RB",
+    "nfl": "CLE",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 6.5,
+    "last_proj": 13.2,
+    "season_pts": 47.3,
+    "games": 5,
+    "starts": 5,
+    "avg": 9.46,
+    "best": {
+     "pts": 18.6,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jaxon Smith-Njigba",
+    "pos": "WR",
+    "nfl": "SEA",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 20.3,
+    "last_proj": 16.82,
+    "season_pts": 125.4,
+    "games": 5,
+    "starts": 5,
+    "avg": 25.08,
+    "best": {
+     "pts": 42.0,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Chris Olave",
+    "pos": "WR",
+    "nfl": "NO",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 6.6,
+    "last_proj": 13.5,
+    "season_pts": 79.2,
+    "games": 5,
+    "starts": 5,
+    "avg": 15.84,
+    "best": {
+     "pts": 23.2,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Sam LaPorta",
+    "pos": "TE",
+    "nfl": "DET",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": 17.3,
+    "last_proj": 10.75,
+    "season_pts": 63.1,
+    "games": 5,
+    "starts": 5,
+    "avg": 12.62,
+    "best": {
+     "pts": 18.4,
+     "week": 4
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Michael Wilson",
+    "pos": "WR",
+    "nfl": "ARI",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 5.0,
+    "last_proj": 14.04,
+    "season_pts": 49.3,
+    "games": 5,
+    "starts": 1,
+    "avg": 9.86,
+    "best": {
+     "pts": 20.4,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Patriots D/ST",
+    "pos": "D/ST",
+    "nfl": "NE",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": 8.0,
+    "last_proj": 6.07,
+    "season_pts": 8.0,
+    "games": 1,
+    "starts": 1,
+    "avg": 8.0,
+    "best": {
+     "pts": 8.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Will Reichard",
+    "pos": "K",
+    "nfl": "MIN",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 13.0,
+    "last_proj": 8.71,
+    "season_pts": 58.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 11.6,
+    "best": {
+     "pts": 16.0,
+     "week": 4
+    },
+    "bye_next": true
+   },
+   {
+    "name": "C.J. Stroud",
+    "pos": "QB",
+    "nfl": "HOU",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 22.5,
+    "last_proj": 17.57,
+    "season_pts": 98.1,
+    "games": 5,
+    "starts": 0,
+    "avg": 19.62,
+    "best": {
+     "pts": 26.2,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Garrett Wilson",
+    "pos": "WR",
+    "nfl": "NYJ",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 19.9,
+    "last_proj": 11.77,
+    "season_pts": 70.9,
+    "games": 5,
+    "starts": 4,
+    "avg": 14.18,
+    "best": {
+     "pts": 21.7,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Ollie Gordon II",
+    "pos": "RB",
+    "nfl": "MIA",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 14.8,
+    "last_proj": 10.15,
+    "season_pts": 31.8,
+    "games": 2,
+    "starts": 0,
+    "avg": 15.9,
+    "best": {
+     "pts": 17.0,
+     "week": 4
+    },
+    "bye_next": true
+   },
+   {
+    "name": "TreVeyon Henderson",
+    "pos": "RB",
+    "nfl": "NE",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 4.3,
+    "last_proj": 9.94,
+    "season_pts": 25.5,
+    "games": 5,
+    "starts": 2,
+    "avg": 5.1,
+    "best": {
+     "pts": 13.6,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "RJ Harvey",
+    "pos": "RB",
+    "nfl": "DEN",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0.7,
+    "last_proj": 9.28,
+    "season_pts": 28.8,
+    "games": 5,
+    "starts": 0,
+    "avg": 5.76,
+    "best": {
+     "pts": 14.3,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Zach Charbonnet",
+    "pos": "RB",
+    "nfl": "SEA",
+    "slot": "IR",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 0,
+    "games": 0,
+    "starts": 0,
+    "avg": 0,
+    "best": null,
+    "bye_next": false
+   }
+  ],
+  "6": [
+   {
+    "name": "Dak Prescott",
+    "pos": "QB",
+    "nfl": "DAL",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": 14.0,
+    "last_proj": 20.89,
+    "season_pts": 110.6,
+    "games": 5,
+    "starts": 5,
+    "avg": 22.12,
+    "best": {
+     "pts": 37.6,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jonathan Taylor",
+    "pos": "RB",
+    "nfl": "IND",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 9.7,
+    "last_proj": 17.71,
+    "season_pts": 90.9,
+    "games": 5,
+    "starts": 5,
+    "avg": 18.18,
+    "best": {
+     "pts": 27.2,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "David Montgomery",
+    "pos": "RB",
+    "nfl": "HOU",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 1.1,
+    "last_proj": 11.04,
+    "season_pts": 42.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 8.4,
+    "best": {
+     "pts": 27.4,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Khalil Shakir",
+    "pos": "WR",
+    "nfl": "BUF",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 9.5,
+    "last_proj": 7.94,
+    "season_pts": 32.6,
+    "games": 5,
+    "starts": 1,
+    "avg": 6.52,
+    "best": {
+     "pts": 9.7,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Wan'Dale Robinson",
+    "pos": "WR",
+    "nfl": "TEN",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 8.3,
+    "last_proj": 7.01,
+    "season_pts": 40.7,
+    "games": 5,
+    "starts": 1,
+    "avg": 8.14,
+    "best": {
+     "pts": 15.2,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jake Ferguson",
+    "pos": "TE",
+    "nfl": "DAL",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": 3.4,
+    "last_proj": 5.4,
+    "season_pts": 33.7,
+    "games": 5,
+    "starts": 1,
+    "avg": 6.74,
+    "best": {
+     "pts": 18.3,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jeremiyah Love",
+    "pos": "RB",
+    "nfl": "ARI",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 2.2,
+    "last_proj": 13.16,
+    "season_pts": 45.6,
+    "games": 5,
+    "starts": 3,
+    "avg": 9.12,
+    "best": {
+     "pts": 19.4,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Browns D/ST",
+    "pos": "D/ST",
+    "nfl": "CLE",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": 12.0,
+    "last_proj": 5.96,
+    "season_pts": 27.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 5.4,
+    "best": {
+     "pts": 12.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Cameron Dicker",
+    "pos": "K",
+    "nfl": "LAC",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 5.0,
+    "last_proj": 8.11,
+    "season_pts": 30.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 6.0,
+    "best": {
+     "pts": 11.0,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Travis Hunter",
+    "pos": "WR",
+    "nfl": "JAX",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 1.4,
+    "last_proj": 0.06,
+    "season_pts": 3.0,
+    "games": 5,
+    "starts": 0,
+    "avg": 0.6,
+    "best": {
+     "pts": 1.6,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Rashee Rice",
+    "pos": "WR",
+    "nfl": "KC",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 31.5,
+    "games": 5,
+    "starts": 4,
+    "avg": 6.3,
+    "best": {
+     "pts": 12.3,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Ladd McConkey",
+    "pos": "WR",
+    "nfl": "LAC",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 30.3,
+    "games": 5,
+    "starts": 4,
+    "avg": 6.06,
+    "best": {
+     "pts": 16.7,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Travis Kelce",
+    "pos": "TE",
+    "nfl": "KC",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 44.6,
+    "games": 5,
+    "starts": 4,
+    "avg": 8.92,
+    "best": {
+     "pts": 20.6,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Chuba Hubbard",
+    "pos": "RB",
+    "nfl": "CAR",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 74.0,
+    "games": 5,
+    "starts": 2,
+    "avg": 14.8,
+    "best": {
+     "pts": 25.4,
+     "week": 4
+    },
+    "bye_next": false
+   }
+  ],
+  "13": [
+   {
+    "name": "Josh Allen",
+    "pos": "QB",
+    "nfl": "BUF",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": 32.1,
+    "last_proj": 22.46,
+    "season_pts": 156.5,
+    "games": 5,
+    "starts": 5,
+    "avg": 31.3,
+    "best": {
+     "pts": 46.9,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jaylen Warren",
+    "pos": "RB",
+    "nfl": "PIT",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 41.8,
+    "last_proj": 15.99,
+    "season_pts": 91.5,
+    "games": 5,
+    "starts": 5,
+    "avg": 18.3,
+    "best": {
+     "pts": 41.8,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jahmyr Gibbs",
+    "pos": "RB",
+    "nfl": "DET",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 35.2,
+    "last_proj": 24.73,
+    "season_pts": 140.2,
+    "games": 5,
+    "starts": 5,
+    "avg": 28.04,
+    "best": {
+     "pts": 37.9,
+     "week": 3
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Davante Adams",
+    "pos": "WR",
+    "nfl": "LAR",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 19.6,
+    "last_proj": 13.32,
+    "season_pts": 81.6,
+    "games": 5,
+    "starts": 5,
+    "avg": 16.32,
+    "best": {
+     "pts": 35.5,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jakobi Meyers",
+    "pos": "WR",
+    "nfl": "JAX",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 4.7,
+    "last_proj": 8.82,
+    "season_pts": 39.9,
+    "games": 5,
+    "starts": 1,
+    "avg": 7.98,
+    "best": {
+     "pts": 15.9,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Trey McBride",
+    "pos": "TE",
+    "nfl": "ARI",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": 17.1,
+    "last_proj": 15.0,
+    "season_pts": 69.8,
+    "games": 5,
+    "starts": 5,
+    "avg": 13.96,
+    "best": {
+     "pts": 20.0,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Tony Pollard",
+    "pos": "RB",
+    "nfl": "TEN",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 5.2,
+    "last_proj": 12.58,
+    "season_pts": 39.7,
+    "games": 5,
+    "starts": 4,
+    "avg": 7.94,
+    "best": {
+     "pts": 12.0,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Seahawks D/ST",
+    "pos": "D/ST",
+    "nfl": "SEA",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": 8.0,
+    "last_proj": 3.93,
+    "season_pts": 46.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 9.2,
+    "best": {
+     "pts": 14.0,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Chad Ryland",
+    "pos": "K",
+    "nfl": "ARI",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 3.0,
+    "last_proj": 8.17,
+    "season_pts": 3.0,
+    "games": 1,
+    "starts": 1,
+    "avg": 3.0,
+    "best": {
+     "pts": 3.0,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Courtland Sutton",
+    "pos": "WR",
+    "nfl": "DEN",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 8.8,
+    "last_proj": 8.64,
+    "season_pts": 21.9,
+    "games": 5,
+    "starts": 0,
+    "avg": 4.38,
+    "best": {
+     "pts": 8.8,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Makai Lemon",
+    "pos": "WR",
+    "nfl": "PHI",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 6.8,
+    "last_proj": 8.26,
+    "season_pts": 17.8,
+    "games": 5,
+    "starts": 0,
+    "avg": 3.56,
+    "best": {
+     "pts": 6.8,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Tetairoa McMillan",
+    "pos": "WR",
+    "nfl": "CAR",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 61.5,
+    "games": 5,
+    "starts": 4,
+    "avg": 12.3,
+    "best": {
+     "pts": 38.2,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Stefon Diggs",
+    "pos": "WR",
+    "nfl": "WAS",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 44.0,
+    "games": 5,
+    "starts": 1,
+    "avg": 8.8,
+    "best": {
+     "pts": 19.2,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Harrison Butker",
+    "pos": "K",
+    "nfl": "KC",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 34.0,
+    "games": 5,
+    "starts": 4,
+    "avg": 6.8,
+    "best": {
+     "pts": 15.0,
+     "week": 2
+    },
+    "bye_next": false
+   }
+  ],
+  "3": [
+   {
+    "name": "Jordan Love",
+    "pos": "QB",
+    "nfl": "GB",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": 32.6,
+    "last_proj": 18.33,
+    "season_pts": 54.6,
+    "games": 2,
+    "starts": 2,
+    "avg": 27.3,
+    "best": {
+     "pts": 32.6,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Bijan Robinson",
+    "pos": "RB",
+    "nfl": "ATL",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 13.8,
+    "last_proj": 20.71,
+    "season_pts": 116.2,
+    "games": 5,
+    "starts": 5,
+    "avg": 23.24,
+    "best": {
+     "pts": 34.3,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Omarion Hampton",
+    "pos": "RB",
+    "nfl": "LAC",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 4.4,
+    "last_proj": 11.34,
+    "season_pts": 47.1,
+    "games": 5,
+    "starts": 5,
+    "avg": 9.42,
+    "best": {
+     "pts": 16.5,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Christian Watson",
+    "pos": "WR",
+    "nfl": "GB",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 34.3,
+    "last_proj": 11.56,
+    "season_pts": 105.4,
+    "games": 5,
+    "starts": 4,
+    "avg": 21.08,
+    "best": {
+     "pts": 34.3,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Tee Higgins",
+    "pos": "WR",
+    "nfl": "CIN",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 3.2,
+    "last_proj": 10.6,
+    "season_pts": 61.8,
+    "games": 5,
+    "starts": 4,
+    "avg": 12.36,
+    "best": {
+     "pts": 21.2,
+     "week": 4
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Kenyon Sadiq",
+    "pos": "TE",
+    "nfl": "NYJ",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": -0.7,
+    "last_proj": 7.59,
+    "season_pts": 19.3,
+    "games": 3,
+    "starts": 2,
+    "avg": 6.43,
+    "best": {
+     "pts": 20.0,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jameson Williams",
+    "pos": "WR",
+    "nfl": "DET",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 17.7,
+    "last_proj": 9.2,
+    "season_pts": 48.6,
+    "games": 5,
+    "starts": 3,
+    "avg": 9.72,
+    "best": {
+     "pts": 17.7,
+     "week": 5
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Vikings D/ST",
+    "pos": "D/ST",
+    "nfl": "MIN",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": 13.0,
+    "last_proj": 6.87,
+    "season_pts": 25.0,
+    "games": 2,
+    "starts": 2,
+    "avg": 12.5,
+    "best": {
+     "pts": 13.0,
+     "week": 5
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Chris Boswell",
+    "pos": "K",
+    "nfl": "PIT",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 11.0,
+    "last_proj": 7.77,
+    "season_pts": 39.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 7.8,
+    "best": {
+     "pts": 12.0,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Blake Corum",
+    "pos": "RB",
+    "nfl": "LAR",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 14.7,
+    "last_proj": 7.94,
+    "season_pts": 34.9,
+    "games": 5,
+    "starts": 0,
+    "avg": 6.98,
+    "best": {
+     "pts": 14.7,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Mark Andrews",
+    "pos": "TE",
+    "nfl": "BAL",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 2.8,
+    "last_proj": 7.43,
+    "season_pts": 32.7,
+    "games": 5,
+    "starts": 3,
+    "avg": 6.54,
+    "best": {
+     "pts": 11.2,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Kenneth Walker III",
+    "pos": "RB",
+    "nfl": "KC",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 108.1,
+    "games": 5,
+    "starts": 4,
+    "avg": 21.62,
+    "best": {
+     "pts": 36.6,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Caleb Williams",
+    "pos": "QB",
+    "nfl": "CHI",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 47.7,
+    "games": 5,
+    "starts": 2,
+    "avg": 9.54,
+    "best": {
+     "pts": 40.5,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Brian Thomas Jr.",
+    "pos": "WR",
+    "nfl": "JAX",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 6.42,
+    "season_pts": 21.0,
+    "games": 5,
+    "starts": 0,
+    "avg": 4.2,
+    "best": {
+     "pts": 8.7,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jordyn Tyson",
+    "pos": "WR",
+    "nfl": "NO",
+    "slot": "IR",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 0,
+    "games": 0,
+    "starts": 0,
+    "avg": 0,
+    "best": null,
+    "bye_next": false
+   }
+  ],
+  "15": [
+   {
+    "name": "Trevor Lawrence",
+    "pos": "QB",
+    "nfl": "JAX",
+    "slot": "QB",
+    "starter": true,
+    "last_pts": 28.5,
+    "last_proj": 22.65,
+    "season_pts": 107.9,
+    "games": 5,
+    "starts": 3,
+    "avg": 21.58,
+    "best": {
+     "pts": 33.3,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Christian McCaffrey",
+    "pos": "RB",
+    "nfl": "SF",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 15.8,
+    "last_proj": 16.54,
+    "season_pts": 81.8,
+    "games": 5,
+    "starts": 5,
+    "avg": 16.36,
+    "best": {
+     "pts": 20.6,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Chase Brown",
+    "pos": "RB",
+    "nfl": "CIN",
+    "slot": "RB",
+    "starter": true,
+    "last_pts": 5.5,
+    "last_proj": 15.42,
+    "season_pts": 53.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 10.6,
+    "best": {
+     "pts": 16.3,
+     "week": 1
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Emeka Egbuka",
+    "pos": "WR",
+    "nfl": "TB",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 14.2,
+    "last_proj": 8.2,
+    "season_pts": 42.8,
+    "games": 5,
+    "starts": 5,
+    "avg": 8.56,
+    "best": {
+     "pts": 14.2,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Keon Coleman",
+    "pos": "WR",
+    "nfl": "BUF",
+    "slot": "WR",
+    "starter": true,
+    "last_pts": 7.2,
+    "last_proj": 7.34,
+    "season_pts": 7.2,
+    "games": 1,
+    "starts": 1,
+    "avg": 7.2,
+    "best": {
+     "pts": 7.2,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "George Kittle",
+    "pos": "TE",
+    "nfl": "SF",
+    "slot": "TE",
+    "starter": true,
+    "last_pts": 4.9,
+    "last_proj": 11.23,
+    "season_pts": 65.3,
+    "games": 5,
+    "starts": 5,
+    "avg": 13.06,
+    "best": {
+     "pts": 23.2,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "T.J. Hockenson",
+    "pos": "TE",
+    "nfl": "MIN",
+    "slot": "FLEX",
+    "starter": true,
+    "last_pts": 1.2,
+    "last_proj": 8.05,
+    "season_pts": 26.1,
+    "games": 4,
+    "starts": 1,
+    "avg": 6.52,
+    "best": {
+     "pts": 18.4,
+     "week": 4
+    },
+    "bye_next": true
+   },
+   {
+    "name": "Ravens D/ST",
+    "pos": "D/ST",
+    "nfl": "BAL",
+    "slot": "D/ST",
+    "starter": true,
+    "last_pts": 7.0,
+    "last_proj": 2.38,
+    "season_pts": 24.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 4.8,
+    "best": {
+     "pts": 7.0,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Harrison Mevis",
+    "pos": "K",
+    "nfl": "",
+    "slot": "K",
+    "starter": true,
+    "last_pts": 4.0,
+    "last_proj": 8.65,
+    "season_pts": 29.0,
+    "games": 5,
+    "starts": 5,
+    "avg": 5.8,
+    "best": {
+     "pts": 14.0,
+     "week": 3
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Jayden Daniels",
+    "pos": "QB",
+    "nfl": "WAS",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 31.3,
+    "last_proj": 23.22,
+    "season_pts": 68.3,
+    "games": 3,
+    "starts": 2,
+    "avg": 22.77,
+    "best": {
+     "pts": 31.3,
+     "week": 5
+    },
+    "bye_next": false
+   },
+   {
+    "name": "KC Concepcion",
+    "pos": "WR",
+    "nfl": "CLE",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 1.0,
+    "last_proj": 8.35,
+    "season_pts": 22.8,
+    "games": 5,
+    "starts": 0,
+    "avg": 4.56,
+    "best": {
+     "pts": 8.9,
+     "week": 4
+    },
+    "bye_next": false
+   },
+   {
+    "name": "DJ Moore",
+    "pos": "WR",
+    "nfl": "BUF",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 31.3,
+    "games": 5,
+    "starts": 3,
+    "avg": 6.26,
+    "best": {
+     "pts": 19.5,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Josh Jacobs",
+    "pos": "RB",
+    "nfl": "GB",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 0,
+    "games": 5,
+    "starts": 0,
+    "avg": 0,
+    "best": {
+     "pts": 0,
+     "week": 1
+    },
+    "bye_next": false
+   },
+   {
+    "name": "Xavier Worthy",
+    "pos": "WR",
+    "nfl": "KC",
+    "slot": "Bench",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 23.0,
+    "games": 4,
+    "starts": 2,
+    "avg": 5.75,
+    "best": {
+     "pts": 11.0,
+     "week": 2
+    },
+    "bye_next": false
+   },
+   {
+    "name": "DeVonta Smith",
+    "pos": "WR",
+    "nfl": "PHI",
+    "slot": "IR",
+    "starter": false,
+    "last_pts": 0,
+    "last_proj": 0,
+    "season_pts": 39.0,
+    "games": 4,
+    "starts": 3,
+    "avg": 9.75,
+    "best": {
+     "pts": 22.7,
+     "week": 2
+    },
+    "bye_next": false
+   }
+  ]
+ },
+ "roster_week": 5,
  "weeks": [
   1,
   2,
@@ -1364,5 +4517,5 @@
   5
  ],
  "live_week": null,
- "updated": "2026-10-19T15:06+00:00"
+ "updated": "2026-10-19T15:10+00:00"
 }
