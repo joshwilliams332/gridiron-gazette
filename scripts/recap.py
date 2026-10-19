@@ -144,7 +144,10 @@ def parse_week(raw, week, league, nfl=None):
             s = m[key]
             roster = s.get("rosterForCurrentScoringPeriod") or s.get("rosterForMatchupPeriod") or {}
             players = [parse_player(e, week, nfl) for e in roster.get("entries", [])]
+            # ESPN leaves totalPoints at 0 until a week is final; use the live total or add up the starters.
             pts = r2(s.get("totalPoints"))
+            if not pts:
+                pts = r2(s.get("totalPointsLive") or sum(p["pts"] for p in players if p["starter"]))
             sides.append({
                 "team": s.get("teamId"),
                 "pts": pts,
