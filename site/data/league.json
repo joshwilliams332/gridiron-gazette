@@ -1,0 +1,945 @@
+{
+ "id": 2212116,
+ "season": 2026,
+ "name": "Family FFL 2026",
+ "espn_name": "Family FFL 2026",
+ "my_team": 3,
+ "regular_season_weeks": 14,
+ "slot_counts": {
+  "0": 1,
+  "2": 2,
+  "4": 2,
+  "6": 1,
+  "16": 1,
+  "17": 1,
+  "20": 5,
+  "21": 1,
+  "23": 1
+ },
+ "teams": [
+  {
+   "id": 2,
+   "name": "King Henry",
+   "abbrev": "BEW",
+   "owner": null,
+   "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/6647ded0-878d-11f0-b1c3-bf61c28fbeb9"
+  },
+  {
+   "id": 3,
+   "name": "K9 Unit",
+   "abbrev": "K9",
+   "owner": null,
+   "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/3a9f4e80-b0a4-11f1-a988-81f0b51cf033"
+  },
+  {
+   "id": 6,
+   "name": "Cleo's Purrrfect Lineup",
+   "abbrev": "RAw",
+   "owner": null,
+   "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/f36a7690-af93-11f1-b548-c3d1f0d4cfdb"
+  },
+  {
+   "id": 7,
+   "name": "Dena's Team \ud83c\udfc8",
+   "abbrev": "DAW",
+   "owner": null,
+   "logo": "https://g.espncdn.com/lm-static/logo-packs/ffl/MickeyAndDonald-Disney/Disney-04.svg"
+  },
+  {
+   "id": 8,
+   "name": "* Go Buckeyes",
+   "abbrev": "DWW",
+   "owner": null,
+   "logo": "https://g.espncdn.com/lm-static/ffl/images/default_logos/6.svg"
+  },
+  {
+   "id": 9,
+   "name": "Oops",
+   "abbrev": "TMW",
+   "owner": null,
+   "logo": "https://g.espncdn.com/lm-static/logo-packs/core/OldTimeMickeyAndFriends/Football_Mickey.svg"
+  },
+  {
+   "id": 12,
+   "name": "The Dude Abides",
+   "abbrev": "Dude",
+   "owner": null,
+   "logo": "https://collider.com/wp-content/uploads/the-big-lebowski-movie-image-2.jpg"
+  },
+  {
+   "id": 13,
+   "name": "I Call Gibbs",
+   "abbrev": "WILL",
+   "owner": null,
+   "logo": "https://g.espncdn.com/lm-static/logo-packs/ffl/CrazyHelmets-ToddDetwiler/Helmets_04.svg"
+  },
+  {
+   "id": 14,
+   "name": "The Canberra Mob",
+   "abbrev": "MOB",
+   "owner": null,
+   "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Boxingkangaroo.svg/1200px-Boxingkangaroo.svg.png"
+  },
+  {
+   "id": 15,
+   "name": "Ken",
+   "abbrev": "VW",
+   "owner": null,
+   "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/cb187b60-8753-11f0-b1c3-bf61c28fbeb9"
+  },
+  {
+   "id": 16,
+   "name": "Slim Shiesties",
+   "abbrev": "SLIM",
+   "owner": null,
+   "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/aca9cfa0-a5f0-11f1-8ef0-19c1af2548f8"
+  },
+  {
+   "id": 17,
+   "name": "Stroud and Proud",
+   "abbrev": "AJ",
+   "owner": null,
+   "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/eb921df0-a5a3-11f1-8623-4f919cfbc4d9"
+  }
+ ],
+ "standings": [
+  {
+   "team": 13,
+   "w": 5,
+   "l": 0,
+   "t": 0,
+   "pf": 722.5,
+   "pa": 439.8,
+   "all_w": 48,
+   "all_l": 6,
+   "win_pct": 1.0,
+   "all_pct": 0.889,
+   "streak": "W5",
+   "recent_avg": 138.07,
+   "rank": 1,
+   "power": 0.939,
+   "power_rank": 1
+  },
+  {
+   "team": 3,
+   "w": 4,
+   "l": 1,
+   "t": 0,
+   "pf": 638.9,
+   "pa": 608.9,
+   "all_w": 42,
+   "all_l": 13,
+   "win_pct": 0.8,
+   "all_pct": 0.764,
+   "streak": "W3",
+   "recent_avg": 132.0,
+   "rank": 2,
+   "power": 0.8036,
+   "power_rank": 2
+  },
+  {
+   "team": 17,
+   "w": 3,
+   "l": 2,
+   "t": 0,
+   "pf": 595.3,
+   "pa": 542.1,
+   "all_w": 34,
+   "all_l": 21,
+   "win_pct": 0.6,
+   "all_pct": 0.618,
+   "streak": "W2",
+   "recent_avg": 115.0,
+   "rank": 3,
+   "power": 0.6448,
+   "power_rank": 3
+  },
+  {
+   "team": 16,
+   "w": 3,
+   "l": 2,
+   "t": 0,
+   "pf": 563.7,
+   "pa": 492.3,
+   "all_w": 30,
+   "all_l": 25,
+   "win_pct": 0.6,
+   "all_pct": 0.545,
+   "streak": "W1",
+   "recent_avg": 115.0,
+   "rank": 4,
+   "power": 0.6047,
+   "power_rank": 4
+  },
+  {
+   "team": 12,
+   "w": 3,
+   "l": 2,
+   "t": 0,
+   "pf": 544.4,
+   "pa": 548.1,
+   "all_w": 29,
+   "all_l": 26,
+   "win_pct": 0.6,
+   "all_pct": 0.527,
+   "streak": "L1",
+   "recent_avg": 120.27,
+   "rank": 5,
+   "power": 0.6005,
+   "power_rank": 5
+  },
+  {
+   "team": 2,
+   "w": 3,
+   "l": 2,
+   "t": 0,
+   "pf": 540.3,
+   "pa": 500.0,
+   "all_w": 25,
+   "all_l": 30,
+   "win_pct": 0.6,
+   "all_pct": 0.455,
+   "streak": "W1",
+   "recent_avg": 112.73,
+   "rank": 6,
+   "power": 0.5527,
+   "power_rank": 6
+  },
+  {
+   "team": 9,
+   "w": 3,
+   "l": 2,
+   "t": 0,
+   "pf": 499.8,
+   "pa": 499.9,
+   "all_w": 24,
+   "all_l": 30,
+   "win_pct": 0.6,
+   "all_pct": 0.444,
+   "streak": "W2",
+   "recent_avg": 107.9,
+   "rank": 7,
+   "power": 0.5414,
+   "power_rank": 7
+  },
+  {
+   "team": 7,
+   "w": 2,
+   "l": 3,
+   "t": 0,
+   "pf": 512.8,
+   "pa": 516.0,
+   "all_w": 23,
+   "all_l": 32,
+   "win_pct": 0.4,
+   "all_pct": 0.418,
+   "streak": "L1",
+   "recent_avg": 104.47,
+   "rank": 8,
+   "power": 0.4634,
+   "power_rank": 8
+  },
+  {
+   "team": 6,
+   "w": 1,
+   "l": 4,
+   "t": 0,
+   "pf": 486.7,
+   "pa": 648.6,
+   "all_w": 22,
+   "all_l": 33,
+   "win_pct": 0.2,
+   "all_pct": 0.4,
+   "streak": "L3",
+   "recent_avg": 84.33,
+   "rank": 9,
+   "power": 0.3716,
+   "power_rank": 10
+  },
+  {
+   "team": 15,
+   "w": 1,
+   "l": 4,
+   "t": 0,
+   "pf": 482.9,
+   "pa": 582.6,
+   "all_w": 21,
+   "all_l": 34,
+   "win_pct": 0.2,
+   "all_pct": 0.382,
+   "streak": "L2",
+   "recent_avg": 95.77,
+   "rank": 10,
+   "power": 0.3741,
+   "power_rank": 9
+  },
+  {
+   "team": 8,
+   "w": 1,
+   "l": 4,
+   "t": 0,
+   "pf": 476.3,
+   "pa": 581.0,
+   "all_w": 17,
+   "all_l": 38,
+   "win_pct": 0.2,
+   "all_pct": 0.309,
+   "streak": "L2",
+   "recent_avg": 107.43,
+   "rank": 11,
+   "power": 0.3467,
+   "power_rank": 11
+  },
+  {
+   "team": 14,
+   "w": 1,
+   "l": 4,
+   "t": 0,
+   "pf": 446.5,
+   "pa": 550.8,
+   "all_w": 14,
+   "all_l": 41,
+   "win_pct": 0.2,
+   "all_pct": 0.255,
+   "streak": "L4",
+   "recent_avg": 84.3,
+   "rank": 12,
+   "power": 0.2918,
+   "power_rank": 12
+  }
+ ],
+ "log": {
+  "2": [
+   {
+    "week": 1,
+    "opp": 16,
+    "pf": 101.3,
+    "pa": 114.5,
+    "result": "L",
+    "optimal": 146.3,
+    "playoff": false,
+    "week_rank": 8
+   },
+   {
+    "week": 2,
+    "opp": 8,
+    "pf": 100.8,
+    "pa": 79.2,
+    "result": "W",
+    "optimal": 121.5,
+    "playoff": false,
+    "week_rank": 6
+   },
+   {
+    "week": 3,
+    "opp": 9,
+    "pf": 104.9,
+    "pa": 71.4,
+    "result": "W",
+    "optimal": 118.4,
+    "playoff": false,
+    "week_rank": 7
+   },
+   {
+    "week": 4,
+    "opp": 7,
+    "pf": 86.0,
+    "pa": 114.5,
+    "result": "L",
+    "optimal": 107.3,
+    "playoff": false,
+    "week_rank": 12
+   },
+   {
+    "week": 5,
+    "opp": 12,
+    "pf": 147.3,
+    "pa": 120.4,
+    "result": "W",
+    "optimal": 150.1,
+    "playoff": false,
+    "week_rank": 2
+   }
+  ],
+  "3": [
+   {
+    "week": 1,
+    "opp": 6,
+    "pf": 156.5,
+    "pa": 115.6,
+    "result": "W",
+    "optimal": 183.7,
+    "playoff": false,
+    "week_rank": 1
+   },
+   {
+    "week": 2,
+    "opp": 13,
+    "pf": 86.4,
+    "pa": 172.1,
+    "result": "L",
+    "optimal": 100.9,
+    "playoff": false,
+    "week_rank": 9
+   },
+   {
+    "week": 3,
+    "opp": 17,
+    "pf": 142.2,
+    "pa": 139.5,
+    "result": "W",
+    "optimal": 159.6,
+    "playoff": false,
+    "week_rank": 1
+   },
+   {
+    "week": 4,
+    "opp": 14,
+    "pf": 124.5,
+    "pa": 93.4,
+    "result": "W",
+    "optimal": 142.7,
+    "playoff": false,
+    "week_rank": 2
+   },
+   {
+    "week": 5,
+    "opp": 15,
+    "pf": 129.3,
+    "pa": 88.3,
+    "result": "W",
+    "optimal": 144.3,
+    "playoff": false,
+    "week_rank": 5
+   }
+  ],
+  "6": [
+   {
+    "week": 1,
+    "opp": 3,
+    "pf": 115.6,
+    "pa": 156.5,
+    "result": "L",
+    "optimal": 125.8,
+    "playoff": false,
+    "week_rank": 5
+   },
+   {
+    "week": 2,
+    "opp": 14,
+    "pf": 118.1,
+    "pa": 97.4,
+    "result": "W",
+    "optimal": 140.7,
+    "playoff": false,
+    "week_rank": 3
+   },
+   {
+    "week": 3,
+    "opp": 15,
+    "pf": 96.7,
+    "pa": 110.4,
+    "result": "L",
+    "optimal": 117.3,
+    "playoff": false,
+    "week_rank": 8
+   },
+   {
+    "week": 4,
+    "opp": 17,
+    "pf": 91.1,
+    "pa": 117.6,
+    "result": "L",
+    "optimal": 112.1,
+    "playoff": false,
+    "week_rank": 10
+   },
+   {
+    "week": 5,
+    "opp": 13,
+    "pf": 65.2,
+    "pa": 166.7,
+    "result": "L",
+    "optimal": 65.5,
+    "playoff": false,
+    "week_rank": 12
+   }
+  ],
+  "7": [
+   {
+    "week": 1,
+    "opp": 12,
+    "pf": 138.0,
+    "pa": 87.4,
+    "result": "W",
+    "optimal": 143.5,
+    "playoff": false,
+    "week_rank": 2
+   },
+   {
+    "week": 2,
+    "opp": 16,
+    "pf": 61.4,
+    "pa": 104.2,
+    "result": "L",
+    "optimal": 83.6,
+    "playoff": false,
+    "week_rank": 11
+   },
+   {
+    "week": 3,
+    "opp": 8,
+    "pf": 81.9,
+    "pa": 106.3,
+    "result": "L",
+    "optimal": 110.8,
+    "playoff": false,
+    "week_rank": 11
+   },
+   {
+    "week": 4,
+    "opp": 2,
+    "pf": 114.5,
+    "pa": 86.0,
+    "result": "W",
+    "optimal": 120.7,
+    "playoff": false,
+    "week_rank": 6
+   },
+   {
+    "week": 5,
+    "opp": 9,
+    "pf": 117.0,
+    "pa": 132.1,
+    "result": "L",
+    "optimal": 119.0,
+    "playoff": false,
+    "week_rank": 7
+   }
+  ],
+  "8": [
+   {
+    "week": 1,
+    "opp": 9,
+    "pf": 74.8,
+    "pa": 120.7,
+    "result": "L",
+    "optimal": 83.2,
+    "playoff": false,
+    "week_rank": 12
+   },
+   {
+    "week": 2,
+    "opp": 2,
+    "pf": 79.2,
+    "pa": 100.8,
+    "result": "L",
+    "optimal": 105.1,
+    "playoff": false,
+    "week_rank": 10
+   },
+   {
+    "week": 3,
+    "opp": 7,
+    "pf": 106.3,
+    "pa": 81.9,
+    "result": "W",
+    "optimal": 122.9,
+    "playoff": false,
+    "week_rank": 6
+   },
+   {
+    "week": 4,
+    "opp": 12,
+    "pf": 113.5,
+    "pa": 133.5,
+    "result": "L",
+    "optimal": 124.5,
+    "playoff": false,
+    "week_rank": 7
+   },
+   {
+    "week": 5,
+    "opp": 16,
+    "pf": 102.5,
+    "pa": 144.1,
+    "result": "L",
+    "optimal": 111.3,
+    "playoff": false,
+    "week_rank": 8
+   }
+  ],
+  "9": [
+   {
+    "week": 1,
+    "opp": 8,
+    "pf": 120.7,
+    "pa": 74.8,
+    "result": "W",
+    "optimal": 141.1,
+    "playoff": false,
+    "week_rank": 4
+   },
+   {
+    "week": 2,
+    "opp": 12,
+    "pf": 55.4,
+    "pa": 96.2,
+    "result": "L",
+    "optimal": 102.9,
+    "playoff": false,
+    "week_rank": 12
+   },
+   {
+    "week": 3,
+    "opp": 2,
+    "pf": 71.4,
+    "pa": 104.9,
+    "result": "L",
+    "optimal": 82.6,
+    "playoff": false,
+    "week_rank": 12
+   },
+   {
+    "week": 4,
+    "opp": 16,
+    "pf": 120.2,
+    "pa": 107.0,
+    "result": "W",
+    "optimal": 155.0,
+    "playoff": false,
+    "week_rank": 3
+   },
+   {
+    "week": 5,
+    "opp": 7,
+    "pf": 132.1,
+    "pa": 117.0,
+    "result": "W",
+    "optimal": 132.1,
+    "playoff": false,
+    "week_rank": 4
+   }
+  ],
+  "12": [
+   {
+    "week": 1,
+    "opp": 7,
+    "pf": 87.4,
+    "pa": 138.0,
+    "result": "L",
+    "optimal": 92.7,
+    "playoff": false,
+    "week_rank": 11
+   },
+   {
+    "week": 2,
+    "opp": 9,
+    "pf": 96.2,
+    "pa": 55.4,
+    "result": "W",
+    "optimal": 105.3,
+    "playoff": false,
+    "week_rank": 8
+   },
+   {
+    "week": 3,
+    "opp": 16,
+    "pf": 106.9,
+    "pa": 93.9,
+    "result": "W",
+    "optimal": 120.0,
+    "playoff": false,
+    "week_rank": 5
+   },
+   {
+    "week": 4,
+    "opp": 8,
+    "pf": 133.5,
+    "pa": 113.5,
+    "result": "W",
+    "optimal": 137.5,
+    "playoff": false,
+    "week_rank": 1
+   },
+   {
+    "week": 5,
+    "opp": 2,
+    "pf": 120.4,
+    "pa": 147.3,
+    "result": "L",
+    "optimal": 137.4,
+    "playoff": false,
+    "week_rank": 6
+   }
+  ],
+  "13": [
+   {
+    "week": 1,
+    "opp": 17,
+    "pf": 136.2,
+    "pa": 110.1,
+    "result": "W",
+    "optimal": 152.9,
+    "playoff": false,
+    "week_rank": 3
+   },
+   {
+    "week": 2,
+    "opp": 3,
+    "pf": 172.1,
+    "pa": 86.4,
+    "result": "W",
+    "optimal": 184.3,
+    "playoff": false,
+    "week_rank": 1
+   },
+   {
+    "week": 3,
+    "opp": 14,
+    "pf": 127.3,
+    "pa": 89.5,
+    "result": "W",
+    "optimal": 140.5,
+    "playoff": false,
+    "week_rank": 3
+   },
+   {
+    "week": 4,
+    "opp": 15,
+    "pf": 120.2,
+    "pa": 88.6,
+    "result": "W",
+    "optimal": 127.0,
+    "playoff": false,
+    "week_rank": 3
+   },
+   {
+    "week": 5,
+    "opp": 6,
+    "pf": 166.7,
+    "pa": 65.2,
+    "result": "W",
+    "optimal": 172.4,
+    "playoff": false,
+    "week_rank": 1
+   }
+  ],
+  "14": [
+   {
+    "week": 1,
+    "opp": 15,
+    "pf": 96.2,
+    "pa": 93.0,
+    "result": "W",
+    "optimal": 113.4,
+    "playoff": false,
+    "week_rank": 9
+   },
+   {
+    "week": 2,
+    "opp": 6,
+    "pf": 97.4,
+    "pa": 118.1,
+    "result": "L",
+    "optimal": 98.0,
+    "playoff": false,
+    "week_rank": 7
+   },
+   {
+    "week": 3,
+    "opp": 13,
+    "pf": 89.5,
+    "pa": 127.3,
+    "result": "L",
+    "optimal": 102.9,
+    "playoff": false,
+    "week_rank": 10
+   },
+   {
+    "week": 4,
+    "opp": 3,
+    "pf": 93.4,
+    "pa": 124.5,
+    "result": "L",
+    "optimal": 110.4,
+    "playoff": false,
+    "week_rank": 9
+   },
+   {
+    "week": 5,
+    "opp": 17,
+    "pf": 70.0,
+    "pa": 87.9,
+    "result": "L",
+    "optimal": 84.0,
+    "playoff": false,
+    "week_rank": 11
+   }
+  ],
+  "15": [
+   {
+    "week": 1,
+    "opp": 14,
+    "pf": 93.0,
+    "pa": 96.2,
+    "result": "L",
+    "optimal": 105.7,
+    "playoff": false,
+    "week_rank": 10
+   },
+   {
+    "week": 2,
+    "opp": 17,
+    "pf": 102.6,
+    "pa": 140.2,
+    "result": "L",
+    "optimal": 113.7,
+    "playoff": false,
+    "week_rank": 5
+   },
+   {
+    "week": 3,
+    "opp": 6,
+    "pf": 110.4,
+    "pa": 96.7,
+    "result": "W",
+    "optimal": 117.1,
+    "playoff": false,
+    "week_rank": 4
+   },
+   {
+    "week": 4,
+    "opp": 13,
+    "pf": 88.6,
+    "pa": 120.2,
+    "result": "L",
+    "optimal": 111.4,
+    "playoff": false,
+    "week_rank": 11
+   },
+   {
+    "week": 5,
+    "opp": 3,
+    "pf": 88.3,
+    "pa": 129.3,
+    "result": "L",
+    "optimal": 91.1,
+    "playoff": false,
+    "week_rank": 9
+   }
+  ],
+  "16": [
+   {
+    "week": 1,
+    "opp": 2,
+    "pf": 114.5,
+    "pa": 101.3,
+    "result": "W",
+    "optimal": 135.6,
+    "playoff": false,
+    "week_rank": 6
+   },
+   {
+    "week": 2,
+    "opp": 7,
+    "pf": 104.2,
+    "pa": 61.4,
+    "result": "W",
+    "optimal": 122.2,
+    "playoff": false,
+    "week_rank": 4
+   },
+   {
+    "week": 3,
+    "opp": 12,
+    "pf": 93.9,
+    "pa": 106.9,
+    "result": "L",
+    "optimal": 108.7,
+    "playoff": false,
+    "week_rank": 9
+   },
+   {
+    "week": 4,
+    "opp": 9,
+    "pf": 107.0,
+    "pa": 120.2,
+    "result": "L",
+    "optimal": 120.2,
+    "playoff": false,
+    "week_rank": 8
+   },
+   {
+    "week": 5,
+    "opp": 8,
+    "pf": 144.1,
+    "pa": 102.5,
+    "result": "W",
+    "optimal": 169.2,
+    "playoff": false,
+    "week_rank": 3
+   }
+  ],
+  "17": [
+   {
+    "week": 1,
+    "opp": 13,
+    "pf": 110.1,
+    "pa": 136.2,
+    "result": "L",
+    "optimal": 112.5,
+    "playoff": false,
+    "week_rank": 7
+   },
+   {
+    "week": 2,
+    "opp": 15,
+    "pf": 140.2,
+    "pa": 102.6,
+    "result": "W",
+    "optimal": 146.5,
+    "playoff": false,
+    "week_rank": 2
+   },
+   {
+    "week": 3,
+    "opp": 3,
+    "pf": 139.5,
+    "pa": 142.2,
+    "result": "L",
+    "optimal": 149.0,
+    "playoff": false,
+    "week_rank": 2
+   },
+   {
+    "week": 4,
+    "opp": 6,
+    "pf": 117.6,
+    "pa": 91.1,
+    "result": "W",
+    "optimal": 163.3,
+    "playoff": false,
+    "week_rank": 5
+   },
+   {
+    "week": 5,
+    "opp": 14,
+    "pf": 87.9,
+    "pa": 70.0,
+    "result": "W",
+    "optimal": 134.6,
+    "playoff": false,
+    "week_rank": 10
+   }
+  ]
+ },
+ "weeks": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "updated": "2026-10-19T14:11+00:00"
+}
