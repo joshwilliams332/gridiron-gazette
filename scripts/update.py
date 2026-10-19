@@ -15,6 +15,8 @@ Uses only the Python standard library.
 """
 
 import argparse
+import csv
+import io
 import json
 import os
 import sys
@@ -30,6 +32,7 @@ import recap  # noqa: E402
 CONFIG = ROOT / "gazette.json"
 COOKIES = ROOT / "scripts" / "espn_cookies.json"
 OUT = ROOT / "site" / "data"
+NFL_SCHEDULE = "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
 API = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{season}/segments/0/leagues/{league}"
 
 
@@ -61,6 +64,17 @@ def espn_get(season, league_id, cookies, params):
         raise
 
 
+def nfl_schedule():
+    """nflverse's NFL schedule, used to tell which players have played and which games were on Monday night."""
+    try:
+        req = urllib.request.Request(NFL_SCHEDULE, headers={"User-Agent": "gridiron-gazette"})
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            return list(csv.DictReader(io.StringIO(resp.read().decode("utf-8"))))
+    except Exception as e:  # the Gazette still works without it, minus the Monday-night stories
+        print(f"  WARNING: couldn't load the NFL schedule ({e})")
+        return []
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--season", type=int)
@@ -87,25 +101,37 @@ def main():
     league_raw = get_league()
     league = recap.parse_league(league_raw, cfg)
     finished = recap.finished_weeks(league_raw)
-    print(f"  {league['name']}: {len(league['teams'])} teams, {len(finished)} finished weeks")
+    live_week = recap.current_week(league_raw)
+    print(f"  {league['name']}: {len(league['teams'])} teams, {len(finished)} finished weeks"
+          + (f", week {live_week} in progress" if live_week else ""))
+    schedule = fixture.get("nfl", []) if args.fixture else nfl_schedule()
 
     weeks = []
     for w in finished:
         print(f"  week {w}")
-        weeks.append(recap.parse_week(get_week(w), w, league))
+        weeks.append(recap.parse_week(get_week(w), w, league, recap.nfl_week(schedule, season, w)))
+    live = None
+    if live_week:
+        print(f"  week {live_week} (live)")
+        live = recap.parse_week(get_week(live_week), live_week, league, recap.nfl_week(schedule, season, live_week))
 
     recap.add_season_context(league, weeks)
     notes = json.loads((ROOT / "notes.json").read_text()) if (ROOT / "notes.json").exists() else {}
+    week_notes = notes.get("weeks", {})
 
     (OUT / "weeks").mkdir(parents=True, exist_ok=True)
     for wk in weeks:
-        issue = recap.build_issue(wk, weeks, league, notes.get("weeks", {}).get(str(wk["week"]), {}))
+        issue = recap.build_issue(wk, weeks, league, week_notes.get(str(wk["week"]), {}))
         (OUT / "weeks" / f"{wk['week']}.json").write_text(json.dumps(issue, indent=1))
+    if live:
+        issue = recap.build_issue(live, weeks, league, week_notes.get(str(live["week"]), {}), live=True)
+        (OUT / "weeks" / f"{live['week']}.json").write_text(json.dumps(issue, indent=1))
     league.pop("snapshots", None)  # already copied into each issue
-    league["weeks"] = [w["week"] for w in weeks]
+    league["weeks"] = [w["week"] for w in weeks] + ([live["week"]] if live else [])
+    league["live_week"] = live["week"] if live else None
     league["updated"] = datetime.now(timezone.utc).isoformat(timespec="minutes")
     (OUT / "league.json").write_text(json.dumps(league, indent=1))
-    print(f"Done: wrote {len(weeks)} issues")
+    print(f"Done: wrote {len(weeks)} issues" + (f" plus the live Week {live['week']} issue" if live else ""))
 
 
 if __name__ == "__main__":

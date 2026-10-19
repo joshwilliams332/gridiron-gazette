@@ -51,30 +51,45 @@
           </div>
         </details>`;
 
-      const scoreLine = g => `<p class="score-line"><span class="w">${esc(team[g.winner]?.name)} ${f2(g.w_pts)}</span>
+      const scoreLine = g => `<p class="score-line">${g.status === "live" ? `<span class="live-dot">LIVE</span> ` : ""}<span class="w">${esc(team[g.winner]?.name)} ${f2(g.w_pts)}</span>
         <span class="muted">–</span> <span class="l">${esc(team[g.loser]?.name)} ${f2(g.l_pts)}</span></p>`;
+      const gameUrl = g => `game.html?week=${week}&game=${issue.games.indexOf(g)}`;
+      const kicker = g => issue.live
+        ? (g.status === "live" ? `Still to play: ${g.remaining} player${g.remaining === 1 ? "" : "s"}` : "Final")
+        : g.late === "comeback" ? `${issue.late_day} Night Comeback` : g.late === "held" ? `Down to ${issue.late_day} Night`
+        : g.margin < 5 ? "Nail-biter" : g.margin >= 30 ? "Blowout" : "Final";
 
       main.innerHTML = `
         <div class="issue-nav">
           <a href="index.html?week=${weeks[i - 1]}" aria-disabled="${i === 0}">← Week ${weeks[i - 1] ?? ""}</a>
-          <select aria-label="Choose a week">${weeks.map(x => `<option value="${x}" ${x === week ? "selected" : ""}>Week ${x}</option>`).join("")}</select>
+          <select aria-label="Choose a week">${weeks.map(x => `<option value="${x}" ${x === week ? "selected" : ""}>Week ${x}${x === league.live_week ? " (live)" : ""}</option>`).join("")}</select>
           <a href="index.html?week=${weeks[i + 1]}" aria-disabled="${i === weeks.length - 1}">Week ${weeks[i + 1] ?? ""} →</a>
         </div>
 
         <div class="front">
           <div class="col">
             <article class="lead">
-              <span class="kicker">${lead.margin < 5 ? "Game of the Week · Thriller" : "Game of the Week"}${lead.playoff ? " · Playoffs" : ""}</span>
-              <h2>${esc(issue.headline)}</h2>
+              <span class="kicker">${issue.live ? `Live · ${esc(issue.late_day)} Night Watch` : "Game of the Week"} · ${kicker(lead)}${lead.playoff ? " · Playoffs" : ""}</span>
+              <h2><a class="hl" href="${gameUrl(lead)}">${esc(issue.headline)}</a></h2>
               ${scoreLine(lead)}
               <p class="story">${esc(lead.story)}</p>
+              <p><a class="read-more" href="${gameUrl(lead)}">Read the full ${lead.status === "live" ? "preview" : "story"} →</a></p>
               ${lead.note ? `<p class="note">${esc(lead.note)}</p>` : ""}
               ${boxScore(lead)}
             </article>
 
             ${issue.column ? `<section class="column"><h3>From the Commissioner</h3><p class="story">${esc(issue.column)}</p></section>` : ""}
 
-            <h2 class="section-title">Weekly Awards</h2>
+            ${issue.live ? `
+            <h2 class="section-title">${esc(issue.late_day)} Night Watch</h2>
+            <p class="ui muted small">Week ${week} isn't over. Players still to play, by projection. Final scores and awards come out after the last game.</p>
+            <table class="watch">
+              <thead><tr><th>Player</th><th>Fantasy team</th><th class="n">Proj</th></tr></thead>
+              <tbody>${issue.watch.map(p => `<tr><td>${esc(p.name)} <span class="muted small">${esc(p.pos)} · ${esc(p.nfl)}</span></td>
+                <td>${teamLink(team, p.team)}</td><td class="n">${p.proj == null ? "—" : p.proj.toFixed(1)}</td></tr>`).join("") || `<tr><td colspan="3" class="muted">Everyone has played.</td></tr>`}</tbody>
+            </table>` : ""}
+
+            ${issue.awards.length ? `<h2 class="section-title">Weekly Awards</h2>` : ""}
             <div class="awards">${issue.awards.map(a => `
               <div class="award">
                 <div class="t">${esc(a.title)}</div>
@@ -87,10 +102,11 @@
             <h2 class="section-title">Around the League</h2>
             <div class="stories">${others.map(g => `
               <article>
-                <span class="kicker">${g.margin < 5 ? "Nail-biter" : g.margin >= 30 ? "Blowout" : "Final"}</span>
-                <h3>${esc(g.headline)}</h3>
+                <span class="kicker">${kicker(g)}</span>
+                <h3><a class="hl" href="${gameUrl(g)}">${esc(g.headline)}</a></h3>
                 ${scoreLine(g)}
                 <p class="story">${esc(g.story)}</p>
+                <p><a class="read-more" href="${gameUrl(g)}">Read the full ${g.status === "live" ? "preview" : "story"} →</a></p>
                 ${g.note ? `<p class="note">${esc(g.note)}</p>` : ""}
                 ${boxScore(g)}
               </article>`).join("")}
@@ -100,7 +116,7 @@
           <aside class="col">
             <h2 class="section-title">Scoreboard</h2>
             <div class="scoreboard">${issue.games.map(g => `
-              <div class="sb-game">
+              <div class="sb-game ${g.status === "live" ? "is-live" : ""}">
                 <div class="sb-row won"><a href="team.html?id=${g.winner}">${esc(team[g.winner]?.name)}</a><span>${f2(g.w_pts)}</span></div>
                 <div class="sb-row"><a href="team.html?id=${g.loser}">${esc(team[g.loser]?.name)}</a><span>${f2(g.l_pts)}</span></div>
               </div>`).join("")}

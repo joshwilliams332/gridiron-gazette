@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matchup · The Gridiron Gazette</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%238e1c1c%22/%3E%3Ctext x=%2216%22 y=%2224%22 font-family=%22Georgia%22 font-weight=%22900%22 font-size=%2222%22 text-anchor=%22middle%22 fill=%22%23f6f1e7%22%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="assets/gazette.css">
+</head>
+<body>
+  <main><p class="muted ui">Loading…</p></main>
+  <script src="assets/gazette.js"></script>
+  <script>
+    // Full write-up for one matchup: game.html?week=N&game=I (I = position in that week's issue).
+    const params = new URLSearchParams(location.search);
+    GZ.start(() => `Week ${params.get("week")} ${"Matchup"}`, async (main, league, team) => {
+      const week = Number(params.get("week")), idx = Number(params.get("game"));
+      if (!league.weeks.includes(week)) { main.innerHTML = `<div class="notice">That week isn't in the paper yet.</div>`; return; }
+      const issue = await GZ.load(`weeks/${week}.json`);
+      const g = issue.games[idx];
+      if (!g) { main.innerHTML = `<div class="notice">Game not found.</div>`; return; }
+      const [w, l] = g.sides;
+      document.title = `${g.headline} · The Gridiron Gazette`;
+      const kicker = issue.live ? (g.status === "live" ? `Live · ${issue.late_day} Night Watch` : "Final")
+        : g.late === "comeback" ? `${issue.late_day} Night Comeback` : g.late === "held" ? `Down to ${issue.late_day} Night`
+        : g.margin < 5 ? "Nail-biter" : g.margin >= 30 ? "Blowout" : "Final";
+
+      const box = s => `
+        <table>
+          <thead><tr><th colspan="2">${esc(team[s.team]?.name)}</th><th class="n">Proj</th><th class="n">Pts</th></tr></thead>
+          <tbody>
+            ${s.players.map(p => `<tr class="${p.starter ? "" : "bench"}">
+              <td class="slot">${esc(p.slot)}</td>
+              <td>${esc(p.name)} <span class="muted small">${esc(p.pos)}${p.nfl ? ` · ${esc(p.nfl)}` : ""}</span>
+                ${issue.live && p.starter && !p.done ? `<span class="live-dot" title="Hasn't played yet">${esc((p.day || "").slice(0, 3).toUpperCase()) || "TBD"}</span>` : ""}</td>
+              <td class="n muted">${p.proj == null ? "" : p.proj.toFixed(1)}</td>
+              <td class="n ${p.proj != null && p.starter && (!issue.live || p.done) ? (p.pts >= p.proj ? "beat" : "miss") : ""}">${p.pts.toFixed(1)}</td></tr>`).join("")}
+            <tr class="total"><td></td><td>Total ${issue.live ? "" : `<span class="muted small">(best possible ${f2(s.optimal)})</span>`}</td><td></td><td class="n">${f2(s.pts)}</td></tr>
+          </tbody>
+        </table>`;
+
+      const others = issue.games.map((x, i) => ({ x, i })).filter(o => o.i !== idx);
+      main.innerHTML = `
+        <a class="back-link" href="index.html?week=${week}">← Back to the Week ${week} issue</a>
+        <article class="article">
+          <span class="kicker">${esc(kicker)}</span>
+          <h2>${esc(g.headline)}</h2>
+          <p class="score-line">${g.status === "live" ? `<span class="live-dot">LIVE</span> ` : ""}<span class="w">${teamLink(team, g.winner)} ${f2(g.w_pts)}</span>
+            <span class="muted">–</span> <span class="l">${teamLink(team, g.loser)} ${f2(g.l_pts)}</span></p>
+          <div class="byline">By the Gazette Sports Desk · Week ${week}, ${league.season} season${issue.live ? " · updated while games are still being played" : ""}</div>
+          <div class="body">${(g.article || [g.story]).map(p => `<p>${esc(p)}</p>`).join("")}</div>
+          ${g.note ? `<p class="note">From the Commissioner: ${esc(g.note)}</p>` : ""}
+          <h2 class="section-title">Box Score</h2>
+          <div class="box-grid">${box(w)}${box(l)}</div>
+          <h2 class="section-title">More from Week ${week}</h2>
+          <div class="scoreboard">${others.map(({ x, i }) => `
+            <a class="sb-game ${x.status === "live" ? "is-live" : ""}" href="game.html?week=${week}&game=${i}" style="text-decoration:none">
+              <div class="sb-row won"><span>${esc(team[x.winner]?.name)}</span><span>${f2(x.w_pts)}</span></div>
+              <div class="sb-row"><span>${esc(team[x.loser]?.name)}</span><span>${f2(x.l_pts)}</span></div>
+            </a>`).join("")}
+          </div>
+        </article>`;
+    });
+  </script>
+</body>
+</html>

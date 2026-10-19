@@ -8,12 +8,16 @@ Each finished week becomes an **issue**:
 - **Around the League**: a story and box score for every other matchup
 - **Scoreboard** and **Power Rankings** with week-to-week movement
 
+Every headline opens the **full story**: who carried each team, the duds, the bench, the quarterback duel, Monday night drama and what it means for the standings.
+
+While a week is still being played, it gets a **live issue**: current scores, a "Down to Monday night" headline when a game is still in doubt, a **Monday Night Watch** list of players still to play, and previews like "look out for George Kittle tonight." Once the week ends, the final issue calls out **Monday night comebacks** and games that came down to the last game.
+
 Plus **Standings** (with all-play records) and a page for every **team**.
 
 ## How it works
 `scripts/update.py` reads the league from ESPN's (unofficial) fantasy API and `scripts/recap.py` turns each finished week into `site/data/weeks/<week>.json`. The site in `site/` is plain HTML/CSS/JS that reads those files.
 
-A GitHub Action (`.github/workflows/publish.yml`) runs every Tuesday morning, saves the new issue to the repo and publishes the site to GitHub Pages. Run it any time from **Actions → Publish the Gazette → Run workflow**.
+A GitHub Action (`.github/workflows/publish.yml`) runs **Monday morning** (live issue: Sunday's games in, Monday night still to play) and **Tuesday morning** (final issue), saves the issues to the repo and publishes the site to GitHub Pages. The NFL schedule from [nflverse](https://github.com/nflverse/nflverse-data) tells it which players have played and which game was on Monday night. Run it any time from **Actions → Publish the Gazette → Run workflow**.
 
 ## One-time setup
 1. **Settings → Pages → Source: GitHub Actions.**
