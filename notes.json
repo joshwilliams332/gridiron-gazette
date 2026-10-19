@@ -1,0 +1,6 @@
+{
+  "_help": "Commissioner's notes, by week number. headline replaces the front-page headline; column is your own write-up shown at the top of the issue; matchups adds a note to a game, keyed by the two team ids joined with a dash, smaller id first (e.g. \"3-7\").",
+  "weeks": {
+    "1": { "headline": "", "column": "", "matchups": {} }
+  }
+}

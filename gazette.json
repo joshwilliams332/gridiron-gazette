@@ -1,0 +1,8 @@
+{
+  "_help": "League settings for The Gridiron Gazette. league_id and my_team come from your ESPN team page link (leagueId=..., teamId=...). Set name to override the ESPN league name on the site. To show owners' names, either set show_owner_first_names to true or list them in owners by team id, e.g. {\"3\": \"Josh\"}.",
+  "league_id": "2212116",
+  "my_team": 3,
+  "name": "",
+  "show_owner_first_names": false,
+  "owners": {}
+}

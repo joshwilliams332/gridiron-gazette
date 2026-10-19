@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team · The Gridiron Gazette</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%238e1c1c%22/%3E%3Ctext x=%2216%22 y=%2224%22 font-family=%22Georgia%22 font-weight=%22900%22 font-size=%2222%22 text-anchor=%22middle%22 fill=%22%23f6f1e7%22%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="assets/gazette.css">
+</head>
+<body>
+  <main><p class="muted ui">Loading…</p></main>
+  <script src="assets/gazette.js"></script>
+  <script>
+    GZ.start(() => "Team Report", async (main, league, team) => {
+      const id = Number(new URLSearchParams(location.search).get("id"));
+      const t = team[id];
+      if (!t) { main.innerHTML = `<div class="notice">Team not found.</div>`; return; }
+      document.title = `${t.name} · The Gridiron Gazette`;
+      const r = league.standings.find(x => x.team === id);
+      const log = league.log[id] || [];
+      const left = log.reduce((a, g) => a + (g.optimal - g.pf), 0);
+      const best = log.reduce((a, g) => (g.pf > (a?.pf ?? -1) ? g : a), null);
+      main.innerHTML = `
+        <div class="team-head">
+          <span class="kicker">${r ? `${ordinal(r.rank)} place · Power ranking #${r.power_rank}` : ""}</span>
+          <h2>${esc(t.name)}</h2>
+          <p class="ui muted">${t.owner ? `${esc(t.owner)} · ` : ""}${r ? `${record(r)} · ${f2(r.pf)} PF · ${f2(r.pa)} PA · all-play ${r.all_w}-${r.all_l} · streak ${esc(r.streak)}` : ""}</p>
+        </div>
+        <div class="awards" style="margin:18px 0">
+          <div class="award"><div class="t">Best week</div><div class="v">${best ? f2(best.pf) : "—"}</div><div class="d">${best ? `Week ${best.week}` : ""}</div></div>
+          <div class="award"><div class="t">Points left on bench</div><div class="v">${f2(left)}</div><div class="d">Season total vs. best possible lineups</div></div>
+          <div class="award"><div class="t">Average score</div><div class="v">${log.length ? f2(log.reduce((a, g) => a + g.pf, 0) / log.length) : "—"}</div><div class="d">${log.length} games</div></div>
+        </div>
+        <h2 class="section-title">Season Log</h2>
+        <div style="overflow-x:auto">
+        <table>
+          <thead><tr><th>Wk</th><th>Opponent</th><th>Result</th><th class="n">Score</th><th class="n">Best possible</th><th class="n">Week rank</th></tr></thead>
+          <tbody>${log.map(g => `<tr>
+            <td><a href="index.html?week=${g.week}">${g.week}</a></td>
+            <td>${teamLink(team, g.opp)}</td>
+            <td class="res-${g.result}">${g.result}</td>
+            <td class="n">${f2(g.pf)} – ${f2(g.pa)}</td>
+            <td class="n muted">${f2(g.optimal)}</td>
+            <td class="n">${g.week_rank} of ${league.teams.length}</td></tr>`).join("")}
+          </tbody>
+        </table>
+        </div>`;
+    });
+  </script>
+</body>
+</html>

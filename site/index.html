@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Gridiron Gazette</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%238e1c1c%22/%3E%3Ctext x=%2216%22 y=%2224%22 font-family=%22Georgia%22 font-weight=%22900%22 font-size=%2222%22 text-anchor=%22middle%22 fill=%22%23f6f1e7%22%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="assets/gazette.css">
+</head>
+<body>
+  <main><p class="muted ui">Loading…</p></main>
+  <script src="assets/gazette.js"></script>
+  <script>
+    // One week's issue. ?week=N picks a week; otherwise the latest.
+    GZ.start(league => {
+      const w = Number(new URLSearchParams(location.search).get("week"));
+      const week = league.weeks.includes(w) ? w : league.weeks[league.weeks.length - 1];
+      return week ? `Week ${week} Edition` : "Preseason";
+    }, async (main, league, team) => {
+      const weeks = league.weeks;
+      if (!weeks.length) {
+        main.innerHTML = `<div class="notice">The first issue comes out after Week 1 wraps up. Check back Tuesday.</div>`;
+        return;
+      }
+      const w = Number(new URLSearchParams(location.search).get("week"));
+      const week = weeks.includes(w) ? w : weeks[weeks.length - 1];
+      const issue = await GZ.load(`weeks/${week}.json`);
+      document.title = `Week ${week} · The Gridiron Gazette`;
+      const i = weeks.indexOf(week);
+      const lead = issue.games[issue.lead];
+      const others = issue.games.filter((_, idx) => idx !== issue.lead);
+      const mine = league.my_team;
+
+      const boxScore = g => `
+        <details class="box"><summary>Box score</summary>
+          <div class="box-grid">${g.sides.map(s => `
+            <table>
+              <thead><tr><th colspan="2">${esc(team[s.team]?.name)}</th><th class="n">Proj</th><th class="n">Pts</th></tr></thead>
+              <tbody>
+                ${s.players.map(p => `<tr class="${p.starter ? "" : "bench"}">
+                  <td class="slot">${esc(p.slot)}</td>
+                  <td>${esc(p.name)} <span class="muted small">${esc(p.pos)}${p.nfl ? ` · ${esc(p.nfl)}` : ""}</span></td>
+                  <td class="n muted">${p.proj == null ? "" : p.proj.toFixed(1)}</td>
+                  <td class="n ${p.proj != null && p.starter ? (p.pts >= p.proj ? "beat" : "miss") : ""}">${p.pts.toFixed(1)}</td></tr>`).join("")}
+                <tr class="total"><td></td><td>Total <span class="muted small">(best possible ${f2(s.optimal)})</span></td><td></td><td class="n">${f2(s.pts)}</td></tr>
+              </tbody>
+            </table>`).join("")}
+          </div>
+        </details>`;
+
+      const scoreLine = g => `<p class="score-line"><span class="w">${esc(team[g.winner]?.name)} ${f2(g.w_pts)}</span>
+        <span class="muted">–</span> <span class="l">${esc(team[g.loser]?.name)} ${f2(g.l_pts)}</span></p>`;
+
+      main.innerHTML = `
+        <div class="issue-nav">
+          <a href="index.html?week=${weeks[i - 1]}" aria-disabled="${i === 0}">← Week ${weeks[i - 1] ?? ""}</a>
+          <select aria-label="Choose a week">${weeks.map(x => `<option value="${x}" ${x === week ? "selected" : ""}>Week ${x}</option>`).join("")}</select>
+          <a href="index.html?week=${weeks[i + 1]}" aria-disabled="${i === weeks.length - 1}">Week ${weeks[i + 1] ?? ""} →</a>
+        </div>
+
+        <div class="front">
+          <div class="col">
+            <article class="lead">
+              <span class="kicker">${lead.margin < 5 ? "Game of the Week · Thriller" : "Game of the Week"}${lead.playoff ? " · Playoffs" : ""}</span>
+              <h2>${esc(issue.headline)}</h2>
+              ${scoreLine(lead)}
+              <p class="story">${esc(lead.story)}</p>
+              ${lead.note ? `<p class="note">${esc(lead.note)}</p>` : ""}
+              ${boxScore(lead)}
+            </article>
+
+            ${issue.column ? `<section class="column"><h3>From the Commissioner</h3><p class="story">${esc(issue.column)}</p></section>` : ""}
+
+            <h2 class="section-title">Weekly Awards</h2>
+            <div class="awards">${issue.awards.map(a => `
+              <div class="award">
+                <div class="t">${esc(a.title)}</div>
+                <div class="v">${esc(a.value)}</div>
+                <div class="who">${teamLink(team, a.team)}</div>
+                <div class="d">${esc(a.detail)}</div>
+              </div>`).join("")}
+            </div>
+
+            <h2 class="section-title">Around the League</h2>
+            <div class="stories">${others.map(g => `
+              <article>
+                <span class="kicker">${g.margin < 5 ? "Nail-biter" : g.margin >= 30 ? "Blowout" : "Final"}</span>
+                <h3>${esc(g.headline)}</h3>
+                ${scoreLine(g)}
+                <p class="story">${esc(g.story)}</p>
+                ${g.note ? `<p class="note">${esc(g.note)}</p>` : ""}
+                ${boxScore(g)}
+              </article>`).join("")}
+            </div>
+          </div>
+
+          <aside class="col">
+            <h2 class="section-title">Scoreboard</h2>
+            <div class="scoreboard">${issue.games.map(g => `
+              <div class="sb-game">
+                <div class="sb-row won"><a href="team.html?id=${g.winner}">${esc(team[g.winner]?.name)}</a><span>${f2(g.w_pts)}</span></div>
+                <div class="sb-row"><a href="team.html?id=${g.loser}">${esc(team[g.loser]?.name)}</a><span>${f2(g.l_pts)}</span></div>
+              </div>`).join("")}
+            </div>
+            <p class="muted small ui">League average ${f2(issue.average)} · median ${f2(issue.median)}</p>
+
+            <h2 class="section-title">Power Rankings</h2>
+            <ol class="power">${issue.power.map(r => `
+              <li class="${r.team === mine ? "me" : ""}">
+                <span class="rk">${r.power_rank}</span>
+                <span><a href="team.html?id=${r.team}">${esc(team[r.team]?.name)}</a><br><span class="rec">${record(r)} · all-play ${r.all_w}-${r.all_l}</span></span>
+                ${moveTag(r.move)}
+              </li>`).join("")}
+            </ol>
+            <p class="muted small ui">Power = all-play record (55%), actual record (30%) and last-3-week scoring (15%).</p>
+          </aside>
+        </div>`;
+
+      main.querySelector(".issue-nav select").onchange = e => { location.href = `index.html?week=${e.target.value}`; };
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "_help": [
+    "Copy this file to scripts/espn_cookies.json (never uploaded to GitHub) to run updates on your computer.",
+    "On fantasy.espn.com (logged in), click the lock icon left of the address bar > Cookies > espn.com > Cookies,",
+    "and copy the Content of espn_s2 and SWID (keep the curly braces). Treat them like a password.",
+    "For the automatic weekly update, add the same two values as GitHub secrets named ESPN_S2 and ESPN_SWID."
+  ],
+  "espn_s2": "",
+  "swid": ""
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teams · The Gridiron Gazette</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%238e1c1c%22/%3E%3Ctext x=%2216%22 y=%2224%22 font-family=%22Georgia%22 font-weight=%22900%22 font-size=%2222%22 text-anchor=%22middle%22 fill=%22%23f6f1e7%22%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="assets/gazette.css">
+</head>
+<body>
+  <main><p class="muted ui">Loading…</p></main>
+  <script src="assets/gazette.js"></script>
+  <script>
+    GZ.start(() => "The Teams", async (main, league, team) => {
+      const st = Object.fromEntries(league.standings.map(r => [r.team, r]));
+      main.innerHTML = `
+        <h2 class="section-title" style="margin-top:24px">The Teams</h2>
+        <div class="stories">${league.teams.map(t => {
+          const r = st[t.id];
+          return `<article>
+            <span class="kicker">${r ? `${ordinal(r.rank)} place · Power #${r.power_rank}` : ""}</span>
+            <h3><a href="team.html?id=${t.id}">${esc(t.name)}</a></h3>
+            <p class="ui muted small">${t.owner ? `${esc(t.owner)} · ` : ""}${r ? `${record(r)} · ${f2(r.pf)} points for` : ""}</p>
+          </article>`;
+        }).join("")}</div>`;
+    });
+  </script>
+</body>
+</html>
