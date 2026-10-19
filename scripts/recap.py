@@ -416,7 +416,8 @@ def final_article(g, names, week, ctx):
 
     # --- Winner: how good was the score, who did it, and was it lucky?
     wr = rank_of(w["pts"])
-    txt = score_context(w, W, wr, n) or ""
+    lucky = n - wr + 1 <= 3
+    txt = score_context(w, W, wr if not lucky else n // 2, n) or ""
     ws = sorted(starters(w), key=lambda p: -p["pts"])
     if ws:
         best = ws[0]
@@ -429,7 +430,7 @@ def final_article(g, names, week, ctx):
         if len(ws) > 2:
             txt += f" {ws[1]['name']} ({ws[1]['pts']:.1f}) and {ws[2]['name']} ({ws[2]['pts']:.1f}) were the other big contributors."
     low_rank = n - wr + 1
-    if low_rank <= 3:
+    if lucky:
         txt += (f" It wasn't pretty: {w['pts']:.2f} was the {'lowest' if low_rank == 1 else ordinal(low_rank) + '-lowest'} score of the week. "
                 + pick(["But a win is a win.", "They'll take it.", "Sometimes the schedule is kind."], *seed))
     paras.append(txt.strip())
@@ -460,9 +461,8 @@ def final_article(g, names, week, ctx):
         if backup and d["pos"] in ("QB", "TE", "K", "D/ST") and (backup["proj"] or 0) > 0:
             pos_word = {"QB": "quarterback", "TE": "tight end", "K": "kicker", "D/ST": "defense"}[d["pos"]]
             txt += (f" {nm} might have a {pos_word} decision to make if {last_name(d['name'])} doesn't figure it out:"
-                    f" {backup['name']} is sitting right there on the bench" + (f" (and scored {backup['pts']:.1f} this week)." if backup["pts"] > d["pts"] else "."))
+                    f" {backup['name']} is sitting right there on the bench" + (f" (and scored {backup['pts']:.1f} this week)." if backup["pts"] >= d["pts"] + 5 else "."))
         paras.append(txt)
-        break
 
     # --- The bench: name the real swaps the best lineup would have made.
     if l["optimal"] > w["pts"] and l["swaps"]:
