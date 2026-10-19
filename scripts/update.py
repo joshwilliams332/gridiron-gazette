@@ -120,6 +120,8 @@ def main():
         live = recap.parse_week(get_week(live_week), live_week, league, recap.nfl_week(schedule, season, live_week))
 
     recap.add_season_context(league, weeks)
+    league["rosters"] = recap.team_rosters(weeks)
+    league["roster_week"] = weeks[-1]["week"] if weeks else None
     notes = json.loads((ROOT / "notes.json").read_text()) if (ROOT / "notes.json").exists() else {}
     week_notes = notes.get("weeks", {})
 

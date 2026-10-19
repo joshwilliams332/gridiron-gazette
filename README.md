@@ -12,7 +12,7 @@ Every headline opens the **full story**: who carried each team, the duds, the be
 
 Each issue calls out **Monday night comebacks** and games that came down to the last game of the week. (A live issue for the week in progress, with a Monday Night Watch list, can be turned on with `"live_issues": true` in `gazette.json`.)
 
-Plus **Standings** (with all-play records) and a page for every **team**.
+Plus **Standings** (with all-play records) and a page for every **team** with its current **roster** (lineup in ESPN order, each player's points this season for that team, best week, and bye-next-week tags) and season log.
 
 ## How it works
 `scripts/update.py` reads the league from ESPN's (unofficial) fantasy API and `scripts/recap.py` turns each finished week into `site/data/weeks/<week>.json`. The site in `site/` is plain HTML/CSS/JS that reads those files.

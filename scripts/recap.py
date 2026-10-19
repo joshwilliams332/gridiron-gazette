@@ -193,6 +193,51 @@ def parse_week(raw, week, league, nfl=None):
     return {"week": week, "matchups": matchups, "last_kick": max(kicks) if kicks else None}
 
 
+# ---------- Rosters ----------
+
+def team_rosters(weeks):
+    """Each team's roster as of its latest week, with season stats for every player while on that team.
+
+    Returns {team_id: [player, ...]} in ESPN lineup order. Byes for next week come from the latest week's next_byes.
+    """
+    out = {}
+    if not weeks:
+        return out
+    season = {}  # (team, player name) -> {"pts", "games", "starts", "start_pts", "best"}
+    for wk in weeks:
+        for m in wk["matchups"]:
+            for side in (m["home"], m["away"]):
+                for p in side["players"]:
+                    if p["slot_id"] == 21:
+                        continue
+                    k = (side["team"], p["name"])
+                    r = season.setdefault(k, {"pts": 0.0, "games": 0, "starts": 0, "start_pts": 0.0, "best": None})
+                    r["pts"] += p["pts"]
+                    r["games"] += 1
+                    if p["starter"]:
+                        r["starts"] += 1
+                        r["start_pts"] += p["pts"]
+                    if r["best"] is None or p["pts"] > r["best"]["pts"]:
+                        r["best"] = {"pts": p["pts"], "week": wk["week"]}
+    latest = weeks[-1]
+    byes = set(latest.get("next_byes", []))
+    for m in latest["matchups"]:
+        for side in (m["home"], m["away"]):
+            rows = []
+            for p in side["players"]:
+                r = season.get((side["team"], p["name"]), {})
+                rows.append({
+                    "name": p["name"], "pos": p["pos"], "nfl": p["nfl"], "slot": p["slot"], "starter": p["starter"],
+                    "last_pts": p["pts"], "last_proj": p["proj"],
+                    "season_pts": r2(r.get("pts", 0)), "games": r.get("games", 0), "starts": r.get("starts", 0),
+                    "avg": r2(r["pts"] / r["games"]) if r.get("games") else 0,
+                    "best": r.get("best"),
+                    "bye_next": NFL_ABBR.get(p["nfl"], p["nfl"]) in byes,
+                })
+            out[side["team"]] = rows
+    return out
+
+
 # ---------- Season context ----------
 
 def add_season_context(league, weeks):

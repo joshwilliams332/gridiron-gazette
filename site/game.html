@@ -30,7 +30,7 @@
 
       const box = s => `
         <table>
-          <thead><tr><th colspan="2">${esc(team[s.team]?.name)}</th><th class="n">Proj</th><th class="n">Pts</th></tr></thead>
+          <thead><tr><th colspan="2"><a class="team-a" href="team.html?id=${s.team}">${esc(team[s.team]?.name)}</a></th><th class="n">Proj</th><th class="n">Pts</th></tr></thead>
           <tbody>
             ${s.players.map(p => `<tr class="${p.starter ? "" : "bench"}">
               <td class="slot">${esc(p.slot)}</td>

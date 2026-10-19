@@ -38,7 +38,7 @@
         <details class="box"><summary>Box score</summary>
           <div class="box-grid">${g.sides.map(s => `
             <table>
-              <thead><tr><th colspan="2">${esc(team[s.team]?.name)}</th><th class="n">Proj</th><th class="n">Pts</th></tr></thead>
+              <thead><tr><th colspan="2"><a class="team-a" href="team.html?id=${s.team}">${esc(team[s.team]?.name)}</a></th><th class="n">Proj</th><th class="n">Pts</th></tr></thead>
               <tbody>
                 ${s.players.map(p => `<tr class="${p.starter ? "" : "bench"}">
                   <td class="slot">${esc(p.slot)}</td>
@@ -51,8 +51,8 @@
           </div>
         </details>`;
 
-      const scoreLine = g => `<p class="score-line">${g.status === "live" ? `<span class="live-dot">LIVE</span> ` : ""}<span class="w">${esc(team[g.winner]?.name)} ${f2(g.w_pts)}</span>
-        <span class="muted">–</span> <span class="l">${esc(team[g.loser]?.name)} ${f2(g.l_pts)}</span></p>`;
+      const scoreLine = g => `<p class="score-line">${g.status === "live" ? `<span class="live-dot">LIVE</span> ` : ""}<span class="w"><a class="team-a" href="team.html?id=${g.winner}">${esc(team[g.winner]?.name)}</a> ${f2(g.w_pts)}</span>
+        <span class="muted">–</span> <span class="l"><a class="team-a" href="team.html?id=${g.loser}">${esc(team[g.loser]?.name)}</a> ${f2(g.l_pts)}</span></p>`;
       const gameUrl = g => `game.html?week=${week}&game=${issue.games.indexOf(g)}`;
       const kicker = g => issue.live
         ? (g.status === "live" ? `Still to play: ${g.remaining} player${g.remaining === 1 ? "" : "s"}` : "Final")

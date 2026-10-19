@@ -21,6 +21,7 @@
       document.title = `${t.name} · The Gridiron Gazette`;
       const r = league.standings.find(x => x.team === id);
       const log = league.log[id] || [];
+      const roster = (league.rosters || {})[id] || [];
       const left = log.reduce((a, g) => a + (g.optimal - g.pf), 0);
       const best = log.reduce((a, g) => (g.pf > (a?.pf ?? -1) ? g : a), null);
       main.innerHTML = `
@@ -34,17 +35,41 @@
           <div class="award"><div class="t">Points left on bench</div><div class="v">${f2(left)}</div><div class="d">Season total vs. best possible lineups</div></div>
           <div class="award"><div class="t">Average score</div><div class="v">${log.length ? f2(log.reduce((a, g) => a + g.pf, 0) / log.length) : "—"}</div><div class="d">${log.length} games</div></div>
         </div>
+        ${roster.length ? `
+        <h2 class="section-title">Roster <span class="muted small" style="letter-spacing:0;text-transform:none;font-weight:600">· lineup from Week ${league.roster_week}</span></h2>
+        <div style="overflow-x:auto">
+        <table class="roster">
+          <thead><tr>
+            <th>Slot</th><th>Player</th>
+            <th class="n">Wk ${league.roster_week}</th><th class="n hide-sm">Proj</th>
+            <th class="n">Season</th><th class="n">Avg</th><th class="n hide-sm">Starts</th><th class="n hide-sm">Best week</th>
+          </tr></thead>
+          <tbody>${roster.map(p => `<tr class="${p.starter ? "" : "bench"}${p.slot === "Bench" && !roster[roster.indexOf(p) - 1]?.slot.match(/Bench|IR/) ? " first-bench" : ""}">
+            <td class="slot">${esc(p.slot)}</td>
+            <td>${esc(p.name)} <span class="muted small">${esc(p.pos)}${p.nfl ? ` · ${esc(p.nfl)}` : ""}</span>
+              ${p.bye_next ? `<span class="bye-tag" title="On bye next week">BYE NEXT WEEK</span>` : ""}</td>
+            <td class="n ${p.last_proj != null && p.starter ? (p.last_pts >= p.last_proj ? "beat" : "miss") : ""}">${p.last_pts.toFixed(1)}</td>
+            <td class="n muted hide-sm">${p.last_proj == null ? "" : p.last_proj.toFixed(1)}</td>
+            <td class="n">${p.season_pts.toFixed(1)}</td>
+            <td class="n">${p.games ? p.avg.toFixed(1) : "—"}</td>
+            <td class="n hide-sm">${p.starts} of ${p.games}</td>
+            <td class="n hide-sm">${p.best ? `${p.best.pts.toFixed(1)} <span class="muted small">(Wk ${p.best.week})</span>` : "—"}</td>
+          </tr>`).join("")}</tbody>
+        </table>
+        </div>
+        <p class="muted small ui">Season, average, starts and best week count only games on this team's roster.</p>` : ""}
+
         <h2 class="section-title">Season Log</h2>
         <div style="overflow-x:auto">
         <table>
-          <thead><tr><th>Wk</th><th>Opponent</th><th>Result</th><th class="n">Score</th><th class="n">Best possible</th><th class="n">Week rank</th></tr></thead>
+          <thead><tr><th>Wk</th><th>Opponent</th><th>Result</th><th class="n">Score</th><th class="n hide-sm">Best possible</th><th class="n hide-sm">Week rank</th></tr></thead>
           <tbody>${log.map(g => `<tr>
             <td><a href="index.html?week=${g.week}">${g.week}</a></td>
             <td>${teamLink(team, g.opp)}</td>
             <td class="res-${g.result}">${g.result}</td>
             <td class="n">${f2(g.pf)} – ${f2(g.pa)}</td>
-            <td class="n muted">${f2(g.optimal)}</td>
-            <td class="n">${g.week_rank} of ${league.teams.length}</td></tr>`).join("")}
+            <td class="n muted hide-sm">${f2(g.optimal)}</td>
+            <td class="n hide-sm">${g.week_rank} of ${league.teams.length}</td></tr>`).join("")}
           </tbody>
         </table>
         </div>`;
