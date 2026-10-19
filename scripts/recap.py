@@ -60,6 +60,8 @@ def parse_league(raw, cfg):
         "regular_season_weeks": (settings.get("scheduleSettings") or {}).get("matchupPeriodCount"),
         "slot_counts": {int(k): v for k, v in counts.items() if v},
         "teams": teams,
+        "schedule": [{"week": m["matchupPeriodId"], "home": m["home"]["teamId"], "away": m["away"]["teamId"]}
+                     for m in raw.get("schedule", []) if m.get("home") and m.get("away")],
     }
 
 
@@ -281,39 +283,118 @@ def record_str(r):
 
 # ---------- Articles ----------
 
-def final_article(g, names, week, standings, last_kick, late_day):
-    """The long write-up for a finished matchup, as a list of paragraphs."""
+def share_phrase(part, total):
+    """'over a third of', 'nearly half of' ... the team's points."""
+    if not total:
+        return None
+    f = part / total
+    return ("more than half of" if f > 0.5 else "nearly half of" if f >= 0.43 else "over a third of" if f >= 0.33
+            else "about a quarter of" if f >= 0.24 else None)
+
+
+def score_context(side, nm, week_rank, n_teams):
+    """'Oops put up 132.10 this week, 18.0 over their projection and the 2nd-highest score in the league.'"""
+    bits = []
+    proj = side.get("proj_total")
+    if proj:
+        diff = side["pts"] - proj
+        if abs(diff) >= 5:
+            bits.append(f"{abs(diff):.1f} {'over' if diff > 0 else 'under'} their projected {proj:.1f}")
+    if week_rank == 1:
+        bits.append("the highest score in the league")
+    elif week_rank == n_teams:
+        bits.append("the lowest score in the league")
+    elif week_rank <= 3:
+        bits.append(f"the {ordinal(week_rank)}-highest score of the week")
+    elif week_rank >= n_teams - 2:
+        bits.append(f"the {ordinal(n_teams - week_rank + 1)}-lowest score of the week")
+    if not bits:
+        return None
+    verb = "put up" if side["pts"] >= 100 else "managed"
+    return f"{nm} {verb} {side['pts']:.2f} this week, " + " and ".join(bits) + "."
+
+
+def a_an(num_text):
+    """'an 8.8' / 'an 11.2' / 'an 18.0' / 'a 12.3' — by how the number sounds."""
+    head = num_text.split(".")[0]
+    return "an" if head.startswith("8") or head in ("11", "18") or (len(head) in (5, 6) and head.startswith(("11", "18"))) else "a"
+
+
+def last_result_phrase(entry, names):
+    """From a team's log entry: 'coming off a 12.3-point win over X' / 'coming off a loss to X'."""
+    margin = abs(entry["pf"] - entry["pa"])
+    opp = names.get(entry["opp"], "their opponent")
+    if entry["result"] == "W":
+        return f"coming off {a_an(f'{margin:.1f}')} {margin:.1f}-point win over {opp}"
+    if entry["result"] == "L":
+        return f"coming off {a_an(f'{margin:.1f}')} {margin:.1f}-point loss to {opp}"
+    return f"coming off a tie with {opp}"
+
+
+def final_article(g, names, week, ctx):
+    """The long write-up for a finished matchup, as a list of paragraphs.
+
+    ctx: standings (after this week), scores (all scores this week), n_teams, last_kick, late_day,
+         schedule (whole season), log (per-team results), regular_season_weeks
+    """
     w, l = g["sides"]
     W, L = names[w["team"]], names[l["team"]]
+    late_day = ctx["late_day"]
+    scores = sorted(ctx["scores"], reverse=True)
+    rank_of = lambda pts: scores.index(pts) + 1
     paras = []
+
     m = g["margin"]
-    size = "a nail-biter" if m < 5 else "a close one" if m < 15 else "a comfortable win" if m < 35 else "a beatdown"
-    lede = f"{W} beat {L} {w['pts']:.2f} to {l['pts']:.2f} in Week {week}, {size} decided by {g['margin']:.2f} points."
+    size = ("a nail-biter" if m < 5 else "a close one" if m < 12 else "a solid win" if m < 25
+            else "a comfortable win" if m < 40 else "a beatdown")
+    lede = f"{W} beat {L} {w['pts']:.2f} to {l['pts']:.2f} in Week {week}, {size} decided by {m:.2f} points."
     if g["late"] == "comeback":
         lede += f" And it was decided late: {L} led by {g['late_margin']:.2f} going into {late_day} night before {W} came back."
     elif g["late"] == "held":
         lede += f" It came down to the final game of the week, with {W} up just {g['late_margin']:.2f} heading into {late_day} night."
+    # Season series: an earlier meeting this season.
+    earlier = [e for e in ctx["log"].get(w["team"], []) if e["opp"] == l["team"] and e["week"] < week]
+    if earlier:
+        e = earlier[-1]
+        hi, lo = max(e["pf"], e["pa"]), min(e["pf"], e["pa"])
+        if e["result"] == "T":
+            lede += f" These two tied back in Week {e['week']}."
+        elif e["result"] == "W":
+            lede += f" {W} also won the first meeting back in Week {e['week']}, {hi:.2f} to {lo:.2f}, so they sweep the season series."
+        else:
+            lede += f" {L} won the first meeting back in Week {e['week']}, {hi:.2f} to {lo:.2f}, so the season series is split."
     paras.append(lede)
 
+    # Winner: how good was the score, then who did it.
+    ctx_line = score_context(w, W, rank_of(w["pts"]), ctx["n_teams"])
     ws = sorted(starters(w), key=lambda p: -p["pts"])
     if ws:
         best = ws[0]
-        txt = f"{best['name']} carried {W} with {best['pts']:.1f} points"
+        txt = (ctx_line + " ") if ctx_line else ""
+        share = share_phrase(best["pts"], w["pts"])
+        txt += f"{best['name']} carried them with {best['pts']:.1f} points" + (f", {share} the team's total" if share else "")
         if best["proj"]:
             diff = best["pts"] - best["proj"]
-            txt += f", {abs(diff):.1f} {'over' if diff >= 0 else 'under'} his projection"
+            if abs(diff) >= 3:
+                txt += f", {abs(diff):.1f} {'over' if diff >= 0 else 'under'} his projection"
         txt += "."
         if len(ws) > 2:
-            txt += f" {ws[1]['name']} ({ws[1]['pts']:.1f}) and {ws[2]['name']} ({ws[2]['pts']:.1f}) chipped in."
+            txt += f" {ws[1]['name']} ({ws[1]['pts']:.1f}) and {ws[2]['name']} ({ws[2]['pts']:.1f}) were the other big contributors."
         paras.append(txt)
 
+    # Loser: their score in context, their best player, their biggest letdown.
     ls = sorted(starters(l), key=lambda p: -p["pts"])
     if ls:
-        txt = f"For {L}, {ls[0]['name']} led the way with {ls[0]['pts']:.1f}."
+        ctx_line = score_context(l, L, rank_of(l["pts"]), ctx["n_teams"])
+        txt = (ctx_line + " ") if ctx_line else ""
+        txt += f"{ls[0]['name']} led the way with {ls[0]['pts']:.1f}" if ctx_line else f"{ls[0]['name']} led {L} with {ls[0]['pts']:.1f}"
+        txt += f", and {ls[1]['name']} added {ls[1]['pts']:.1f}." if len(ls) > 1 and ls[1]["pts"] >= 10 else "."
+        if rank_of(l["pts"]) <= ctx["n_teams"] // 2:
+            txt += f" That would have beaten most teams this week. {L} just ran into {W}."
         bad = duds(l)
         if bad:
             d = bad[0]
-            txt += f" The bigger story was {d['name']}, who managed {d['pts']:.1f} on a {d['proj']:.1f} projection."
+            txt += f" The letdown was {d['name']}, who managed {d['pts']:.1f} on a {d['proj']:.1f} projection."
         paras.append(txt)
 
     for side, nm, won in ((l, L, False), (w, W, True)):
@@ -334,11 +415,11 @@ def final_article(g, names, week, standings, last_kick, late_day):
             paras.append(f"At quarterback, {hi['name']} ({hi['pts']:.1f}) outdueled {lo['name']} ({lo['pts']:.1f}).")
 
     if g["late"] in ("comeback", "held"):
-        movers = sorted([p for s in (w, l) for p in starters(s) if is_late(p, last_kick)], key=lambda p: -p["pts"])
+        movers = sorted([p for s in (w, l) for p in starters(s) if is_late(p, ctx["last_kick"])], key=lambda p: -p["pts"])
         if movers:
             paras.append(f"On {late_day} night: {pts_list(movers)}.")
 
-    st = {r["team"]: r for r in standings}
+    st = {r["team"]: r for r in ctx["standings"]}
     if w["team"] in st and l["team"] in st and not g["playoff"]:
         a, b = st[w["team"]], st[l["team"]]
         txt = f"{W} moves to {record_str(a)} ({ordinal(a['rank'])} place)"
@@ -348,6 +429,33 @@ def final_article(g, names, week, standings, last_kick, late_day):
         if b["streak"].startswith("L") and int(b["streak"][1:]) >= 3:
             txt += f" and has now lost {b['streak'][1:]} in a row"
         paras.append(txt + ".")
+
+    # Up next: each team's opponent next week, with that opponent's record and last result.
+    nxt = week + 1
+    reg = ctx.get("regular_season_weeks")
+    if not g["playoff"] and (not reg or nxt <= reg):
+        lines = []
+        for team, nm in ((w["team"], W), (l["team"], L)):
+            game = next((x for x in ctx["schedule"] if x["week"] == nxt and team in (x["home"], x["away"])), None)
+            if not game:
+                continue
+            opp = game["away"] if game["home"] == team else game["home"]
+            o = st.get(opp)
+            last = next((e for e in reversed(ctx["log"].get(opp, [])) if e["week"] == week), None)
+            info = record_str(o) if o else ""
+            if o and o["streak"] and o["streak"][0] in "WL" and int(o["streak"][1:]) >= 3:
+                info += f", {'winners' if o['streak'][0] == 'W' else 'losers'} of {o['streak'][1:]} straight"
+            phrase = names.get(opp, "TBD") + (f" ({info})" if info else "")
+            if last:
+                phrase += f", {last_result_phrase(last, names)}"
+            lines.append((nm, phrase))
+        if lines:
+            (n1, p1), *rest = lines
+            txt = f"Up next in Week {nxt}: {n1} takes on {p1}."
+            if rest:
+                n2, p2 = rest[0]
+                txt += f" {n2} gets {p2}."
+            paras.append(txt)
     return paras
 
 
@@ -447,7 +555,14 @@ def build_issue(wk, weeks, league, note, live=False):
                 elif before < 15 and ll > 0:
                     g["late"], g["late_margin"] = "held", before
             g["headline"] = headline(names[w["team"]], names[l["team"]], margin, week, g["late"])
-            g["article"] = final_article(g, names, week, standings, last_kick, late_day)
+            for side in (w, l):
+                projs = [p["proj"] for p in starters(side) if p["proj"] is not None]
+                side["proj_total"] = r2(sum(projs)) if projs else None
+            g["article"] = final_article(g, names, week, {
+                "standings": standings, "scores": scores, "n_teams": len(names), "last_kick": last_kick,
+                "late_day": late_day, "schedule": league.get("schedule", []), "log": league.get("log", {}),
+                "regular_season_weeks": league.get("regular_season_weeks"),
+            })
         games.append(g)
 
     if live:
