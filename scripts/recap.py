@@ -351,23 +351,39 @@ def final_article(g, names, week, standings, last_kick, late_day):
     return paras
 
 
+def join_names(items):
+    """'A', 'A and B', 'A, B and C'."""
+    return items[0] if len(items) == 1 else ", ".join(items[:-1]) + " and " + items[-1]
+
+
 def live_article(g, names, late_day):
-    a, b = g["sides"]  # a = leader
+    a, b = g["sides"]  # a = leader, b = trailing
     A, B = names[a["team"]], names[b["team"]]
-    paras = []
+    night = f"{late_day} night" if late_day else "tonight"
     if not g["remaining"]:
-        paras.append(f"This one's in the books: {A} beat {B} {a['pts']:.2f} to {b['pts']:.2f}.")
-        return paras
-    paras.append(f"{A} leads {B} {a['pts']:.2f} to {b['pts']:.2f} with players still to go.")
-    for side, nm in ((b, B), (a, A)):
-        left = [p for p in starters(side) if not p["done"]]
-        if left:
-            proj = sum(p["proj"] or 0 for p in left)
-            who = ", ".join(p["name"] + (" (%.1f proj)" % p["proj"] if p["proj"] else "") for p in left)
-            paras.append(f"{nm} still has {who} to play: about {proj:.1f} projected points.")
+        return [f"This one's in the books: {A} beat {B} {a['pts']:.2f} to {b['pts']:.2f}."]
+    paras = [f"{A} leads {B} {a['pts']:.2f} to {b['pts']:.2f} heading into {night}."]
+    margin = a["pts"] - b["pts"]
+    for side, nm, trailing in ((b, B, True), (a, A, False)):
+        left = sorted([p for p in starters(side) if not p["done"]], key=lambda p: -(p["proj"] or 0))
+        if not left:
+            continue
+        proj = sum(p["proj"] or 0 for p in left)
+        if len(left) == 1:
+            p = left[0]
+            txt = f"{nm} has one player left: {p['name']}" + (f", projected for {p['proj']:.1f} points." if p["proj"] else ".")
+        else:
+            txt = f"{nm} still has {join_names([p['name'] for p in left])} to play, projected for about {proj:.1f} points combined."
+        if trailing:
+            other = sum(p["proj"] or 0 for p in starters(a) if not p["done"])
+            if proj > margin + other:
+                txt += f" If {'he hits' if len(left) == 1 else 'they hit'} that, {nm} wins this one."
+            elif proj > 0:
+                txt += f" {nm} needs a big night: about {margin + other - proj:.1f} more than projected."
+        paras.append(txt)
     star = max((p for s in (a, b) for p in starters(s) if not p["done"]), key=lambda p: p["proj"] or 0, default=None)
     if star:
-        paras.append(f"Look out for {star['name']} {('on ' + late_day + ' night') if late_day else 'tonight'}. This one isn't over.")
+        paras.append(f"Look out for {star['name']} on {night}. This one isn't over.")
     return paras
 
 
