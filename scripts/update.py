@@ -109,7 +109,11 @@ def main():
     weeks = []
     for w in finished:
         print(f"  week {w}")
-        weeks.append(recap.parse_week(get_week(w), w, league, recap.nfl_week(schedule, season, w)))
+        wk = recap.parse_week(get_week(w), w, league, recap.nfl_week(schedule, season, w))
+        playing_next = recap.nfl_week(schedule, season, w + 1)
+        # NFL teams with no game next week (only when next week's schedule is known).
+        wk["next_byes"] = sorted(recap.ALL_NFL - set(playing_next)) if playing_next else []
+        weeks.append(wk)
     live = None
     if live_week:
         print(f"  week {live_week} (live)")

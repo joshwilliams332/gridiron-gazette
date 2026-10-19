@@ -24,6 +24,7 @@ PRO_TEAMS = {
 
 # ESPN abbreviations that differ from nflverse's (used for the NFL schedule).
 NFL_ABBR = {"LAR": "LA"}
+ALL_NFL = {NFL_ABBR.get(t, t) for t in PRO_TEAMS.values()}
 
 
 def r2(x):
@@ -120,18 +121,42 @@ def parse_player(entry, week, nfl):
     }
 
 
-def optimal_points(players, slot_counts):
-    """Best possible starting lineup score from the players on the roster that week (greedy, position slots first)."""
-    pool = sorted([p for p in players if p["slot_id"] != 21], key=lambda p: -p["pts"])
-    used, total = set(), 0.0
+def optimal_lineup(players, slot_counts):
+    """Best possible starting lineup from the players on the roster that week (greedy, position slots first).
+    Returns (total points, indexes into `players` of the players it starts)."""
+    order = sorted([i for i, p in enumerate(players) if p["slot_id"] != 21], key=lambda i: -players[i]["pts"])
+    used, total = [], 0.0
     for slot in SLOT_FILL_ORDER:
         for _ in range(slot_counts.get(slot, 0)):
-            for i, p in enumerate(pool):
-                if i not in used and slot in p["eligible"]:
-                    used.add(i)
-                    total += p["pts"]
+            for i in order:
+                if i not in used and slot in players[i]["eligible"]:
+                    used.append(i)
+                    total += players[i]["pts"]
                     break
-    return r2(total)
+    return r2(total), used
+
+
+def pair_swaps(should_start, should_sit):
+    """[(bench player, starter they'd replace)], biggest gain first. Same position first, then any slot they can fill."""
+    sit = list(should_sit)
+    pairs = []
+    for p in sorted(should_start, key=lambda p: -p["pts"]):
+        same = [q for q in sit if q["pos"] == p["pos"]]
+        fits = same or [q for q in sit if q["slot_id"] in p["eligible"]]
+        if not fits:
+            continue
+        out = min(fits, key=lambda q: q["pts"])
+        sit.remove(out)
+        pairs.append((p, out))
+    return sorted(pairs, key=lambda x: -(x[0]["pts"] - x[1]["pts"]))
+
+
+def optimal_points(players, slot_counts):
+    return optimal_lineup(players, slot_counts)[0]
+
+
+# ESPN box-score order: QB, RB, WR, TE, FLEX, D/ST, K, then the bench and IR.
+SLOT_ORDER = {0: 0, 2: 1, 3: 2, 4: 3, 5: 4, 6: 5, 23: 6, 7: 7, 16: 8, 17: 9, 20: 10, 21: 11}
 
 
 def parse_week(raw, week, league, nfl=None):
@@ -150,11 +175,17 @@ def parse_week(raw, week, league, nfl=None):
             pts = r2(s.get("totalPoints"))
             if not pts:
                 pts = r2(s.get("totalPointsLive") or sum(p["pts"] for p in players if p["starter"]))
+            best, picked = optimal_lineup(players, league["slot_counts"]) if players else (pts, [])
+            # Bench players the best lineup would have started, and the starters they'd have replaced.
+            should_start = [players[i] for i in picked if not players[i]["starter"]]
+            should_sit = [p for i, p in enumerate(players) if p["starter"] and i not in picked]
             sides.append({
                 "team": s.get("teamId"),
                 "pts": pts,
-                "players": sorted(players, key=lambda p: (not p["starter"], -p["pts"])),
-                "optimal": max(pts, optimal_points(players, league["slot_counts"])) if players else pts,
+                "players": sorted(players, key=lambda p: (SLOT_ORDER.get(p["slot_id"], 12), -p["pts"])),
+                "optimal": max(pts, best),
+                "should_start": sorted(should_start, key=lambda p: -p["pts"]),
+                "swaps": pair_swaps(should_start, should_sit),
             })
         matchups.append({"home": sides[0], "away": sides[1], "winner": m.get("winner"),
                          "playoff": m.get("playoffTierType", "NONE") != "NONE"})
@@ -325,34 +356,52 @@ def last_result_phrase(entry, names):
     margin = abs(entry["pf"] - entry["pa"])
     opp = names.get(entry["opp"], "their opponent")
     if entry["result"] == "W":
+        if margin < 3:
+            return f"coming off a thrilling {margin:.1f}-point win over {opp}"
         return f"coming off {a_an(f'{margin:.1f}')} {margin:.1f}-point win over {opp}"
     if entry["result"] == "L":
         return f"coming off {a_an(f'{margin:.1f}')} {margin:.1f}-point loss to {opp}"
     return f"coming off a tie with {opp}"
 
 
+def last_name(full):
+    parts = [x for x in full.split() if x.rstrip(".") not in ("Jr", "Sr", "II", "III", "IV", "V")]
+    return parts[-1] if parts else full
+
+
+def swaps_text(swaps, n=2):
+    """'Matthew Stafford (27.3) instead of Joe Burrow (24.6) and Emeka Egbuka (17.2) instead of Mike Gesicki (7.4)'."""
+    return join_names([f"{a['name']} ({a['pts']:.1f}) instead of {b['name']} ({b['pts']:.1f})" for a, b in swaps[:n]])
+
+
+def names_with_pts(players):
+    return join_names([f"{p['name']} ({p['pts']:.1f})" for p in players])
+
+
 def final_article(g, names, week, ctx):
     """The long write-up for a finished matchup, as a list of paragraphs.
 
     ctx: standings (after this week), scores (all scores this week), n_teams, last_kick, late_day,
-         schedule (whole season), log (per-team results), regular_season_weeks
+         schedule (whole season), log (per-team results), regular_season_weeks, next_byes (NFL teams on bye next week)
     """
     w, l = g["sides"]
     W, L = names[w["team"]], names[l["team"]]
     late_day = ctx["late_day"]
+    n = ctx["n_teams"]
     scores = sorted(ctx["scores"], reverse=True)
     rank_of = lambda pts: scores.index(pts) + 1
+    seed = (week, w["team"], l["team"])
     paras = []
 
+    # --- Lede: result, size, season series.
     m = g["margin"]
     size = ("a nail-biter" if m < 5 else "a close one" if m < 12 else "a solid win" if m < 25
             else "a comfortable win" if m < 40 else "a beatdown")
     lede = f"{W} beat {L} {w['pts']:.2f} to {l['pts']:.2f} in Week {week}, {size} decided by {m:.2f} points."
-    if g["late"] == "comeback":
-        lede += f" And it was decided late: {L} led by {g['late_margin']:.2f} going into {late_day} night before {W} came back."
-    elif g["late"] == "held":
-        lede += f" It came down to the final game of the week, with {W} up just {g['late_margin']:.2f} heading into {late_day} night."
-    # Season series: an earlier meeting this season.
+    if m >= 40:
+        lede += " " + pick([f"{L} never stood a chance.", f"This one was over early.", f"{L} would like to forget this one."], *seed)
+    elif m < 3:
+        lede += " " + pick(["It doesn't get much closer than that.", "Every point mattered in this one."], *seed)
     earlier = [e for e in ctx["log"].get(w["team"], []) if e["opp"] == l["team"] and e["week"] < week]
     if earlier:
         e = earlier[-1]
@@ -365,96 +414,127 @@ def final_article(g, names, week, ctx):
             lede += f" {L} won the first meeting back in Week {e['week']}, {hi:.2f} to {lo:.2f}, so the season series is split."
     paras.append(lede)
 
-    # Winner: how good was the score, then who did it.
-    ctx_line = score_context(w, W, rank_of(w["pts"]), ctx["n_teams"])
+    # --- Winner: how good was the score, who did it, and was it lucky?
+    wr = rank_of(w["pts"])
+    txt = score_context(w, W, wr, n) or ""
     ws = sorted(starters(w), key=lambda p: -p["pts"])
     if ws:
         best = ws[0]
-        txt = (ctx_line + " ") if ctx_line else ""
         share = share_phrase(best["pts"], w["pts"])
-        txt += f"{best['name']} carried them with {best['pts']:.1f} points" + (f", {share} the team's total" if share else "")
-        if best["proj"]:
+        txt += f" {best['name']} carried them with {best['pts']:.1f} points" + (f", {share} the team's total" if share else "")
+        if best["proj"] and abs(best["pts"] - best["proj"]) >= 3:
             diff = best["pts"] - best["proj"]
-            if abs(diff) >= 3:
-                txt += f", {abs(diff):.1f} {'over' if diff >= 0 else 'under'} his projection"
+            txt += f", {abs(diff):.1f} {'over' if diff > 0 else 'under'} his projection"
         txt += "."
         if len(ws) > 2:
             txt += f" {ws[1]['name']} ({ws[1]['pts']:.1f}) and {ws[2]['name']} ({ws[2]['pts']:.1f}) were the other big contributors."
-        paras.append(txt)
+    low_rank = n - wr + 1
+    if low_rank <= 3:
+        txt += (f" It wasn't pretty: {w['pts']:.2f} was the {'lowest' if low_rank == 1 else ordinal(low_rank) + '-lowest'} score of the week. "
+                + pick(["But a win is a win.", "They'll take it.", "Sometimes the schedule is kind."], *seed))
+    paras.append(txt.strip())
 
-    # Loser: their score in context, their best player, their biggest letdown.
+    # --- Loser: their score in context, their best players, their biggest letdown.
+    lr = rank_of(l["pts"])
     ls = sorted(starters(l), key=lambda p: -p["pts"])
     if ls:
-        ctx_line = score_context(l, L, rank_of(l["pts"]), ctx["n_teams"])
+        ctx_line = score_context(l, L, lr, n)
         txt = (ctx_line + " ") if ctx_line else ""
-        txt += f"{ls[0]['name']} led the way with {ls[0]['pts']:.1f}" if ctx_line else f"{ls[0]['name']} led {L} with {ls[0]['pts']:.1f}"
+        txt += (f"{ls[0]['name']} led the way with {ls[0]['pts']:.1f}" if ctx_line else f"{ls[0]['name']} led {L} with {ls[0]['pts']:.1f}")
         txt += f", and {ls[1]['name']} added {ls[1]['pts']:.1f}." if len(ls) > 1 and ls[1]["pts"] >= 10 else "."
-        if rank_of(l["pts"]) <= ctx["n_teams"] // 2:
+        if lr <= 3:
+            txt += f" {L} scored the {'most' if lr == 1 else ordinal(lr) + '-most'} points in the league this week and still lost. Brutal."
+        elif lr <= n // 2:
             txt += f" That would have beaten most teams this week. {L} just ran into {W}."
-        bad = duds(l)
-        if bad:
-            d = bad[0]
-            txt += f" The letdown was {d['name']}, who managed {d['pts']:.1f} on a {d['proj']:.1f} projection."
         paras.append(txt)
 
-    for side, nm, won in ((l, L, False), (w, W, True)):
-        left = r2(side["optimal"] - side["pts"])
-        bench = sorted([p for p in side["players"] if not p["starter"] and p["slot_id"] != 21], key=lambda p: -p["pts"])
-        if left >= 10 and bench:
-            txt = f"{nm} left {left:.2f} points on the bench, with {bench[0]['name']} ({bench[0]['pts']:.1f}) sitting out."
-            if not won and side["optimal"] > w["pts"]:
-                txt += f" The best possible lineup would have scored {side['optimal']:.2f}: enough to win."
-            paras.append(txt)
-            break
+    # --- Biggest letdown, and whether there's an obvious replacement on the bench.
+    for side, nm in ((l, L), (w, W)):
+        bad = duds(side)
+        if not bad:
+            continue
+        d = bad[0]
+        txt = f"The letdown for {nm} was {d['name']}, who managed {d['pts']:.1f} on a {d['proj']:.1f} projection."
+        backup = max((p for p in side["players"] if not p["starter"] and p["pos"] == d["pos"] and p["slot_id"] != 21),
+                     key=lambda p: p["proj"] or 0, default=None)
+        if backup and d["pos"] in ("QB", "TE", "K", "D/ST") and (backup["proj"] or 0) > 0:
+            pos_word = {"QB": "quarterback", "TE": "tight end", "K": "kicker", "D/ST": "defense"}[d["pos"]]
+            txt += (f" {nm} might have a {pos_word} decision to make if {last_name(d['name'])} doesn't figure it out:"
+                    f" {backup['name']} is sitting right there on the bench" + (f" (and scored {backup['pts']:.1f} this week)." if backup["pts"] > d["pts"] else "."))
+        paras.append(txt)
+        break
+
+    # --- The bench: name the real swaps the best lineup would have made.
+    if l["optimal"] > w["pts"] and l["swaps"]:
+        paras.append(f"Here's the painful part for {L}: starting {swaps_text(l['swaps'])} "
+                     f"would have produced {l['optimal']:.2f} points, enough to win.")
+    elif m >= 15:
+        paras.append(f"Not much {L} could have done about this one: even their best possible lineup ({l['optimal']:.2f}) "
+                     f"wouldn't have caught {W}.")
+    elif l["swaps"] and l["optimal"] - l["pts"] >= 10:
+        paras.append(f"{L} left {l['optimal'] - l['pts']:.2f} points on the bench, with {names_with_pts(l['should_start'][:2])} sitting, "
+                     f"though even that wouldn't have been enough.")
+    if w["swaps"] and w["optimal"] - w["pts"] >= 10:
+        paras.append(f"{W} could have scored even more by starting {swaps_text(w['swaps'])}.")
 
     qbs = [next((p for p in starters(s) if p["pos"] == "QB"), None) for s in (w, l)]
-    if all(qbs):
-        a, b = qbs
-        if abs(a["pts"] - b["pts"]) >= 3:
-            hi, lo = (a, b) if a["pts"] > b["pts"] else (b, a)
-            paras.append(f"At quarterback, {hi['name']} ({hi['pts']:.1f}) outdueled {lo['name']} ({lo['pts']:.1f}).")
+    if all(qbs) and abs(qbs[0]["pts"] - qbs[1]["pts"]) >= 3:
+        hi, lo = (qbs[0], qbs[1]) if qbs[0]["pts"] > qbs[1]["pts"] else (qbs[1], qbs[0])
+        paras.append(f"At quarterback, {hi['name']} ({hi['pts']:.1f}) outdueled {lo['name']} ({lo['pts']:.1f}).")
 
+    # --- Monday night, only when it mattered.
     if g["late"] in ("comeback", "held"):
-        movers = sorted([p for s in (w, l) for p in starters(s) if is_late(p, ctx["last_kick"])], key=lambda p: -p["pts"])
-        if movers:
-            paras.append(f"On {late_day} night: {pts_list(movers)}.")
+        lk = ctx["last_kick"]
+        w_late = [p for p in starters(w) if is_late(p, lk)]
+        l_late = [p for p in starters(l) if is_late(p, lk)]
+        if g["late"] == "comeback":
+            txt = f"Going into {late_day} night, {W} trailed by {g['late_margin']:.2f} and needed a big night."
+            if w_late:
+                txt += f" {names_with_pts(w_late)} delivered"
+                txt += f", while {L} got just {sum(p['pts'] for p in l_late):.1f} from {join_names([p['name'] for p in l_late])}." if l_late else "."
+        else:
+            txt = f"Going into {late_day} night, {W} led by {g['late_margin']:.2f}, and {L} still had {join_names([p['name'] for p in l_late])} to play."
+            l_pts = sum(p["pts"] for p in l_late)
+            if w_late:
+                txt += f" {names_with_pts(l_late)} put in work, but {W}'s {names_with_pts(w_late)} more than answered."
+            else:
+                txt += f" {names_with_pts(l_late)} " + ("came up short." if l_pts < g["late_margin"] else "made it close.")
+        paras.append(txt)
 
+    # --- Standings.
     st = {r["team"]: r for r in ctx["standings"]}
     if w["team"] in st and l["team"] in st and not g["playoff"]:
         a, b = st[w["team"]], st[l["team"]]
-        txt = f"{W} moves to {record_str(a)} ({ordinal(a['rank'])} place)"
+        txt = f"{W} improves to {record_str(a)} ({ordinal(a['rank'])} place)"
         if a["streak"].startswith("W") and int(a["streak"][1:]) >= 3:
             txt += f", winners of {a['streak'][1:]} straight"
-        txt += f". {L} falls to {record_str(b)} ({ordinal(b['rank'])})"
+        txt += f". {L} drops to {record_str(b)} ({ordinal(b['rank'])})"
         if b["streak"].startswith("L") and int(b["streak"][1:]) >= 3:
             txt += f" and has now lost {b['streak'][1:]} in a row"
         paras.append(txt + ".")
 
-    # Up next: each team's opponent next week, with that opponent's record and last result.
+    # --- Next week: opponents, their form, and bye-week holes.
     nxt = week + 1
     reg = ctx.get("regular_season_weeks")
     if not g["playoff"] and (not reg or nxt <= reg):
-        lines = []
-        for team, nm in ((w["team"], W), (l["team"], L)):
+        for team, nm, side in ((w["team"], W, w), (l["team"], L, l)):
             game = next((x for x in ctx["schedule"] if x["week"] == nxt and team in (x["home"], x["away"])), None)
             if not game:
                 continue
             opp = game["away"] if game["home"] == team else game["home"]
             o = st.get(opp)
+            txt = f"Next week, {nm} faces {names.get(opp, 'TBD')}" + (f" ({record_str(o)})" if o else "")
             last = next((e for e in reversed(ctx["log"].get(opp, [])) if e["week"] == week), None)
-            info = record_str(o) if o else ""
-            if o and o["streak"] and o["streak"][0] in "WL" and int(o["streak"][1:]) >= 3:
-                info += f", {'winners' if o['streak'][0] == 'W' else 'losers'} of {o['streak'][1:]} straight"
-            phrase = names.get(opp, "TBD") + (f" ({info})" if info else "")
             if last:
-                phrase += f", {last_result_phrase(last, names)}"
-            lines.append((nm, phrase))
-        if lines:
-            (n1, p1), *rest = lines
-            txt = f"Up next in Week {nxt}: {n1} takes on {p1}."
-            if rest:
-                n2, p2 = rest[0]
-                txt += f" {n2} gets {p2}."
+                txt += f", who are {last_result_phrase(last, names)}"
+                if o and o["streak"] and o["streak"][0] in "WL" and int(o["streak"][1:]) >= 3:
+                    txt += f" and have {'won' if o['streak'][0] == 'W' else 'lost'} {o['streak'][1:]} straight"
+            txt += "."
+            byes = [p for p in starters(side) if NFL_ABBR.get(p["nfl"], p["nfl"]) in ctx.get("next_byes", set())]
+            if byes:
+                txt += (f" {nm} will be without {join_names([p['name'] for p in byes])} (bye), "
+                        + pick(["so expect some waiver-wire shopping.", "so it's time to check the waiver wire.",
+                                "so the bench is about to get some work."], week, team))
             paras.append(txt)
     return paras
 
@@ -506,6 +586,8 @@ def ordinal(n):
 def strip_players(side):
     side = dict(side)
     side["players"] = [{k: v for k, v in p.items() if k not in ("eligible", "slot_id", "kick")} for p in side["players"]]
+    side["should_start"] = [p["name"] for p in side.get("should_start", [])]
+    side["swaps"] = [[a["name"], b["name"]] for a, b in side.get("swaps", [])]
     return side
 
 
@@ -562,6 +644,7 @@ def build_issue(wk, weeks, league, note, live=False):
                 "standings": standings, "scores": scores, "n_teams": len(names), "last_kick": last_kick,
                 "late_day": late_day, "schedule": league.get("schedule", []), "log": league.get("log", {}),
                 "regular_season_weeks": league.get("regular_season_weeks"),
+                "next_byes": set(wk.get("next_byes", [])),
             })
         games.append(g)
 
