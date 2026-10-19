@@ -3,549 +3,21 @@
  "live": true,
  "late_day": "Monday",
  "lead": 0,
- "headline": "Down to Monday night: Slim Shiesties clings to a 0.0-point lead over Cleo's Purrrfect Lineup",
+ "headline": "The Canberra Mob in control against Dena's Team \ud83c\udfc8, up 34.7",
  "column": null,
  "games": [
   {
-   "winner": 16,
-   "loser": 6,
-   "w_pts": 0,
-   "l_pts": 0,
-   "margin": 0,
+   "winner": 14,
+   "loser": 7,
+   "w_pts": 90.1,
+   "l_pts": 55.4,
+   "margin": 34.7,
    "note": null,
    "playoff": false,
    "sides": [
-    {
-     "team": 16,
-     "pts": 0,
-     "players": [
-      {
-       "name": "James Cook III",
-       "pos": "RB",
-       "nfl": "BUF",
-       "slot": "RB",
-       "starter": true,
-       "pts": 22.8,
-       "proj": 18.68,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "D'Andre Swift",
-       "pos": "RB",
-       "nfl": "CHI",
-       "slot": "RB",
-       "starter": true,
-       "pts": 21.0,
-       "proj": 13.92,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Broncos D/ST",
-       "pos": "D/ST",
-       "nfl": "DEN",
-       "slot": "D/ST",
-       "starter": true,
-       "pts": 11.0,
-       "proj": 5.82,
-       "day": "Thursday",
-       "done": true
-      },
-      {
-       "name": "Nico Collins",
-       "pos": "WR",
-       "nfl": "HOU",
-       "slot": "WR",
-       "starter": true,
-       "pts": 9.4,
-       "proj": 13.99,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Cam Little",
-       "pos": "K",
-       "nfl": "JAX",
-       "slot": "K",
-       "starter": true,
-       "pts": 9.0,
-       "proj": 6.84,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Parker Washington",
-       "pos": "WR",
-       "nfl": "JAX",
-       "slot": "WR",
-       "starter": true,
-       "pts": 8.4,
-       "proj": 13.02,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Tucker Kraft",
-       "pos": "TE",
-       "nfl": "GB",
-       "slot": "TE",
-       "starter": true,
-       "pts": 6.2,
-       "proj": 9.79,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jacoby Brissett",
-       "pos": "QB",
-       "nfl": "ARI",
-       "slot": "QB",
-       "starter": true,
-       "pts": 6.2,
-       "proj": 18.44,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Mike Evans",
-       "pos": "WR",
-       "nfl": "SF",
-       "slot": "FLEX",
-       "starter": true,
-       "pts": 0,
-       "proj": 12.67,
-       "day": "Monday",
-       "done": false
-      },
-      {
-       "name": "Jaylen Waddle",
-       "pos": "WR",
-       "nfl": "DEN",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 4.4,
-       "proj": 7.41,
-       "day": "Thursday",
-       "done": true
-      },
-      {
-       "name": "Joe Burrow",
-       "pos": "QB",
-       "nfl": "CIN",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": null,
-       "done": true
-      },
-      {
-       "name": "Jacory Croskey-Merritt",
-       "pos": "RB",
-       "nfl": "WAS",
-       "slot": "IR",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": "Monday",
-       "done": false
-      },
-      {
-       "name": "Jared Goff",
-       "pos": "QB",
-       "nfl": "DET",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": null,
-       "done": true
-      },
-      {
-       "name": "Juwan Johnson",
-       "pos": "TE",
-       "nfl": "NO",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 8.64,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Brandin Cooks",
-       "pos": "WR",
-       "nfl": "SF",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 5.33,
-       "day": "Monday",
-       "done": false
-      }
-     ],
-     "optimal": 98.4
-    },
-    {
-     "team": 6,
-     "pts": 0,
-     "players": [
-      {
-       "name": "Jonathan Taylor",
-       "pos": "RB",
-       "nfl": "IND",
-       "slot": "RB",
-       "starter": true,
-       "pts": 20.1,
-       "proj": 18.41,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Chuba Hubbard",
-       "pos": "RB",
-       "nfl": "CAR",
-       "slot": "RB",
-       "starter": true,
-       "pts": 18.6,
-       "proj": 13.82,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Dak Prescott",
-       "pos": "QB",
-       "nfl": "DAL",
-       "slot": "QB",
-       "starter": true,
-       "pts": 12.7,
-       "proj": 19.92,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Browns D/ST",
-       "pos": "D/ST",
-       "nfl": "CLE",
-       "slot": "D/ST",
-       "starter": true,
-       "pts": 12.0,
-       "proj": 5.56,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Khalil Shakir",
-       "pos": "WR",
-       "nfl": "BUF",
-       "slot": "WR",
-       "starter": true,
-       "pts": 11.4,
-       "proj": 9.48,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Travis Kelce",
-       "pos": "TE",
-       "nfl": "KC",
-       "slot": "TE",
-       "starter": true,
-       "pts": 7.3,
-       "proj": 9.36,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Cameron Dicker",
-       "pos": "K",
-       "nfl": "LAC",
-       "slot": "K",
-       "starter": true,
-       "pts": 6.0,
-       "proj": 7.01,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Tyler Allgeier",
-       "pos": "RB",
-       "nfl": "ARI",
-       "slot": "FLEX",
-       "starter": true,
-       "pts": 5.3,
-       "proj": 11.18,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Ladd McConkey",
-       "pos": "WR",
-       "nfl": "LAC",
-       "slot": "WR",
-       "starter": true,
-       "pts": 2.2,
-       "proj": 8.41,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Wan'Dale Robinson",
-       "pos": "WR",
-       "nfl": "TEN",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 3.7,
-       "proj": 7.35,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jake Ferguson",
-       "pos": "TE",
-       "nfl": "DAL",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 2.3,
-       "proj": 5.5,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jeremiyah Love",
-       "pos": "RB",
-       "nfl": "ARI",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Rashee Rice",
-       "pos": "WR",
-       "nfl": "KC",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "David Montgomery",
-       "pos": "RB",
-       "nfl": "HOU",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": "Sunday",
-       "done": true
-      }
-     ],
-     "optimal": 97.1
-    }
-   ],
-   "late": null,
-   "late_margin": null,
-   "remaining": 1,
-   "proj_margin": 12.67,
-   "headline": "Down to Monday night: Slim Shiesties clings to a 0.0-point lead over Cleo's Purrrfect Lineup",
-   "status": "live",
-   "article": [
-    "Slim Shiesties leads Cleo's Purrrfect Lineup 0.00 to 0.00 with players still to go.",
-    "Slim Shiesties still has Mike Evans (12.7 proj) to play: about 12.7 projected points.",
-    "Look out for Mike Evans on Monday night. This one isn't over."
-   ],
-   "story": "Slim Shiesties leads Cleo's Purrrfect Lineup 0.00 to 0.00 with players still to go. Slim Shiesties still has Mike Evans (12.7 proj) to play: about 12.7 projected points."
-  },
-  {
-   "winner": 7,
-   "loser": 14,
-   "w_pts": 0,
-   "l_pts": 0,
-   "margin": 0,
-   "note": null,
-   "playoff": false,
-   "sides": [
-    {
-     "team": 7,
-     "pts": 0,
-     "players": [
-      {
-       "name": "Hunter Henry",
-       "pos": "TE",
-       "nfl": "NE",
-       "slot": "FLEX",
-       "starter": true,
-       "pts": 12.8,
-       "proj": 6.37,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Javonte Williams",
-       "pos": "RB",
-       "nfl": "DAL",
-       "slot": "RB",
-       "starter": true,
-       "pts": 12.0,
-       "proj": 15.67,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Braelon Allen",
-       "pos": "RB",
-       "nfl": "NYJ",
-       "slot": "RB",
-       "starter": true,
-       "pts": 11.4,
-       "proj": 13.31,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Zay Flowers",
-       "pos": "WR",
-       "nfl": "BAL",
-       "slot": "WR",
-       "starter": true,
-       "pts": 9.7,
-       "proj": 11.16,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Dallas Goedert",
-       "pos": "TE",
-       "nfl": "PHI",
-       "slot": "TE",
-       "starter": true,
-       "pts": 9.1,
-       "proj": 8.02,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Dontayvion Wicks",
-       "pos": "WR",
-       "nfl": "PHI",
-       "slot": "WR",
-       "starter": true,
-       "pts": 3.4,
-       "proj": 7.21,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Brandon Aubrey",
-       "pos": "K",
-       "nfl": "DAL",
-       "slot": "K",
-       "starter": true,
-       "pts": 1.0,
-       "proj": 9.39,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Brock Purdy",
-       "pos": "QB",
-       "nfl": "SF",
-       "slot": "QB",
-       "starter": true,
-       "pts": 0,
-       "proj": 26.07,
-       "day": "Monday",
-       "done": false
-      },
-      {
-       "name": "Texans D/ST",
-       "pos": "D/ST",
-       "nfl": "HOU",
-       "slot": "D/ST",
-       "starter": true,
-       "pts": -4.0,
-       "proj": 5.35,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Tanner McKee",
-       "pos": "QB",
-       "nfl": "PHI",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 14.0,
-       "proj": 16.32,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Marvin Harrison Jr.",
-       "pos": "WR",
-       "nfl": "HOU",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 4.9,
-       "proj": 3.01,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Saquon Barkley",
-       "pos": "RB",
-       "nfl": "PHI",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Justin Jefferson",
-       "pos": "WR",
-       "nfl": "MIN",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": null,
-       "done": true
-      },
-      {
-       "name": "Jalen Hurts",
-       "pos": "QB",
-       "nfl": "PHI",
-       "slot": "IR",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jordan Addison",
-       "pos": "WR",
-       "nfl": "MIN",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": null,
-       "done": true
-      }
-     ],
-     "optimal": 70.9
-    },
     {
      "team": 14,
-     "pts": 0,
+     "pts": 90.1,
      "players": [
       {
        "name": "Matthew Golden",
@@ -714,33 +186,561 @@
       }
      ],
      "optimal": 93.4
+    },
+    {
+     "team": 7,
+     "pts": 55.4,
+     "players": [
+      {
+       "name": "Hunter Henry",
+       "pos": "TE",
+       "nfl": "NE",
+       "slot": "FLEX",
+       "starter": true,
+       "pts": 12.8,
+       "proj": 6.37,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Javonte Williams",
+       "pos": "RB",
+       "nfl": "DAL",
+       "slot": "RB",
+       "starter": true,
+       "pts": 12.0,
+       "proj": 15.67,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Braelon Allen",
+       "pos": "RB",
+       "nfl": "NYJ",
+       "slot": "RB",
+       "starter": true,
+       "pts": 11.4,
+       "proj": 13.31,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Zay Flowers",
+       "pos": "WR",
+       "nfl": "BAL",
+       "slot": "WR",
+       "starter": true,
+       "pts": 9.7,
+       "proj": 11.16,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Dallas Goedert",
+       "pos": "TE",
+       "nfl": "PHI",
+       "slot": "TE",
+       "starter": true,
+       "pts": 9.1,
+       "proj": 8.02,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Dontayvion Wicks",
+       "pos": "WR",
+       "nfl": "PHI",
+       "slot": "WR",
+       "starter": true,
+       "pts": 3.4,
+       "proj": 7.21,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Brandon Aubrey",
+       "pos": "K",
+       "nfl": "DAL",
+       "slot": "K",
+       "starter": true,
+       "pts": 1.0,
+       "proj": 9.39,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Brock Purdy",
+       "pos": "QB",
+       "nfl": "SF",
+       "slot": "QB",
+       "starter": true,
+       "pts": 0,
+       "proj": 26.07,
+       "day": "Monday",
+       "done": false
+      },
+      {
+       "name": "Texans D/ST",
+       "pos": "D/ST",
+       "nfl": "HOU",
+       "slot": "D/ST",
+       "starter": true,
+       "pts": -4.0,
+       "proj": 5.35,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Tanner McKee",
+       "pos": "QB",
+       "nfl": "PHI",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 14.0,
+       "proj": 16.32,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Marvin Harrison Jr.",
+       "pos": "WR",
+       "nfl": "HOU",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 4.9,
+       "proj": 3.01,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Saquon Barkley",
+       "pos": "RB",
+       "nfl": "PHI",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Justin Jefferson",
+       "pos": "WR",
+       "nfl": "MIN",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": null,
+       "done": true
+      },
+      {
+       "name": "Jalen Hurts",
+       "pos": "QB",
+       "nfl": "PHI",
+       "slot": "IR",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Jordan Addison",
+       "pos": "WR",
+       "nfl": "MIN",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": null,
+       "done": true
+      }
+     ],
+     "optimal": 70.9
     }
    ],
    "late": null,
    "late_margin": null,
    "remaining": 1,
-   "proj_margin": 26.07,
-   "headline": "Down to Monday night: Dena's Team \ud83c\udfc8 clings to a 0.0-point lead over The Canberra Mob",
+   "proj_margin": 8.63,
+   "headline": "The Canberra Mob in control against Dena's Team \ud83c\udfc8, up 34.7",
    "status": "live",
    "article": [
-    "Dena's Team \ud83c\udfc8 leads The Canberra Mob 0.00 to 0.00 with players still to go.",
+    "The Canberra Mob leads Dena's Team \ud83c\udfc8 90.10 to 55.40 with players still to go.",
     "Dena's Team \ud83c\udfc8 still has Brock Purdy (26.1 proj) to play: about 26.1 projected points.",
     "Look out for Brock Purdy on Monday night. This one isn't over."
    ],
-   "story": "Dena's Team \ud83c\udfc8 leads The Canberra Mob 0.00 to 0.00 with players still to go. Dena's Team \ud83c\udfc8 still has Brock Purdy (26.1 proj) to play: about 26.1 projected points."
+   "story": "The Canberra Mob leads Dena's Team \ud83c\udfc8 90.10 to 55.40 with players still to go. Dena's Team \ud83c\udfc8 still has Brock Purdy (26.1 proj) to play: about 26.1 projected points."
+  },
+  {
+   "winner": 6,
+   "loser": 16,
+   "w_pts": 95.6,
+   "l_pts": 94.0,
+   "margin": 1.6,
+   "note": null,
+   "playoff": false,
+   "sides": [
+    {
+     "team": 6,
+     "pts": 95.6,
+     "players": [
+      {
+       "name": "Jonathan Taylor",
+       "pos": "RB",
+       "nfl": "IND",
+       "slot": "RB",
+       "starter": true,
+       "pts": 20.1,
+       "proj": 18.41,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Chuba Hubbard",
+       "pos": "RB",
+       "nfl": "CAR",
+       "slot": "RB",
+       "starter": true,
+       "pts": 18.6,
+       "proj": 13.82,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Dak Prescott",
+       "pos": "QB",
+       "nfl": "DAL",
+       "slot": "QB",
+       "starter": true,
+       "pts": 12.7,
+       "proj": 19.92,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Browns D/ST",
+       "pos": "D/ST",
+       "nfl": "CLE",
+       "slot": "D/ST",
+       "starter": true,
+       "pts": 12.0,
+       "proj": 5.56,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Khalil Shakir",
+       "pos": "WR",
+       "nfl": "BUF",
+       "slot": "WR",
+       "starter": true,
+       "pts": 11.4,
+       "proj": 9.48,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Travis Kelce",
+       "pos": "TE",
+       "nfl": "KC",
+       "slot": "TE",
+       "starter": true,
+       "pts": 7.3,
+       "proj": 9.36,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Cameron Dicker",
+       "pos": "K",
+       "nfl": "LAC",
+       "slot": "K",
+       "starter": true,
+       "pts": 6.0,
+       "proj": 7.01,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Tyler Allgeier",
+       "pos": "RB",
+       "nfl": "ARI",
+       "slot": "FLEX",
+       "starter": true,
+       "pts": 5.3,
+       "proj": 11.18,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Ladd McConkey",
+       "pos": "WR",
+       "nfl": "LAC",
+       "slot": "WR",
+       "starter": true,
+       "pts": 2.2,
+       "proj": 8.41,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Wan'Dale Robinson",
+       "pos": "WR",
+       "nfl": "TEN",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 3.7,
+       "proj": 7.35,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Jake Ferguson",
+       "pos": "TE",
+       "nfl": "DAL",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 2.3,
+       "proj": 5.5,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Jeremiyah Love",
+       "pos": "RB",
+       "nfl": "ARI",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Rashee Rice",
+       "pos": "WR",
+       "nfl": "KC",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "David Montgomery",
+       "pos": "RB",
+       "nfl": "HOU",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": "Sunday",
+       "done": true
+      }
+     ],
+     "optimal": 97.1
+    },
+    {
+     "team": 16,
+     "pts": 94.0,
+     "players": [
+      {
+       "name": "James Cook III",
+       "pos": "RB",
+       "nfl": "BUF",
+       "slot": "RB",
+       "starter": true,
+       "pts": 22.8,
+       "proj": 18.68,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "D'Andre Swift",
+       "pos": "RB",
+       "nfl": "CHI",
+       "slot": "RB",
+       "starter": true,
+       "pts": 21.0,
+       "proj": 13.92,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Broncos D/ST",
+       "pos": "D/ST",
+       "nfl": "DEN",
+       "slot": "D/ST",
+       "starter": true,
+       "pts": 11.0,
+       "proj": 5.82,
+       "day": "Thursday",
+       "done": true
+      },
+      {
+       "name": "Nico Collins",
+       "pos": "WR",
+       "nfl": "HOU",
+       "slot": "WR",
+       "starter": true,
+       "pts": 9.4,
+       "proj": 13.99,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Cam Little",
+       "pos": "K",
+       "nfl": "JAX",
+       "slot": "K",
+       "starter": true,
+       "pts": 9.0,
+       "proj": 6.84,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Parker Washington",
+       "pos": "WR",
+       "nfl": "JAX",
+       "slot": "WR",
+       "starter": true,
+       "pts": 8.4,
+       "proj": 13.02,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Tucker Kraft",
+       "pos": "TE",
+       "nfl": "GB",
+       "slot": "TE",
+       "starter": true,
+       "pts": 6.2,
+       "proj": 9.79,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Jacoby Brissett",
+       "pos": "QB",
+       "nfl": "ARI",
+       "slot": "QB",
+       "starter": true,
+       "pts": 6.2,
+       "proj": 18.44,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Mike Evans",
+       "pos": "WR",
+       "nfl": "SF",
+       "slot": "FLEX",
+       "starter": true,
+       "pts": 0,
+       "proj": 12.67,
+       "day": "Monday",
+       "done": false
+      },
+      {
+       "name": "Jaylen Waddle",
+       "pos": "WR",
+       "nfl": "DEN",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 4.4,
+       "proj": 7.41,
+       "day": "Thursday",
+       "done": true
+      },
+      {
+       "name": "Joe Burrow",
+       "pos": "QB",
+       "nfl": "CIN",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": null,
+       "done": true
+      },
+      {
+       "name": "Jacory Croskey-Merritt",
+       "pos": "RB",
+       "nfl": "WAS",
+       "slot": "IR",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": "Monday",
+       "done": false
+      },
+      {
+       "name": "Jared Goff",
+       "pos": "QB",
+       "nfl": "DET",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": null,
+       "done": true
+      },
+      {
+       "name": "Juwan Johnson",
+       "pos": "TE",
+       "nfl": "NO",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 8.64,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Brandin Cooks",
+       "pos": "WR",
+       "nfl": "SF",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 5.33,
+       "day": "Monday",
+       "done": false
+      }
+     ],
+     "optimal": 98.4
+    }
+   ],
+   "late": null,
+   "late_margin": null,
+   "remaining": 1,
+   "proj_margin": -11.07,
+   "headline": "Down to Monday night: Cleo's Purrrfect Lineup clings to a 1.6-point lead over Slim Shiesties",
+   "status": "live",
+   "article": [
+    "Cleo's Purrrfect Lineup leads Slim Shiesties 95.60 to 94.00 with players still to go.",
+    "Slim Shiesties still has Mike Evans (12.7 proj) to play: about 12.7 projected points.",
+    "Look out for Mike Evans on Monday night. This one isn't over."
+   ],
+   "story": "Cleo's Purrrfect Lineup leads Slim Shiesties 95.60 to 94.00 with players still to go. Slim Shiesties still has Mike Evans (12.7 proj) to play: about 12.7 projected points."
   },
   {
    "winner": 12,
    "loser": 15,
-   "w_pts": 0,
-   "l_pts": 0,
-   "margin": 0,
+   "w_pts": 66.4,
+   "l_pts": 60.1,
+   "margin": 6.3,
    "note": null,
    "playoff": false,
    "sides": [
     {
      "team": 12,
-     "pts": 0,
+     "pts": 66.4,
      "players": [
       {
        "name": "Kirk Cousins",
@@ -912,7 +912,7 @@
     },
     {
      "team": 15,
-     "pts": 0,
+     "pts": 60.1,
      "players": [
       {
        "name": "DeVonta Smith",
@@ -1075,201 +1075,29 @@
    "late": null,
    "late_margin": null,
    "remaining": 4,
-   "proj_margin": -44.18,
-   "headline": "Down to Monday night: The Dude Abides clings to a 0.0-point lead over Ken",
+   "proj_margin": -37.88,
+   "headline": "Down to Monday night: The Dude Abides clings to a 6.3-point lead over Ken",
    "status": "live",
    "article": [
-    "The Dude Abides leads Ken 0.00 to 0.00 with players still to go.",
+    "The Dude Abides leads Ken 66.40 to 60.10 with players still to go.",
     "Ken still has Christian McCaffrey (19.3 proj), Jayden Daniels (22.5 proj), George Kittle (12.5 proj) to play: about 54.3 projected points.",
     "The Dude Abides still has Terry McLaurin (10.1 proj) to play: about 10.1 projected points.",
     "Look out for Jayden Daniels on Monday night. This one isn't over."
    ],
-   "story": "The Dude Abides leads Ken 0.00 to 0.00 with players still to go. Ken still has Christian McCaffrey (19.3 proj), Jayden Daniels (22.5 proj), George Kittle (12.5 proj) to play: about 54.3 projected points."
+   "story": "The Dude Abides leads Ken 66.40 to 60.10 with players still to go. Ken still has Christian McCaffrey (19.3 proj), Jayden Daniels (22.5 proj), George Kittle (12.5 proj) to play: about 54.3 projected points."
   },
   {
-   "winner": 9,
-   "loser": 17,
-   "w_pts": 0,
-   "l_pts": 0,
-   "margin": 0,
+   "winner": 17,
+   "loser": 9,
+   "w_pts": 116.5,
+   "l_pts": 115.4,
+   "margin": 1.1,
    "note": null,
    "playoff": false,
    "sides": [
     {
-     "team": 9,
-     "pts": 0,
-     "players": [
-      {
-       "name": "Drake Maye",
-       "pos": "QB",
-       "nfl": "NE",
-       "slot": "QB",
-       "starter": true,
-       "pts": 30.4,
-       "proj": 24.63,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Malik Nabers",
-       "pos": "WR",
-       "nfl": "NYG",
-       "slot": "WR",
-       "starter": true,
-       "pts": 22.5,
-       "proj": 14.65,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Colston Loveland",
-       "pos": "TE",
-       "nfl": "CHI",
-       "slot": "TE",
-       "starter": true,
-       "pts": 15.5,
-       "proj": 7.05,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "DK Metcalf",
-       "pos": "WR",
-       "nfl": "PIT",
-       "slot": "FLEX",
-       "starter": true,
-       "pts": 14.8,
-       "proj": 9.65,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Ashton Jeanty",
-       "pos": "RB",
-       "nfl": "LV",
-       "slot": "RB",
-       "starter": true,
-       "pts": 13.8,
-       "proj": 17.07,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Dameon Pierce",
-       "pos": "RB",
-       "nfl": "PHI",
-       "slot": "RB",
-       "starter": true,
-       "pts": 13.0,
-       "proj": 11.51,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Rome Odunze",
-       "pos": "WR",
-       "nfl": "CHI",
-       "slot": "WR",
-       "starter": true,
-       "pts": 5.4,
-       "proj": 8.8,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Tyler Loop",
-       "pos": "K",
-       "nfl": "BAL",
-       "slot": "K",
-       "starter": true,
-       "pts": 4.0,
-       "proj": 8.35,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jaguars D/ST",
-       "pos": "D/ST",
-       "nfl": "JAX",
-       "slot": "D/ST",
-       "starter": true,
-       "pts": -4.0,
-       "proj": 5.99,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Romeo Doubs",
-       "pos": "WR",
-       "nfl": "NE",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 11.7,
-       "proj": 7.99,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Patrick Mahomes",
-       "pos": "QB",
-       "nfl": "KC",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 9.6,
-       "proj": 22.52,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Amon-Ra St. Brown",
-       "pos": "WR",
-       "nfl": "DET",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": null,
-       "done": true
-      },
-      {
-       "name": "Jadarian Price",
-       "pos": "RB",
-       "nfl": "SEA",
-       "slot": "IR",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": "Thursday",
-       "done": true
-      },
-      {
-       "name": "Aaron Jones Sr.",
-       "pos": "RB",
-       "nfl": "MIN",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": null,
-       "done": true
-      },
-      {
-       "name": "Kyle Monangai",
-       "pos": "RB",
-       "nfl": "CHI",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": "Sunday",
-       "done": true
-      }
-     ],
-     "optimal": 121.7
-    },
-    {
      "team": 17,
-     "pts": 0,
+     "pts": 116.5,
      "players": [
       {
        "name": "Tyler Shough",
@@ -1438,31 +1266,364 @@
       }
      ],
      "optimal": 116.5
+    },
+    {
+     "team": 9,
+     "pts": 115.4,
+     "players": [
+      {
+       "name": "Drake Maye",
+       "pos": "QB",
+       "nfl": "NE",
+       "slot": "QB",
+       "starter": true,
+       "pts": 30.4,
+       "proj": 24.63,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Malik Nabers",
+       "pos": "WR",
+       "nfl": "NYG",
+       "slot": "WR",
+       "starter": true,
+       "pts": 22.5,
+       "proj": 14.65,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Colston Loveland",
+       "pos": "TE",
+       "nfl": "CHI",
+       "slot": "TE",
+       "starter": true,
+       "pts": 15.5,
+       "proj": 7.05,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "DK Metcalf",
+       "pos": "WR",
+       "nfl": "PIT",
+       "slot": "FLEX",
+       "starter": true,
+       "pts": 14.8,
+       "proj": 9.65,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Ashton Jeanty",
+       "pos": "RB",
+       "nfl": "LV",
+       "slot": "RB",
+       "starter": true,
+       "pts": 13.8,
+       "proj": 17.07,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Dameon Pierce",
+       "pos": "RB",
+       "nfl": "PHI",
+       "slot": "RB",
+       "starter": true,
+       "pts": 13.0,
+       "proj": 11.51,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Rome Odunze",
+       "pos": "WR",
+       "nfl": "CHI",
+       "slot": "WR",
+       "starter": true,
+       "pts": 5.4,
+       "proj": 8.8,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Tyler Loop",
+       "pos": "K",
+       "nfl": "BAL",
+       "slot": "K",
+       "starter": true,
+       "pts": 4.0,
+       "proj": 8.35,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Jaguars D/ST",
+       "pos": "D/ST",
+       "nfl": "JAX",
+       "slot": "D/ST",
+       "starter": true,
+       "pts": -4.0,
+       "proj": 5.99,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Romeo Doubs",
+       "pos": "WR",
+       "nfl": "NE",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 11.7,
+       "proj": 7.99,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Patrick Mahomes",
+       "pos": "QB",
+       "nfl": "KC",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 9.6,
+       "proj": 22.52,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Amon-Ra St. Brown",
+       "pos": "WR",
+       "nfl": "DET",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": null,
+       "done": true
+      },
+      {
+       "name": "Jadarian Price",
+       "pos": "RB",
+       "nfl": "SEA",
+       "slot": "IR",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": "Thursday",
+       "done": true
+      },
+      {
+       "name": "Aaron Jones Sr.",
+       "pos": "RB",
+       "nfl": "MIN",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": null,
+       "done": true
+      },
+      {
+       "name": "Kyle Monangai",
+       "pos": "RB",
+       "nfl": "CHI",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": "Sunday",
+       "done": true
+      }
+     ],
+     "optimal": 121.7
     }
    ],
    "late": null,
    "late_margin": null,
    "remaining": 0,
-   "proj_margin": 0,
-   "headline": "Oops escapes Stroud and Proud in a 0.0-point thriller",
+   "proj_margin": 1.1,
+   "headline": "Stroud and Proud escapes Oops in a 1.1-point thriller",
    "status": "final",
    "article": [
-    "This one's in the books: Oops beat Stroud and Proud 0.00 to 0.00."
+    "This one's in the books: Stroud and Proud beat Oops 116.50 to 115.40."
    ],
-   "story": "This one's in the books: Oops beat Stroud and Proud 0.00 to 0.00."
+   "story": "This one's in the books: Stroud and Proud beat Oops 116.50 to 115.40."
   },
   {
-   "winner": 8,
-   "loser": 13,
-   "w_pts": 0,
-   "l_pts": 0,
-   "margin": 0,
+   "winner": 13,
+   "loser": 8,
+   "w_pts": 93.1,
+   "l_pts": 59.3,
+   "margin": 33.8,
    "note": null,
    "playoff": false,
    "sides": [
     {
+     "team": 13,
+     "pts": 93.1,
+     "players": [
+      {
+       "name": "Josh Allen",
+       "pos": "QB",
+       "nfl": "BUF",
+       "slot": "QB",
+       "starter": true,
+       "pts": 22.1,
+       "proj": 28.96,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Tetairoa McMillan",
+       "pos": "WR",
+       "nfl": "CAR",
+       "slot": "WR",
+       "starter": true,
+       "pts": 11.6,
+       "proj": 13.33,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Jakobi Meyers",
+       "pos": "WR",
+       "nfl": "JAX",
+       "slot": "FLEX",
+       "starter": true,
+       "pts": 10.8,
+       "proj": 7.86,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Seahawks D/ST",
+       "pos": "D/ST",
+       "nfl": "SEA",
+       "slot": "D/ST",
+       "starter": true,
+       "pts": 9.0,
+       "proj": 6.72,
+       "day": "Thursday",
+       "done": true
+      },
+      {
+       "name": "Harrison Butker",
+       "pos": "K",
+       "nfl": "KC",
+       "slot": "K",
+       "starter": true,
+       "pts": 9.0,
+       "proj": 8.67,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Trey McBride",
+       "pos": "TE",
+       "nfl": "ARI",
+       "slot": "TE",
+       "starter": true,
+       "pts": 8.8,
+       "proj": 13.26,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Jaylen Warren",
+       "pos": "RB",
+       "nfl": "PIT",
+       "slot": "RB",
+       "starter": true,
+       "pts": 8.8,
+       "proj": 13.35,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Tony Pollard",
+       "pos": "RB",
+       "nfl": "TEN",
+       "slot": "RB",
+       "starter": true,
+       "pts": 7.6,
+       "proj": 13.46,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Davante Adams",
+       "pos": "WR",
+       "nfl": "LAR",
+       "slot": "WR",
+       "starter": true,
+       "pts": 5.4,
+       "proj": 13.91,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Aaron Rodgers",
+       "pos": "QB",
+       "nfl": "PIT",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 19.9,
+       "proj": 17.8,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Makai Lemon",
+       "pos": "WR",
+       "nfl": "PHI",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 3.4,
+       "proj": 4.4,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Courtland Sutton",
+       "pos": "WR",
+       "nfl": "DEN",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 2.9,
+       "proj": 7.06,
+       "day": "Thursday",
+       "done": true
+      },
+      {
+       "name": "Jahmyr Gibbs",
+       "pos": "RB",
+       "nfl": "DET",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": null,
+       "done": true
+      },
+      {
+       "name": "Stefon Diggs",
+       "pos": "WR",
+       "nfl": "WAS",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 8.3,
+       "day": "Monday",
+       "done": false
+      }
+     ],
+     "optimal": 93.1
+    },
+    {
      "team": 8,
-     "pts": 0,
+     "pts": 59.3,
      "players": [
       {
        "name": "Matthew Stafford",
@@ -1631,353 +1792,31 @@
       }
      ],
      "optimal": 73.7
-    },
-    {
-     "team": 13,
-     "pts": 0,
-     "players": [
-      {
-       "name": "Josh Allen",
-       "pos": "QB",
-       "nfl": "BUF",
-       "slot": "QB",
-       "starter": true,
-       "pts": 22.1,
-       "proj": 28.96,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Tetairoa McMillan",
-       "pos": "WR",
-       "nfl": "CAR",
-       "slot": "WR",
-       "starter": true,
-       "pts": 11.6,
-       "proj": 13.33,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jakobi Meyers",
-       "pos": "WR",
-       "nfl": "JAX",
-       "slot": "FLEX",
-       "starter": true,
-       "pts": 10.8,
-       "proj": 7.86,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Seahawks D/ST",
-       "pos": "D/ST",
-       "nfl": "SEA",
-       "slot": "D/ST",
-       "starter": true,
-       "pts": 9.0,
-       "proj": 6.72,
-       "day": "Thursday",
-       "done": true
-      },
-      {
-       "name": "Harrison Butker",
-       "pos": "K",
-       "nfl": "KC",
-       "slot": "K",
-       "starter": true,
-       "pts": 9.0,
-       "proj": 8.67,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Trey McBride",
-       "pos": "TE",
-       "nfl": "ARI",
-       "slot": "TE",
-       "starter": true,
-       "pts": 8.8,
-       "proj": 13.26,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jaylen Warren",
-       "pos": "RB",
-       "nfl": "PIT",
-       "slot": "RB",
-       "starter": true,
-       "pts": 8.8,
-       "proj": 13.35,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Tony Pollard",
-       "pos": "RB",
-       "nfl": "TEN",
-       "slot": "RB",
-       "starter": true,
-       "pts": 7.6,
-       "proj": 13.46,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Davante Adams",
-       "pos": "WR",
-       "nfl": "LAR",
-       "slot": "WR",
-       "starter": true,
-       "pts": 5.4,
-       "proj": 13.91,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Aaron Rodgers",
-       "pos": "QB",
-       "nfl": "PIT",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 19.9,
-       "proj": 17.8,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Makai Lemon",
-       "pos": "WR",
-       "nfl": "PHI",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 3.4,
-       "proj": 4.4,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Courtland Sutton",
-       "pos": "WR",
-       "nfl": "DEN",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 2.9,
-       "proj": 7.06,
-       "day": "Thursday",
-       "done": true
-      },
-      {
-       "name": "Jahmyr Gibbs",
-       "pos": "RB",
-       "nfl": "DET",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": null,
-       "done": true
-      },
-      {
-       "name": "Stefon Diggs",
-       "pos": "WR",
-       "nfl": "WAS",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 8.3,
-       "day": "Monday",
-       "done": false
-      }
-     ],
-     "optimal": 93.1
     }
    ],
    "late": null,
    "late_margin": null,
    "remaining": 0,
-   "proj_margin": 0,
-   "headline": "* Go Buckeyes holds off I Call Gibbs in a 0.0-point thriller",
+   "proj_margin": 33.8,
+   "headline": "I Call Gibbs flattens * Go Buckeyes",
    "status": "final",
    "article": [
-    "This one's in the books: * Go Buckeyes beat I Call Gibbs 0.00 to 0.00."
+    "This one's in the books: I Call Gibbs beat * Go Buckeyes 93.10 to 59.30."
    ],
-   "story": "This one's in the books: * Go Buckeyes beat I Call Gibbs 0.00 to 0.00."
+   "story": "This one's in the books: I Call Gibbs beat * Go Buckeyes 93.10 to 59.30."
   },
   {
-   "winner": 2,
-   "loser": 3,
-   "w_pts": 0,
-   "l_pts": 0,
-   "margin": 0,
+   "winner": 3,
+   "loser": 2,
+   "w_pts": 127.3,
+   "l_pts": 86.9,
+   "margin": 40.4,
    "note": null,
    "playoff": false,
    "sides": [
     {
-     "team": 2,
-     "pts": 0,
-     "players": [
-      {
-       "name": "Bhayshul Tuten",
-       "pos": "RB",
-       "nfl": "JAX",
-       "slot": "RB",
-       "starter": true,
-       "pts": 22.7,
-       "proj": 11.81,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jalen Coker",
-       "pos": "WR",
-       "nfl": "CAR",
-       "slot": "FLEX",
-       "starter": true,
-       "pts": 12.7,
-       "proj": 11.38,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Puka Nacua",
-       "pos": "WR",
-       "nfl": "LAR",
-       "slot": "WR",
-       "starter": true,
-       "pts": 11.0,
-       "proj": 19.24,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "George Pickens",
-       "pos": "WR",
-       "nfl": "DAL",
-       "slot": "WR",
-       "starter": true,
-       "pts": 10.3,
-       "proj": 11.07,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jameis Winston",
-       "pos": "QB",
-       "nfl": "NYG",
-       "slot": "QB",
-       "starter": true,
-       "pts": 8.4,
-       "proj": 21.73,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Dalton Kincaid",
-       "pos": "TE",
-       "nfl": "BUF",
-       "slot": "TE",
-       "starter": true,
-       "pts": 7.3,
-       "proj": 7.06,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jason Myers",
-       "pos": "K",
-       "nfl": "SEA",
-       "slot": "K",
-       "starter": true,
-       "pts": 7.0,
-       "proj": 6.24,
-       "day": "Thursday",
-       "done": true
-      },
-      {
-       "name": "Derrick Henry",
-       "pos": "RB",
-       "nfl": "BAL",
-       "slot": "RB",
-       "starter": true,
-       "pts": 4.5,
-       "proj": 17.76,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Rams D/ST",
-       "pos": "D/ST",
-       "nfl": "LAR",
-       "slot": "D/ST",
-       "starter": true,
-       "pts": 3.0,
-       "proj": 7.6,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Luther Burden III",
-       "pos": "WR",
-       "nfl": "CHI",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 13.5,
-       "proj": 10.38,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Kendre Miller",
-       "pos": "RB",
-       "nfl": "NO",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 8.0,
-       "proj": 8.5,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Josh Downs",
-       "pos": "WR",
-       "nfl": "IND",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 6.7,
-       "proj": 7.91,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Pat Freiermuth",
-       "pos": "TE",
-       "nfl": "PIT",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 2.1,
-       "proj": 9.07,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Lamar Jackson",
-       "pos": "QB",
-       "nfl": "BAL",
-       "slot": "Bench",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": "Sunday",
-       "done": true
-      }
-     ],
-     "optimal": 93.6
-    },
-    {
      "team": 3,
-     "pts": 0,
+     "pts": 127.3,
      "players": [
       {
        "name": "Kenneth Walker III",
@@ -2146,18 +1985,179 @@
       }
      ],
      "optimal": 134.4
+    },
+    {
+     "team": 2,
+     "pts": 86.9,
+     "players": [
+      {
+       "name": "Bhayshul Tuten",
+       "pos": "RB",
+       "nfl": "JAX",
+       "slot": "RB",
+       "starter": true,
+       "pts": 22.7,
+       "proj": 11.81,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Jalen Coker",
+       "pos": "WR",
+       "nfl": "CAR",
+       "slot": "FLEX",
+       "starter": true,
+       "pts": 12.7,
+       "proj": 11.38,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Puka Nacua",
+       "pos": "WR",
+       "nfl": "LAR",
+       "slot": "WR",
+       "starter": true,
+       "pts": 11.0,
+       "proj": 19.24,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "George Pickens",
+       "pos": "WR",
+       "nfl": "DAL",
+       "slot": "WR",
+       "starter": true,
+       "pts": 10.3,
+       "proj": 11.07,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Jameis Winston",
+       "pos": "QB",
+       "nfl": "NYG",
+       "slot": "QB",
+       "starter": true,
+       "pts": 8.4,
+       "proj": 21.73,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Dalton Kincaid",
+       "pos": "TE",
+       "nfl": "BUF",
+       "slot": "TE",
+       "starter": true,
+       "pts": 7.3,
+       "proj": 7.06,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Jason Myers",
+       "pos": "K",
+       "nfl": "SEA",
+       "slot": "K",
+       "starter": true,
+       "pts": 7.0,
+       "proj": 6.24,
+       "day": "Thursday",
+       "done": true
+      },
+      {
+       "name": "Derrick Henry",
+       "pos": "RB",
+       "nfl": "BAL",
+       "slot": "RB",
+       "starter": true,
+       "pts": 4.5,
+       "proj": 17.76,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Rams D/ST",
+       "pos": "D/ST",
+       "nfl": "LAR",
+       "slot": "D/ST",
+       "starter": true,
+       "pts": 3.0,
+       "proj": 7.6,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Luther Burden III",
+       "pos": "WR",
+       "nfl": "CHI",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 13.5,
+       "proj": 10.38,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Kendre Miller",
+       "pos": "RB",
+       "nfl": "NO",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 8.0,
+       "proj": 8.5,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Josh Downs",
+       "pos": "WR",
+       "nfl": "IND",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 6.7,
+       "proj": 7.91,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Pat Freiermuth",
+       "pos": "TE",
+       "nfl": "PIT",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 2.1,
+       "proj": 9.07,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Lamar Jackson",
+       "pos": "QB",
+       "nfl": "BAL",
+       "slot": "Bench",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": "Sunday",
+       "done": true
+      }
+     ],
+     "optimal": 93.6
     }
    ],
    "late": null,
    "late_margin": null,
    "remaining": 0,
-   "proj_margin": 0,
-   "headline": "King Henry survives K9 Unit in a 0.0-point thriller",
+   "proj_margin": 40.4,
+   "headline": "K9 Unit routs King Henry",
    "status": "final",
    "article": [
-    "This one's in the books: King Henry beat K9 Unit 0.00 to 0.00."
+    "This one's in the books: K9 Unit beat King Henry 127.30 to 86.90."
    ],
-   "story": "This one's in the books: King Henry beat K9 Unit 0.00 to 0.00."
+   "story": "This one's in the books: K9 Unit beat King Henry 127.30 to 86.90."
   }
  ],
  "awards": [],
@@ -2211,8 +2211,8 @@
    "day": "Monday"
   }
  ],
- "median": 0,
- "average": 0,
+ "median": 91.6,
+ "average": 88.34,
  "standings": [
   {
    "team": 13,
