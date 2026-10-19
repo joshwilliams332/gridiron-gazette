@@ -20,17 +20,6 @@
      "pts": 142.2,
      "players": [
       {
-       "name": "Bijan Robinson",
-       "pos": "RB",
-       "nfl": "ATL",
-       "slot": "RB",
-       "starter": true,
-       "pts": 34.3,
-       "proj": 17.44,
-       "day": "Thursday",
-       "done": true
-      },
-      {
        "name": "Jordan Love",
        "pos": "QB",
        "nfl": "GB",
@@ -38,6 +27,17 @@
        "starter": true,
        "pts": 22.0,
        "proj": 20.62,
+       "day": "Thursday",
+       "done": true
+      },
+      {
+       "name": "Bijan Robinson",
+       "pos": "RB",
+       "nfl": "ATL",
+       "slot": "RB",
+       "starter": true,
+       "pts": 34.3,
+       "proj": 17.44,
        "day": "Thursday",
        "done": true
       },
@@ -75,24 +75,13 @@
        "done": true
       },
       {
-       "name": "Chris Boswell",
-       "pos": "K",
-       "nfl": "PIT",
-       "slot": "K",
+       "name": "Mark Andrews",
+       "pos": "TE",
+       "nfl": "BAL",
+       "slot": "TE",
        "starter": true,
-       "pts": 12.0,
-       "proj": 7.77,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Panthers D/ST",
-       "pos": "D/ST",
-       "nfl": "CAR",
-       "slot": "D/ST",
-       "starter": true,
-       "pts": 7.0,
-       "proj": 7.94,
+       "pts": 3.9,
+       "proj": 8.33,
        "day": "Sunday",
        "done": true
       },
@@ -108,13 +97,24 @@
        "done": true
       },
       {
-       "name": "Mark Andrews",
-       "pos": "TE",
-       "nfl": "BAL",
-       "slot": "TE",
+       "name": "Panthers D/ST",
+       "pos": "D/ST",
+       "nfl": "CAR",
+       "slot": "D/ST",
        "starter": true,
-       "pts": 3.9,
-       "proj": 8.33,
+       "pts": 7.0,
+       "proj": 7.94,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Chris Boswell",
+       "pos": "K",
+       "nfl": "PIT",
+       "slot": "K",
+       "starter": true,
+       "pts": 12.0,
+       "proj": 7.77,
        "day": "Sunday",
        "done": true
       },
@@ -186,6 +186,20 @@
       }
      ],
      "optimal": 159.6,
+     "should_start": [
+      "Kenyon Sadiq",
+      "Jameson Williams"
+     ],
+     "swaps": [
+      [
+       "Kenyon Sadiq",
+       "Mark Andrews"
+      ],
+      [
+       "Jameson Williams",
+       "Omarion Hampton"
+      ]
+     ],
      "proj_total": 118.27
     },
     {
@@ -204,6 +218,28 @@
        "done": true
       },
       {
+       "name": "Quinshon Judkins",
+       "pos": "RB",
+       "nfl": "CLE",
+       "slot": "RB",
+       "starter": true,
+       "pts": 8.9,
+       "proj": 12.69,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "TreVeyon Henderson",
+       "pos": "RB",
+       "nfl": "NE",
+       "slot": "RB",
+       "starter": true,
+       "pts": 3.4,
+       "proj": 9.66,
+       "day": "Sunday",
+       "done": true
+      },
+      {
        "name": "Jaxon Smith-Njigba",
        "pos": "WR",
        "nfl": "SEA",
@@ -211,17 +247,6 @@
        "starter": true,
        "pts": 29.8,
        "proj": 17.27,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Garrett Wilson",
-       "pos": "WR",
-       "nfl": "NYJ",
-       "slot": "FLEX",
-       "starter": true,
-       "pts": 21.7,
-       "proj": 13.16,
        "day": "Sunday",
        "done": true
       },
@@ -237,13 +262,24 @@
        "done": true
       },
       {
-       "name": "Will Reichard",
-       "pos": "K",
-       "nfl": "MIN",
-       "slot": "K",
+       "name": "Sam LaPorta",
+       "pos": "TE",
+       "nfl": "DET",
+       "slot": "TE",
        "starter": true,
-       "pts": 13.0,
-       "proj": 7.55,
+       "pts": 5.9,
+       "proj": 9.0,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Garrett Wilson",
+       "pos": "WR",
+       "nfl": "NYJ",
+       "slot": "FLEX",
+       "starter": true,
+       "pts": 21.7,
+       "proj": 13.16,
        "day": "Sunday",
        "done": true
       },
@@ -259,35 +295,13 @@
        "done": true
       },
       {
-       "name": "Quinshon Judkins",
-       "pos": "RB",
-       "nfl": "CLE",
-       "slot": "RB",
+       "name": "Will Reichard",
+       "pos": "K",
+       "nfl": "MIN",
+       "slot": "K",
        "starter": true,
-       "pts": 8.9,
-       "proj": 12.69,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Sam LaPorta",
-       "pos": "TE",
-       "nfl": "DET",
-       "slot": "TE",
-       "starter": true,
-       "pts": 5.9,
-       "proj": 9.0,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "TreVeyon Henderson",
-       "pos": "RB",
-       "nfl": "NE",
-       "slot": "RB",
-       "starter": true,
-       "pts": 3.4,
-       "proj": 9.66,
+       "pts": 13.0,
+       "proj": 7.55,
        "day": "Sunday",
        "done": true
       },
@@ -348,6 +362,20 @@
       }
      ],
      "optimal": 149.0,
+     "should_start": [
+      "Michael Wilson",
+      "RJ Harvey"
+     ],
+     "swaps": [
+      [
+       "Michael Wilson",
+       "Chris Olave"
+      ],
+      [
+       "RJ Harvey",
+       "TreVeyon Henderson"
+      ]
+     ],
      "proj_total": 114.16
     }
    ],
@@ -355,15 +383,18 @@
    "late_margin": null,
    "headline": "K9 Unit holds off Stroud and Proud in a 2.7-point thriller",
    "article": [
-    "K9 Unit beat Stroud and Proud 142.20 to 139.50 in Week 3, a nail-biter decided by 2.70 points.",
+    "K9 Unit beat Stroud and Proud 142.20 to 139.50 in Week 3, a nail-biter decided by 2.70 points. It doesn't get much closer than that.",
     "K9 Unit put up 142.20 this week, 23.9 over their projected 118.3 and the highest score in the league. Bijan Robinson carried them with 34.3 points, about a quarter of the team's total, 16.9 over his projection. Jordan Love (22.0) and Kenneth Walker III (20.3) were the other big contributors.",
-    "Stroud and Proud put up 139.50 this week, 25.3 over their projected 114.2 and the 2nd-highest score of the week. Tyler Shough led the way with 31.6, and Jaxon Smith-Njigba added 29.8. That would have beaten most teams this week. Stroud and Proud just ran into K9 Unit. The letdown was TreVeyon Henderson, who managed 3.4 on a 9.7 projection.",
-    "K9 Unit left 17.40 points on the bench, with Kenyon Sadiq (20.0) sitting out.",
+    "Stroud and Proud put up 139.50 this week, 25.3 over their projected 114.2 and the 2nd-highest score of the week. Tyler Shough led the way with 31.6, and Jaxon Smith-Njigba added 29.8. Stroud and Proud scored the 2nd-most points in the league this week and still lost. Brutal.",
+    "The letdown for Stroud and Proud was TreVeyon Henderson, who managed 3.4 on a 9.7 projection.",
+    "Here's the painful part for Stroud and Proud: starting Michael Wilson (20.4) instead of Chris Olave (15.2) and RJ Harvey (7.7) instead of TreVeyon Henderson (3.4) would have produced 149.00 points, enough to win.",
+    "K9 Unit could have scored even more by starting Kenyon Sadiq (20.0) instead of Mark Andrews (3.9) and Jameson Williams (6.9) instead of Omarion Hampton (5.6).",
     "At quarterback, Tyler Shough (31.6) outdueled Jordan Love (22.0).",
-    "K9 Unit moves to 2-1 (2nd place). Stroud and Proud falls to 1-2 (6th).",
-    "Up next in Week 4: K9 Unit takes on The Canberra Mob (1-2), coming off a 37.8-point loss to I Call Gibbs. Stroud and Proud gets Cleo's Purrrfect Lineup (1-2), coming off a 13.7-point loss to Ken."
+    "K9 Unit improves to 2-1 (2nd place). Stroud and Proud drops to 1-2 (6th).",
+    "Next week, K9 Unit faces The Canberra Mob (1-2), who are coming off a 37.8-point loss to I Call Gibbs.",
+    "Next week, Stroud and Proud faces Cleo's Purrrfect Lineup (1-2), who are coming off a 13.7-point loss to Ken."
    ],
-   "story": "K9 Unit beat Stroud and Proud 142.20 to 139.50 in Week 3, a nail-biter decided by 2.70 points. K9 Unit put up 142.20 this week, 23.9 over their projected 118.3 and the highest score in the league. Bijan Robinson carried them with 34.3 points, about a quarter of the team's total, 16.9 over his projection. Jordan Love (22.0) and Kenneth Walker III (20.3) were the other big contributors."
+   "story": "K9 Unit beat Stroud and Proud 142.20 to 139.50 in Week 3, a nail-biter decided by 2.70 points. It doesn't get much closer than that. K9 Unit put up 142.20 this week, 23.9 over their projected 118.3 and the highest score in the league. Bijan Robinson carried them with 34.3 points, about a quarter of the team's total, 16.9 over his projection. Jordan Love (22.0) and Kenneth Walker III (20.3) were the other big contributors."
   },
   {
    "winner": 12,
@@ -390,28 +421,6 @@
        "done": true
       },
       {
-       "name": "Brock Bowers",
-       "pos": "TE",
-       "nfl": "LV",
-       "slot": "TE",
-       "starter": true,
-       "pts": 22.6,
-       "proj": 11.18,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Ja'Marr Chase",
-       "pos": "WR",
-       "nfl": "CIN",
-       "slot": "WR",
-       "starter": true,
-       "pts": 20.3,
-       "proj": 15.33,
-       "day": "Sunday",
-       "done": true
-      },
-      {
        "name": "Kyren Williams",
        "pos": "RB",
        "nfl": "LAR",
@@ -419,17 +428,6 @@
        "starter": true,
        "pts": 18.8,
        "proj": 11.85,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jake Bates",
-       "pos": "K",
-       "nfl": "DET",
-       "slot": "K",
-       "starter": true,
-       "pts": 7.0,
-       "proj": 8.04,
        "day": "Sunday",
        "done": true
       },
@@ -445,6 +443,17 @@
        "done": true
       },
       {
+       "name": "Ja'Marr Chase",
+       "pos": "WR",
+       "nfl": "CIN",
+       "slot": "WR",
+       "starter": true,
+       "pts": 20.3,
+       "proj": 15.33,
+       "day": "Sunday",
+       "done": true
+      },
+      {
        "name": "Devaughn Vele",
        "pos": "WR",
        "nfl": "NO",
@@ -452,6 +461,17 @@
        "starter": true,
        "pts": 5.4,
        "proj": 9.43,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Brock Bowers",
+       "pos": "TE",
+       "nfl": "LV",
+       "slot": "TE",
+       "starter": true,
+       "pts": 22.6,
+       "proj": 11.18,
        "day": "Sunday",
        "done": true
       },
@@ -475,6 +495,17 @@
        "pts": -7.0,
        "proj": 5.82,
        "day": "Thursday",
+       "done": true
+      },
+      {
+       "name": "Jake Bates",
+       "pos": "K",
+       "nfl": "DET",
+       "slot": "K",
+       "starter": true,
+       "pts": 7.0,
+       "proj": 8.04,
+       "day": "Sunday",
        "done": true
       },
       {
@@ -545,6 +576,20 @@
       }
      ],
      "optimal": 120.0,
+     "should_start": [
+      "Terry McLaurin",
+      "Cade Otton"
+     ],
+     "swaps": [
+      [
+       "Terry McLaurin",
+       "Devaughn Vele"
+      ],
+      [
+       "Cade Otton",
+       "Rhamondre Stevenson"
+      ]
+     ],
      "proj_total": 106.15
     },
     {
@@ -574,28 +619,6 @@
        "done": true
       },
       {
-       "name": "Parker Washington",
-       "pos": "WR",
-       "nfl": "JAX",
-       "slot": "WR",
-       "starter": true,
-       "pts": 11.5,
-       "proj": 12.4,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Mike Evans",
-       "pos": "WR",
-       "nfl": "SF",
-       "slot": "FLEX",
-       "starter": true,
-       "pts": 10.9,
-       "proj": 10.67,
-       "day": "Sunday",
-       "done": true
-      },
-      {
        "name": "D'Andre Swift",
        "pos": "RB",
        "nfl": "CHI",
@@ -607,6 +630,17 @@
        "done": true
       },
       {
+       "name": "Parker Washington",
+       "pos": "WR",
+       "nfl": "JAX",
+       "slot": "WR",
+       "starter": true,
+       "pts": 11.5,
+       "proj": 12.4,
+       "day": "Sunday",
+       "done": true
+      },
+      {
        "name": "Jaylen Waddle",
        "pos": "WR",
        "nfl": "DEN",
@@ -614,17 +648,6 @@
        "starter": true,
        "pts": 5.4,
        "proj": 10.61,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Cam Little",
-       "pos": "K",
-       "nfl": "JAX",
-       "slot": "K",
-       "starter": true,
-       "pts": 5.0,
-       "proj": 7.99,
        "day": "Sunday",
        "done": true
       },
@@ -640,6 +663,17 @@
        "done": true
       },
       {
+       "name": "Mike Evans",
+       "pos": "WR",
+       "nfl": "SF",
+       "slot": "FLEX",
+       "starter": true,
+       "pts": 10.9,
+       "proj": 10.67,
+       "day": "Sunday",
+       "done": true
+      },
+      {
        "name": "Eagles D/ST",
        "pos": "D/ST",
        "nfl": "PHI",
@@ -648,6 +682,17 @@
        "pts": -1.0,
        "proj": 8.3,
        "day": "Monday",
+       "done": true
+      },
+      {
+       "name": "Cam Little",
+       "pos": "K",
+       "nfl": "JAX",
+       "slot": "K",
+       "starter": true,
+       "pts": 5.0,
+       "proj": 7.99,
+       "day": "Sunday",
        "done": true
       },
       {
@@ -718,6 +763,20 @@
       }
      ],
      "optimal": 108.7,
+     "should_start": [
+      "Juwan Johnson",
+      "Quentin Johnston"
+     ],
+     "swaps": [
+      [
+       "Juwan Johnson",
+       "Tucker Kraft"
+      ],
+      [
+       "Quentin Johnston",
+       "Jaylen Waddle"
+      ]
+     ],
      "proj_total": 106.01
     }
    ],
@@ -727,10 +786,13 @@
    "article": [
     "The Dude Abides beat Slim Shiesties 106.90 to 93.90 in Week 3, a solid win decided by 13.00 points.",
     "Bo Nix carried them with 27.7 points, about a quarter of the team's total, 8.2 over his projection. Brock Bowers (22.6) and Ja'Marr Chase (20.3) were the other big contributors.",
-    "Slim Shiesties managed 93.90 this week, 12.1 under their projected 106.0. Joe Burrow led the way with 28.3, and James Cook III added 19.4. The letdown was Eagles D/ST, who managed -1.0 on a 8.3 projection.",
-    "Slim Shiesties left 14.80 points on the bench, with Jared Goff (22.6) sitting out. The best possible lineup would have scored 108.70: enough to win.",
-    "The Dude Abides moves to 2-1 (5th place). Slim Shiesties falls to 2-1 (3rd).",
-    "Up next in Week 4: The Dude Abides takes on * Go Buckeyes (1-2), coming off a 24.4-point win over Dena's Team \ud83c\udfc8. Slim Shiesties gets Oops (1-2), coming off a 33.5-point loss to King Henry."
+    "Slim Shiesties managed 93.90 this week, 12.1 under their projected 106.0. Joe Burrow led the way with 28.3, and James Cook III added 19.4.",
+    "The letdown for Slim Shiesties was Eagles D/ST, who managed -1.0 on a 8.3 projection.",
+    "Here's the painful part for Slim Shiesties: starting Juwan Johnson (19.3) instead of Tucker Kraft (4.6) and Quentin Johnston (5.5) instead of Jaylen Waddle (5.4) would have produced 108.70 points, enough to win.",
+    "The Dude Abides could have scored even more by starting Terry McLaurin (16.7) instead of Devaughn Vele (5.4) and Cade Otton (7.1) instead of Rhamondre Stevenson (5.3).",
+    "The Dude Abides improves to 2-1 (5th place). Slim Shiesties drops to 2-1 (3rd).",
+    "Next week, The Dude Abides faces * Go Buckeyes (1-2), who are coming off a 24.4-point win over Dena's Team \ud83c\udfc8.",
+    "Next week, Slim Shiesties faces Oops (1-2), who are coming off a 33.5-point loss to King Henry."
    ],
    "story": "The Dude Abides beat Slim Shiesties 106.90 to 93.90 in Week 3, a solid win decided by 13.00 points. Bo Nix carried them with 27.7 points, about a quarter of the team's total, 8.2 over his projection. Brock Bowers (22.6) and Ja'Marr Chase (20.3) were the other big contributors."
   },
@@ -759,17 +821,6 @@
        "done": true
       },
       {
-       "name": "George Kittle",
-       "pos": "TE",
-       "nfl": "SF",
-       "slot": "TE",
-       "starter": true,
-       "pts": 23.2,
-       "proj": 10.61,
-       "day": "Sunday",
-       "done": true
-      },
-      {
        "name": "Christian McCaffrey",
        "pos": "RB",
        "nfl": "SF",
@@ -781,14 +832,14 @@
        "done": true
       },
       {
-       "name": "Harrison Mevis",
-       "pos": "K",
-       "nfl": "",
-       "slot": "K",
+       "name": "Chase Brown",
+       "pos": "RB",
+       "nfl": "CIN",
+       "slot": "RB",
        "starter": true,
-       "pts": 14.0,
-       "proj": 7.58,
-       "day": null,
+       "pts": 7.9,
+       "proj": 14.73,
+       "day": "Sunday",
        "done": true
       },
       {
@@ -814,13 +865,13 @@
        "done": true
       },
       {
-       "name": "Chase Brown",
-       "pos": "RB",
-       "nfl": "CIN",
-       "slot": "RB",
+       "name": "George Kittle",
+       "pos": "TE",
+       "nfl": "SF",
+       "slot": "TE",
        "starter": true,
-       "pts": 7.9,
-       "proj": 14.73,
+       "pts": 23.2,
+       "proj": 10.61,
        "day": "Sunday",
        "done": true
       },
@@ -844,6 +895,17 @@
        "pts": -1.0,
        "proj": 4.31,
        "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Harrison Mevis",
+       "pos": "K",
+       "nfl": "",
+       "slot": "K",
+       "starter": true,
+       "pts": 14.0,
+       "proj": 7.58,
+       "day": null,
        "done": true
       },
       {
@@ -891,17 +953,6 @@
        "done": true
       },
       {
-       "name": "Jayden Daniels",
-       "pos": "QB",
-       "nfl": "WAS",
-       "slot": "IR",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": "Sunday",
-       "done": true
-      },
-      {
        "name": "Josh Jacobs",
        "pos": "RB",
        "nfl": "GB",
@@ -911,9 +962,29 @@
        "proj": 0,
        "day": "Thursday",
        "done": true
+      },
+      {
+       "name": "Jayden Daniels",
+       "pos": "QB",
+       "nfl": "WAS",
+       "slot": "IR",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": "Sunday",
+       "done": true
       }
      ],
      "optimal": 117.1,
+     "should_start": [
+      "DJ Moore"
+     ],
+     "swaps": [
+      [
+       "DJ Moore",
+       "Xavier Worthy"
+      ]
+     ],
      "proj_total": 109.38
     },
     {
@@ -943,13 +1014,13 @@
        "done": true
       },
       {
-       "name": "Travis Kelce",
-       "pos": "TE",
-       "nfl": "KC",
-       "slot": "TE",
+       "name": "Jonathan Taylor",
+       "pos": "RB",
+       "nfl": "IND",
+       "slot": "RB",
        "starter": true,
-       "pts": 12.9,
-       "proj": 10.27,
+       "pts": 8.2,
+       "proj": 19.26,
        "day": "Sunday",
        "done": true
       },
@@ -965,17 +1036,6 @@
        "done": true
       },
       {
-       "name": "Cameron Dicker",
-       "pos": "K",
-       "nfl": "LAC",
-       "slot": "K",
-       "starter": true,
-       "pts": 10.0,
-       "proj": 8.37,
-       "day": "Sunday",
-       "done": true
-      },
-      {
        "name": "Ladd McConkey",
        "pos": "WR",
        "nfl": "LAC",
@@ -987,13 +1047,13 @@
        "done": true
       },
       {
-       "name": "Jonathan Taylor",
-       "pos": "RB",
-       "nfl": "IND",
-       "slot": "RB",
+       "name": "Travis Kelce",
+       "pos": "TE",
+       "nfl": "KC",
+       "slot": "TE",
        "starter": true,
-       "pts": 8.2,
-       "proj": 19.26,
+       "pts": 12.9,
+       "proj": 10.27,
        "day": "Sunday",
        "done": true
       },
@@ -1016,6 +1076,17 @@
        "starter": true,
        "pts": 5.0,
        "proj": 5.73,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Cameron Dicker",
+       "pos": "K",
+       "nfl": "LAC",
+       "slot": "K",
+       "starter": true,
+       "pts": 10.0,
+       "proj": 8.37,
        "day": "Sunday",
        "done": true
       },
@@ -1076,6 +1147,16 @@
       }
      ],
      "optimal": 117.3,
+     "should_start": [
+      "Jeremiyah Love",
+      "Wan'Dale Robinson"
+     ],
+     "swaps": [
+      [
+       "Jeremiyah Love",
+       "David Montgomery"
+      ]
+     ],
      "proj_total": 109.73
     }
    ],
@@ -1085,11 +1166,13 @@
    "article": [
     "Ken beat Cleo's Purrrfect Lineup 110.40 to 96.70 in Week 3, a solid win decided by 13.70 points.",
     "Trevor Lawrence carried them with 25.5 points, 5.1 over his projection. George Kittle (23.2) and Christian McCaffrey (19.6) were the other big contributors.",
-    "Cleo's Purrrfect Lineup managed 96.70 this week, 13.0 under their projected 109.7. Dak Prescott led the way with 20.9, and Chuba Hubbard added 13.0. The letdown was Jonathan Taylor, who managed 8.2 on a 19.3 projection.",
-    "Cleo's Purrrfect Lineup left 20.60 points on the bench, with Jeremiyah Love (19.4) sitting out. The best possible lineup would have scored 117.30: enough to win.",
+    "Cleo's Purrrfect Lineup managed 96.70 this week, 13.0 under their projected 109.7. Dak Prescott led the way with 20.9, and Chuba Hubbard added 13.0.",
+    "The letdown for Cleo's Purrrfect Lineup was Jonathan Taylor, who managed 8.2 on a 19.3 projection.",
+    "Here's the painful part for Cleo's Purrrfect Lineup: starting Jeremiyah Love (19.4) instead of David Montgomery (5.8) would have produced 117.30 points, enough to win.",
     "At quarterback, Trevor Lawrence (25.5) outdueled Dak Prescott (20.9).",
-    "Ken moves to 1-2 (8th place). Cleo's Purrrfect Lineup falls to 1-2 (7th).",
-    "Up next in Week 4: Ken takes on I Call Gibbs (3-0, winners of 3 straight), coming off a 37.8-point win over The Canberra Mob. Cleo's Purrrfect Lineup gets Stroud and Proud (1-2), coming off a 2.7-point loss to K9 Unit."
+    "Ken improves to 1-2 (8th place). Cleo's Purrrfect Lineup drops to 1-2 (7th).",
+    "Next week, Ken faces I Call Gibbs (3-0), who are coming off a 37.8-point win over The Canberra Mob and have won 3 straight.",
+    "Next week, Cleo's Purrrfect Lineup faces Stroud and Proud (1-2), who are coming off a 2.7-point loss to K9 Unit."
    ],
    "story": "Ken beat Cleo's Purrrfect Lineup 110.40 to 96.70 in Week 3, a solid win decided by 13.70 points. Trevor Lawrence carried them with 25.5 points, 5.1 over his projection. George Kittle (23.2) and Christian McCaffrey (19.6) were the other big contributors."
   },
@@ -1107,35 +1190,13 @@
      "pts": 106.3,
      "players": [
       {
-       "name": "Drake London",
-       "pos": "WR",
-       "nfl": "ATL",
-       "slot": "WR",
-       "starter": true,
-       "pts": 23.9,
-       "proj": 12.56,
-       "day": "Thursday",
-       "done": true
-      },
-      {
-       "name": "Deebo Samuel Sr.",
-       "pos": "WR",
-       "nfl": "SF",
-       "slot": "FLEX",
-       "starter": true,
-       "pts": 19.4,
-       "proj": 10.58,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Spencer Shrader",
-       "pos": "K",
+       "name": "Daniel Jones",
+       "pos": "QB",
        "nfl": "IND",
-       "slot": "K",
+       "slot": "QB",
        "starter": true,
-       "pts": 15.0,
-       "proj": 7.77,
+       "pts": 9.5,
+       "proj": 15.75,
        "day": "Sunday",
        "done": true
       },
@@ -1151,6 +1212,39 @@
        "done": true
       },
       {
+       "name": "De'Von Achane",
+       "pos": "RB",
+       "nfl": "MIA",
+       "slot": "RB",
+       "starter": true,
+       "pts": 1.7,
+       "proj": 17.4,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Drake London",
+       "pos": "WR",
+       "nfl": "ATL",
+       "slot": "WR",
+       "starter": true,
+       "pts": 23.9,
+       "proj": 12.56,
+       "day": "Thursday",
+       "done": true
+      },
+      {
+       "name": "Denzel Boston",
+       "pos": "WR",
+       "nfl": "CLE",
+       "slot": "WR",
+       "starter": true,
+       "pts": 7.1,
+       "proj": 9.28,
+       "day": "Sunday",
+       "done": true
+      },
+      {
        "name": "Tyler Warren",
        "pos": "TE",
        "nfl": "IND",
@@ -1162,13 +1256,13 @@
        "done": true
       },
       {
-       "name": "Daniel Jones",
-       "pos": "QB",
-       "nfl": "IND",
-       "slot": "QB",
+       "name": "Deebo Samuel Sr.",
+       "pos": "WR",
+       "nfl": "SF",
+       "slot": "FLEX",
        "starter": true,
-       "pts": 9.5,
-       "proj": 15.75,
+       "pts": 19.4,
+       "proj": 10.58,
        "day": "Sunday",
        "done": true
       },
@@ -1184,24 +1278,13 @@
        "done": true
       },
       {
-       "name": "Denzel Boston",
-       "pos": "WR",
-       "nfl": "CLE",
-       "slot": "WR",
+       "name": "Spencer Shrader",
+       "pos": "K",
+       "nfl": "IND",
+       "slot": "K",
        "starter": true,
-       "pts": 7.1,
-       "proj": 9.28,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "De'Von Achane",
-       "pos": "RB",
-       "nfl": "MIA",
-       "slot": "RB",
-       "starter": true,
-       "pts": 1.7,
-       "proj": 17.4,
+       "pts": 15.0,
+       "proj": 7.77,
        "day": "Sunday",
        "done": true
       },
@@ -1273,34 +1356,31 @@
       }
      ],
      "optimal": 122.9,
+     "should_start": [
+      "Keenan Allen",
+      "Bryce Young",
+      "Alvin Kamara"
+     ],
+     "swaps": [
+      [
+       "Keenan Allen",
+       "Denzel Boston"
+      ],
+      [
+       "Bryce Young",
+       "Daniel Jones"
+      ],
+      [
+       "Alvin Kamara",
+       "De'Von Achane"
+      ]
+     ],
      "proj_total": 100.7
     },
     {
      "team": 7,
      "pts": 81.9,
      "players": [
-      {
-       "name": "Javonte Williams",
-       "pos": "RB",
-       "nfl": "DAL",
-       "slot": "RB",
-       "starter": true,
-       "pts": 17.3,
-       "proj": 13.85,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Zay Flowers",
-       "pos": "WR",
-       "nfl": "BAL",
-       "slot": "WR",
-       "starter": true,
-       "pts": 12.9,
-       "proj": 11.63,
-       "day": "Sunday",
-       "done": true
-      },
       {
        "name": "Jalen Hurts",
        "pos": "QB",
@@ -1313,24 +1393,13 @@
        "done": true
       },
       {
-       "name": "Brandon Aubrey",
-       "pos": "K",
+       "name": "Javonte Williams",
+       "pos": "RB",
        "nfl": "DAL",
-       "slot": "K",
+       "slot": "RB",
        "starter": true,
-       "pts": 11.0,
-       "proj": 8.93,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Texans D/ST",
-       "pos": "D/ST",
-       "nfl": "HOU",
-       "slot": "D/ST",
-       "starter": true,
-       "pts": 9.0,
-       "proj": 6.42,
+       "pts": 17.3,
+       "proj": 13.85,
        "day": "Sunday",
        "done": true
       },
@@ -1346,13 +1415,13 @@
        "done": true
       },
       {
-       "name": "Marvin Harrison Jr.",
+       "name": "Zay Flowers",
        "pos": "WR",
-       "nfl": "HOU",
-       "slot": "FLEX",
+       "nfl": "BAL",
+       "slot": "WR",
        "starter": true,
-       "pts": 5.5,
-       "proj": 5.78,
+       "pts": 12.9,
+       "proj": 11.63,
        "day": "Sunday",
        "done": true
       },
@@ -1375,6 +1444,39 @@
        "starter": true,
        "pts": 1.0,
        "proj": 8.14,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Marvin Harrison Jr.",
+       "pos": "WR",
+       "nfl": "HOU",
+       "slot": "FLEX",
+       "starter": true,
+       "pts": 5.5,
+       "proj": 5.78,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Texans D/ST",
+       "pos": "D/ST",
+       "nfl": "HOU",
+       "slot": "D/ST",
+       "starter": true,
+       "pts": 9.0,
+       "proj": 6.42,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Brandon Aubrey",
+       "pos": "K",
+       "nfl": "DAL",
+       "slot": "K",
+       "starter": true,
+       "pts": 11.0,
+       "proj": 8.93,
        "day": "Sunday",
        "done": true
       },
@@ -1435,6 +1537,15 @@
       }
      ],
      "optimal": 110.8,
+     "should_start": [
+      "Brock Purdy"
+     ],
+     "swaps": [
+      [
+       "Brock Purdy",
+       "Jalen Hurts"
+      ]
+     ],
      "proj_total": 108.82
     }
    ],
@@ -1444,11 +1555,14 @@
    "article": [
     "* Go Buckeyes beat Dena's Team \ud83c\udfc8 106.30 to 81.90 in Week 3, a solid win decided by 24.40 points.",
     "* Go Buckeyes put up 106.30 this week, 5.6 over their projected 100.7. Drake London carried them with 23.9 points, 11.3 over his projection. Deebo Samuel Sr. (19.4) and Spencer Shrader (15.0) were the other big contributors.",
-    "Dena's Team \ud83c\udfc8 managed 81.90 this week, 26.9 under their projected 108.8 and the 2nd-lowest score of the week. Javonte Williams led the way with 17.3, and Zay Flowers added 12.9. The letdown was Justin Jefferson, who managed 4.2 on a 14.8 projection.",
-    "Dena's Team \ud83c\udfc8 left 28.90 points on the bench, with Brock Purdy (41.4) sitting out. The best possible lineup would have scored 110.80: enough to win.",
+    "Dena's Team \ud83c\udfc8 managed 81.90 this week, 26.9 under their projected 108.8 and the 2nd-lowest score of the week. Javonte Williams led the way with 17.3, and Zay Flowers added 12.9.",
+    "The letdown for Dena's Team \ud83c\udfc8 was Justin Jefferson, who managed 4.2 on a 14.8 projection.",
+    "Here's the painful part for Dena's Team \ud83c\udfc8: starting Brock Purdy (41.4) instead of Jalen Hurts (12.5) would have produced 110.80 points, enough to win.",
+    "* Go Buckeyes could have scored even more by starting Keenan Allen (15.3) instead of Denzel Boston (7.1) and Bryce Young (15.0) instead of Daniel Jones (9.5).",
     "At quarterback, Jalen Hurts (12.5) outdueled Daniel Jones (9.5).",
-    "* Go Buckeyes moves to 1-2 (11th place). Dena's Team \ud83c\udfc8 falls to 1-2 (10th).",
-    "Up next in Week 4: * Go Buckeyes takes on The Dude Abides (2-1), coming off a 13.0-point win over Slim Shiesties. Dena's Team \ud83c\udfc8 gets King Henry (2-1), coming off a 33.5-point win over Oops."
+    "* Go Buckeyes improves to 1-2 (11th place). Dena's Team \ud83c\udfc8 drops to 1-2 (10th).",
+    "Next week, * Go Buckeyes faces The Dude Abides (2-1), who are coming off a 13.0-point win over Slim Shiesties.",
+    "Next week, Dena's Team \ud83c\udfc8 faces King Henry (2-1), who are coming off a 33.5-point win over Oops."
    ],
    "story": "* Go Buckeyes beat Dena's Team \ud83c\udfc8 106.30 to 81.90 in Week 3, a solid win decided by 24.40 points. * Go Buckeyes put up 106.30 this week, 5.6 over their projected 100.7. Drake London carried them with 23.9 points, 11.3 over his projection. Deebo Samuel Sr. (19.4) and Spencer Shrader (15.0) were the other big contributors."
   },
@@ -1510,35 +1624,13 @@
        "done": true
       },
       {
-       "name": "Josh Downs",
+       "name": "Jalen Coker",
        "pos": "WR",
-       "nfl": "IND",
-       "slot": "FLEX",
+       "nfl": "CAR",
+       "slot": "WR",
        "starter": true,
-       "pts": 10.2,
-       "proj": 9.54,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jason Myers",
-       "pos": "K",
-       "nfl": "SEA",
-       "slot": "K",
-       "starter": true,
-       "pts": 8.0,
-       "proj": 8.69,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Chiefs D/ST",
-       "pos": "D/ST",
-       "nfl": "KC",
-       "slot": "D/ST",
-       "starter": true,
-       "pts": 8.0,
-       "proj": 7.58,
+       "pts": 2.8,
+       "proj": 11.17,
        "day": "Sunday",
        "done": true
       },
@@ -1554,13 +1646,35 @@
        "done": true
       },
       {
-       "name": "Jalen Coker",
+       "name": "Josh Downs",
        "pos": "WR",
-       "nfl": "CAR",
-       "slot": "WR",
+       "nfl": "IND",
+       "slot": "FLEX",
        "starter": true,
-       "pts": 2.8,
-       "proj": 11.17,
+       "pts": 10.2,
+       "proj": 9.54,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Chiefs D/ST",
+       "pos": "D/ST",
+       "nfl": "KC",
+       "slot": "D/ST",
+       "starter": true,
+       "pts": 8.0,
+       "proj": 7.58,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Jason Myers",
+       "pos": "K",
+       "nfl": "SEA",
+       "slot": "K",
+       "starter": true,
+       "pts": 8.0,
+       "proj": 8.69,
        "day": "Sunday",
        "done": true
       },
@@ -1621,6 +1735,15 @@
       }
      ],
      "optimal": 118.4,
+     "should_start": [
+      "Luther Burden III"
+     ],
+     "swaps": [
+      [
+       "Luther Burden III",
+       "Jalen Coker"
+      ]
+     ],
      "proj_total": 109.24
     },
     {
@@ -1639,17 +1762,6 @@
        "done": true
       },
       {
-       "name": "Aaron Jones Sr.",
-       "pos": "RB",
-       "nfl": "MIN",
-       "slot": "FLEX",
-       "starter": true,
-       "pts": 11.7,
-       "proj": 12.92,
-       "day": "Sunday",
-       "done": true
-      },
-      {
        "name": "Ashton Jeanty",
        "pos": "RB",
        "nfl": "LV",
@@ -1661,6 +1773,17 @@
        "done": true
       },
       {
+       "name": "Jadarian Price",
+       "pos": "RB",
+       "nfl": "SEA",
+       "slot": "RB",
+       "starter": true,
+       "pts": 0.7,
+       "proj": 11.37,
+       "day": "Sunday",
+       "done": true
+      },
+      {
        "name": "Amon-Ra St. Brown",
        "pos": "WR",
        "nfl": "DET",
@@ -1668,17 +1791,6 @@
        "starter": true,
        "pts": 9.9,
        "proj": 16.26,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Lions D/ST",
-       "pos": "D/ST",
-       "nfl": "DET",
-       "slot": "D/ST",
-       "starter": true,
-       "pts": 6.0,
-       "proj": 7.05,
        "day": "Sunday",
        "done": true
       },
@@ -1705,6 +1817,28 @@
        "done": true
       },
       {
+       "name": "Aaron Jones Sr.",
+       "pos": "RB",
+       "nfl": "MIN",
+       "slot": "FLEX",
+       "starter": true,
+       "pts": 11.7,
+       "proj": 12.92,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Lions D/ST",
+       "pos": "D/ST",
+       "nfl": "DET",
+       "slot": "D/ST",
+       "starter": true,
+       "pts": 6.0,
+       "proj": 7.05,
+       "day": "Sunday",
+       "done": true
+      },
+      {
        "name": "Eddy Pineiro",
        "pos": "K",
        "nfl": "SF",
@@ -1712,17 +1846,6 @@
        "starter": true,
        "pts": 3.0,
        "proj": 9.09,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Jadarian Price",
-       "pos": "RB",
-       "nfl": "SEA",
-       "slot": "RB",
-       "starter": true,
-       "pts": 0.7,
-       "proj": 11.37,
        "day": "Sunday",
        "done": true
       },
@@ -1783,6 +1906,16 @@
       }
      ],
      "optimal": 82.6,
+     "should_start": [
+      "DK Metcalf",
+      "Romeo Doubs"
+     ],
+     "swaps": [
+      [
+       "DK Metcalf",
+       "Malik Nabers"
+      ]
+     ],
      "proj_total": 116.46
     }
    ],
@@ -1792,11 +1925,14 @@
    "article": [
     "King Henry beat Oops 104.90 to 71.40 in Week 3, a comfortable win decided by 33.50 points.",
     "Lamar Jackson carried them with 24.0 points. Derrick Henry (21.4) and Bhayshul Tuten (16.0) were the other big contributors.",
-    "Oops managed 71.40 this week, 45.1 under their projected 116.5 and the lowest score in the league. Patrick Mahomes led the way with 19.1, and Aaron Jones Sr. added 11.7. The letdown was Jadarian Price, who managed 0.7 on a 11.4 projection.",
-    "Oops left 11.20 points on the bench, with DK Metcalf (10.6) sitting out.",
+    "Oops managed 71.40 this week, 45.1 under their projected 116.5 and the lowest score in the league. Patrick Mahomes led the way with 19.1, and Aaron Jones Sr. added 11.7.",
+    "The letdown for Oops was Jadarian Price, who managed 0.7 on a 11.4 projection.",
+    "Not much Oops could have done about this one: even their best possible lineup (82.60) wouldn't have caught King Henry.",
+    "King Henry could have scored even more by starting Luther Burden III (16.3) instead of Jalen Coker (2.8).",
     "At quarterback, Lamar Jackson (24.0) outdueled Patrick Mahomes (19.1).",
-    "King Henry moves to 2-1 (4th place). Oops falls to 1-2 (12th).",
-    "Up next in Week 4: King Henry takes on Dena's Team \ud83c\udfc8 (1-2), coming off a 24.4-point loss to * Go Buckeyes. Oops gets Slim Shiesties (2-1), coming off a 13.0-point loss to The Dude Abides."
+    "King Henry improves to 2-1 (4th place). Oops drops to 1-2 (12th).",
+    "Next week, King Henry faces Dena's Team \ud83c\udfc8 (1-2), who are coming off a 24.4-point loss to * Go Buckeyes.",
+    "Next week, Oops faces Slim Shiesties (2-1), who are coming off a 13.0-point loss to The Dude Abides."
    ],
    "story": "King Henry beat Oops 104.90 to 71.40 in Week 3, a comfortable win decided by 33.50 points. Lamar Jackson carried them with 24.0 points. Derrick Henry (21.4) and Bhayshul Tuten (16.0) were the other big contributors."
   },
@@ -1813,6 +1949,17 @@
      "team": 13,
      "pts": 127.3,
      "players": [
+      {
+       "name": "Josh Allen",
+       "pos": "QB",
+       "nfl": "BUF",
+       "slot": "QB",
+       "starter": true,
+       "pts": 16.8,
+       "proj": 26.57,
+       "day": "Sunday",
+       "done": true
+      },
       {
        "name": "Jahmyr Gibbs",
        "pos": "RB",
@@ -1847,13 +1994,13 @@
        "done": true
       },
       {
-       "name": "Josh Allen",
-       "pos": "QB",
-       "nfl": "BUF",
-       "slot": "QB",
+       "name": "Tetairoa McMillan",
+       "pos": "WR",
+       "nfl": "CAR",
+       "slot": "WR",
        "starter": true,
-       "pts": 16.8,
-       "proj": 26.57,
+       "pts": 2.7,
+       "proj": 11.96,
        "day": "Sunday",
        "done": true
       },
@@ -1880,17 +2027,6 @@
        "done": true
       },
       {
-       "name": "Harrison Butker",
-       "pos": "K",
-       "nfl": "KC",
-       "slot": "K",
-       "starter": true,
-       "pts": 6.0,
-       "proj": 8.23,
-       "day": "Sunday",
-       "done": true
-      },
-      {
        "name": "Seahawks D/ST",
        "pos": "D/ST",
        "nfl": "SEA",
@@ -1902,13 +2038,13 @@
        "done": true
       },
       {
-       "name": "Tetairoa McMillan",
-       "pos": "WR",
-       "nfl": "CAR",
-       "slot": "WR",
+       "name": "Harrison Butker",
+       "pos": "K",
+       "nfl": "KC",
+       "slot": "K",
        "starter": true,
-       "pts": 2.7,
-       "proj": 11.96,
+       "pts": 6.0,
+       "proj": 8.23,
        "day": "Sunday",
        "done": true
       },
@@ -1969,45 +2105,21 @@
       }
      ],
      "optimal": 140.5,
+     "should_start": [
+      "Jakobi Meyers"
+     ],
+     "swaps": [
+      [
+       "Jakobi Meyers",
+       "Tetairoa McMillan"
+      ]
+     ],
      "proj_total": 128.32
     },
     {
      "team": 14,
      "pts": 89.5,
      "players": [
-      {
-       "name": "Harold Fannin Jr.",
-       "pos": "TE",
-       "nfl": "CLE",
-       "slot": "TE",
-       "starter": true,
-       "pts": 20.6,
-       "proj": 7.74,
-       "day": "Sunday",
-       "done": true
-      },
-      {
-       "name": "Matthew Golden",
-       "pos": "WR",
-       "nfl": "GB",
-       "slot": "WR",
-       "starter": true,
-       "pts": 18.5,
-       "proj": 9.55,
-       "day": "Thursday",
-       "done": true
-      },
-      {
-       "name": "CeeDee Lamb",
-       "pos": "WR",
-       "nfl": "DAL",
-       "slot": "WR",
-       "starter": true,
-       "pts": 16.7,
-       "proj": 14.07,
-       "day": "Sunday",
-       "done": true
-      },
       {
        "name": "Justin Herbert",
        "pos": "QB",
@@ -2042,13 +2154,35 @@
        "done": true
       },
       {
-       "name": "Ka'imi Fairbairn",
-       "pos": "K",
-       "nfl": "HOU",
-       "slot": "K",
+       "name": "Matthew Golden",
+       "pos": "WR",
+       "nfl": "GB",
+       "slot": "WR",
        "starter": true,
-       "pts": 5.0,
-       "proj": 8.51,
+       "pts": 18.5,
+       "proj": 9.55,
+       "day": "Thursday",
+       "done": true
+      },
+      {
+       "name": "CeeDee Lamb",
+       "pos": "WR",
+       "nfl": "DAL",
+       "slot": "WR",
+       "starter": true,
+       "pts": 16.7,
+       "proj": 14.07,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Harold Fannin Jr.",
+       "pos": "TE",
+       "nfl": "CLE",
+       "slot": "TE",
+       "starter": true,
+       "pts": 20.6,
+       "proj": 7.74,
        "day": "Sunday",
        "done": true
       },
@@ -2071,6 +2205,17 @@
        "starter": true,
        "pts": -1.0,
        "proj": 8.22,
+       "day": "Sunday",
+       "done": true
+      },
+      {
+       "name": "Ka'imi Fairbairn",
+       "pos": "K",
+       "nfl": "HOU",
+       "slot": "K",
+       "starter": true,
+       "pts": 5.0,
+       "proj": 8.51,
        "day": "Sunday",
        "done": true
       },
@@ -2119,17 +2264,6 @@
        "done": true
       },
       {
-       "name": "A.J. Brown",
-       "pos": "WR",
-       "nfl": "NE",
-       "slot": "IR",
-       "starter": false,
-       "pts": 0,
-       "proj": 0,
-       "day": "Sunday",
-       "done": true
-      },
-      {
        "name": "Jordan Mason",
        "pos": "RB",
        "nfl": "MIN",
@@ -2139,9 +2273,39 @@
        "proj": 0,
        "day": "Sunday",
        "done": true
+      },
+      {
+       "name": "A.J. Brown",
+       "pos": "WR",
+       "nfl": "NE",
+       "slot": "IR",
+       "starter": false,
+       "pts": 0,
+       "proj": 0,
+       "day": "Sunday",
+       "done": true
       }
      ],
      "optimal": 102.9,
+     "should_start": [
+      "Carnell Tate",
+      "Woody Marks",
+      "Steelers D/ST"
+     ],
+     "swaps": [
+      [
+       "Carnell Tate",
+       "Rico Dowdle"
+      ],
+      [
+       "Steelers D/ST",
+       "49ers D/ST"
+      ],
+      [
+       "Woody Marks",
+       "Breece Hall"
+      ]
+     ],
      "proj_total": 93.68
     }
    ],
@@ -2151,10 +2315,13 @@
    "article": [
     "I Call Gibbs beat The Canberra Mob 127.30 to 89.50 in Week 3, a comfortable win decided by 37.80 points.",
     "I Call Gibbs put up 127.30 this week, the 3rd-highest score of the week. Jahmyr Gibbs carried them with 37.9 points, about a quarter of the team's total, 14.3 over his projection. Jaylen Warren (19.1) and Davante Adams (17.2) were the other big contributors.",
-    "The Canberra Mob managed 89.50 this week, the 3rd-lowest score of the week. Harold Fannin Jr. led the way with 20.6, and Matthew Golden added 18.5. The letdown was 49ers D/ST, who managed -1.0 on a 8.2 projection.",
-    "The Canberra Mob left 13.40 points on the bench, with Kyler Murray (12.7) sitting out.",
-    "I Call Gibbs moves to 3-0 (1st place), winners of 3 straight. The Canberra Mob falls to 1-2 (9th).",
-    "Up next in Week 4: I Call Gibbs takes on Ken (1-2), coming off a 13.7-point win over Cleo's Purrrfect Lineup. The Canberra Mob gets K9 Unit (2-1), coming off a 2.7-point win over Stroud and Proud."
+    "The Canberra Mob managed 89.50 this week, the 3rd-lowest score of the week. Harold Fannin Jr. led the way with 20.6, and Matthew Golden added 18.5.",
+    "The letdown for The Canberra Mob was 49ers D/ST, who managed -1.0 on a 8.2 projection. The Canberra Mob might have a defense decision to make if D/ST doesn't figure it out: Steelers D/ST is sitting right there on the bench (and scored 2.0 this week).",
+    "Not much The Canberra Mob could have done about this one: even their best possible lineup (102.90) wouldn't have caught I Call Gibbs.",
+    "I Call Gibbs could have scored even more by starting Jakobi Meyers (15.9) instead of Tetairoa McMillan (2.7).",
+    "I Call Gibbs improves to 3-0 (1st place), winners of 3 straight. The Canberra Mob drops to 1-2 (9th).",
+    "Next week, I Call Gibbs faces Ken (1-2), who are coming off a 13.7-point win over Cleo's Purrrfect Lineup.",
+    "Next week, The Canberra Mob faces K9 Unit (2-1), who are coming off a thrilling 2.7-point win over Stroud and Proud."
    ],
    "story": "I Call Gibbs beat The Canberra Mob 127.30 to 89.50 in Week 3, a comfortable win decided by 37.80 points. I Call Gibbs put up 127.30 this week, the 3rd-highest score of the week. Jahmyr Gibbs carried them with 37.9 points, about a quarter of the team's total, 14.3 over his projection. Jaylen Warren (19.1) and Davante Adams (17.2) were the other big contributors."
   }
