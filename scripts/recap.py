@@ -435,9 +435,13 @@ def build_issue(wk, weeks, league, note, live=False):
         games.append(g)
 
     if live:
+        # Lead with the tightest game that's still in doubt ("Down to Monday night"), then any game still going.
+        in_doubt = [g for g in games if g["headline"].startswith("Down to")]
         open_games = [g for g in games if g["status"] == "live"]
-        lead = min(open_games, key=lambda g: abs(g["proj_margin"])) if open_games else min(games, key=lambda g: g["margin"])
-        games.sort(key=lambda g: (g["status"] != "live", abs(g.get("proj_margin", 0))))
+        lead = (min(in_doubt, key=lambda g: g["margin"]) if in_doubt
+                else min(open_games, key=lambda g: abs(g["proj_margin"])) if open_games
+                else min(games, key=lambda g: g["margin"]))
+        games.sort(key=lambda g: (not g["headline"].startswith("Down to"), g["status"] != "live", g["margin"]))
     else:
         games.sort(key=lambda g: g["margin"])
         lead = (next((g for g in games if g["late"] == "comeback"), None)
