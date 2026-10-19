@@ -17,7 +17,9 @@ const GZ = {
     const link = (href, label) => `<a href="${href}" ${here === href ? 'aria-current="page"' : ""}>${label}</a>`;
     document.body.insertAdjacentHTML("afterbegin", `
       <header class="masthead">
-        <div class="top-line"><span>${esc(league?.name || "")}</span><span>${league?.season ? `${league.season} Season` : ""}</span></div>
+        <div class="top-line"><span>${esc(league?.name || "")}</span>
+          <span class="top-right"><span class="season">${league?.season ? `${league.season} Season` : ""}</span>
+          <button class="theme-toggle" type="button"></button></span></div>
         <h1><a href="index.html">The Gridiron Gazette</a></h1>
         <p class="motto">All the news that's fit to bench</p>
         <div class="dateline">
@@ -25,8 +27,27 @@ const GZ = {
           <nav>${link("index.html", "Latest Issue")}${link("standings.html", "Standings")}${link("teams.html", "Teams")}</nav>
         </div>
       </header>`);
+    this.wireTheme();
     document.body.insertAdjacentHTML("beforeend", `
       <footer class="site-footer">The Gridiron Gazette · scores from ESPN Fantasy${league?.updated ? ` · updated ${esc(new Date(league.updated).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }))}` : ""}</footer>`);
+  },
+
+  // Light/dark toggle. The page's <head> applies a saved choice before drawing, so there's no flash.
+  wireTheme() {
+    const btn = document.querySelector(".theme-toggle");
+    const root = document.documentElement;
+    const current = () => root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    const label = () => {
+      const dark = current() === "dark";
+      btn.textContent = dark ? "☀️ Light" : "🌙 Dark";
+      btn.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+    };
+    btn.onclick = () => {
+      root.dataset.theme = current() === "dark" ? "light" : "dark";
+      try { localStorage.setItem("gz-theme", root.dataset.theme); } catch (e) { /* storage blocked */ }
+      label();
+    };
+    label();
   },
 
   async start(subtitleFn, fn) {

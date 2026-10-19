@@ -11,8 +11,9 @@
   --body: "Source Serif 4", Georgia, serif;
   --ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
+/* Dark: follows the device unless someone picked a theme with the header toggle. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --paper: #16140f;
     --paper-2: #221f18;
     --ink: #ece5d6;
@@ -22,6 +23,16 @@
     --win: #6fcf8f;
     --loss: #f08a84;
   }
+}
+:root[data-theme="dark"] {
+  --paper: #16140f;
+  --paper-2: #221f18;
+  --ink: #ece5d6;
+  --muted: #a49b8b;
+  --rule: #3d372c;
+  --accent: #e0726b;
+  --win: #6fcf8f;
+  --loss: #f08a84;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 var(--body); }
@@ -151,3 +162,12 @@ a.team-a:hover { text-decoration: underline; }
 table.roster tr.first-bench td { border-top: 2px solid var(--ink); }
 .bye-tag { display: inline-block; margin-left: 6px; font: 800 10px var(--ui); letter-spacing: .06em; color: var(--accent); border: 1px solid var(--accent); padding: 0 5px; border-radius: 3px; vertical-align: 1px; }
 @media (max-width: 820px) { .hide-sm { display: none; } }
+
+/* Theme toggle */
+.theme-toggle {
+  font: 600 12px var(--ui); letter-spacing: .04em; color: var(--muted); background: none; border: 1px solid var(--rule);
+  border-radius: 999px; padding: 2px 10px; cursor: pointer; text-transform: none;
+}
+.theme-toggle:hover { color: var(--ink); border-color: var(--ink); }
+.masthead .top-line { align-items: center; }
+.masthead .top-right { display: flex; align-items: center; gap: 10px; }
