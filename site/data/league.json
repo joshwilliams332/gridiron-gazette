@@ -102,6 +102,428 @@
    "logo": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/eb921df0-a5a3-11f1-8623-4f919cfbc4d9"
   }
  ],
+ "schedule": [
+  {
+   "week": 1,
+   "home": 8,
+   "away": 9
+  },
+  {
+   "week": 1,
+   "home": 7,
+   "away": 12
+  },
+  {
+   "week": 1,
+   "home": 16,
+   "away": 2
+  },
+  {
+   "week": 1,
+   "home": 13,
+   "away": 17
+  },
+  {
+   "week": 1,
+   "home": 14,
+   "away": 15
+  },
+  {
+   "week": 1,
+   "home": 6,
+   "away": 3
+  },
+  {
+   "week": 2,
+   "home": 9,
+   "away": 12
+  },
+  {
+   "week": 2,
+   "home": 2,
+   "away": 8
+  },
+  {
+   "week": 2,
+   "home": 16,
+   "away": 7
+  },
+  {
+   "week": 2,
+   "home": 17,
+   "away": 15
+  },
+  {
+   "week": 2,
+   "home": 3,
+   "away": 13
+  },
+  {
+   "week": 2,
+   "home": 6,
+   "away": 14
+  },
+  {
+   "week": 3,
+   "home": 2,
+   "away": 9
+  },
+  {
+   "week": 3,
+   "home": 12,
+   "away": 16
+  },
+  {
+   "week": 3,
+   "home": 8,
+   "away": 7
+  },
+  {
+   "week": 3,
+   "home": 3,
+   "away": 17
+  },
+  {
+   "week": 3,
+   "home": 15,
+   "away": 6
+  },
+  {
+   "week": 3,
+   "home": 13,
+   "away": 14
+  },
+  {
+   "week": 4,
+   "home": 9,
+   "away": 16
+  },
+  {
+   "week": 4,
+   "home": 7,
+   "away": 2
+  },
+  {
+   "week": 4,
+   "home": 8,
+   "away": 12
+  },
+  {
+   "week": 4,
+   "home": 17,
+   "away": 6
+  },
+  {
+   "week": 4,
+   "home": 14,
+   "away": 3
+  },
+  {
+   "week": 4,
+   "home": 13,
+   "away": 15
+  },
+  {
+   "week": 5,
+   "home": 7,
+   "away": 9
+  },
+  {
+   "week": 5,
+   "home": 16,
+   "away": 8
+  },
+  {
+   "week": 5,
+   "home": 2,
+   "away": 12
+  },
+  {
+   "week": 5,
+   "home": 14,
+   "away": 17
+  },
+  {
+   "week": 5,
+   "home": 6,
+   "away": 13
+  },
+  {
+   "week": 5,
+   "home": 3,
+   "away": 15
+  },
+  {
+   "week": 6,
+   "home": 9,
+   "away": 17
+  },
+  {
+   "week": 6,
+   "home": 8,
+   "away": 13
+  },
+  {
+   "week": 6,
+   "home": 12,
+   "away": 15
+  },
+  {
+   "week": 6,
+   "home": 2,
+   "away": 3
+  },
+  {
+   "week": 6,
+   "home": 16,
+   "away": 6
+  },
+  {
+   "week": 6,
+   "home": 7,
+   "away": 14
+  },
+  {
+   "week": 7,
+   "home": 17,
+   "away": 8
+  },
+  {
+   "week": 7,
+   "home": 13,
+   "away": 12
+  },
+  {
+   "week": 7,
+   "home": 15,
+   "away": 2
+  },
+  {
+   "week": 7,
+   "home": 3,
+   "away": 16
+  },
+  {
+   "week": 7,
+   "home": 6,
+   "away": 7
+  },
+  {
+   "week": 7,
+   "home": 14,
+   "away": 9
+  },
+  {
+   "week": 8,
+   "home": 12,
+   "away": 17
+  },
+  {
+   "week": 8,
+   "home": 2,
+   "away": 13
+  },
+  {
+   "week": 8,
+   "home": 16,
+   "away": 15
+  },
+  {
+   "week": 8,
+   "home": 7,
+   "away": 3
+  },
+  {
+   "week": 8,
+   "home": 9,
+   "away": 6
+  },
+  {
+   "week": 8,
+   "home": 8,
+   "away": 14
+  },
+  {
+   "week": 9,
+   "home": 17,
+   "away": 2
+  },
+  {
+   "week": 9,
+   "home": 13,
+   "away": 16
+  },
+  {
+   "week": 9,
+   "home": 15,
+   "away": 7
+  },
+  {
+   "week": 9,
+   "home": 3,
+   "away": 9
+  },
+  {
+   "week": 9,
+   "home": 6,
+   "away": 8
+  },
+  {
+   "week": 9,
+   "home": 14,
+   "away": 12
+  },
+  {
+   "week": 10,
+   "home": 16,
+   "away": 17
+  },
+  {
+   "week": 10,
+   "home": 7,
+   "away": 13
+  },
+  {
+   "week": 10,
+   "home": 9,
+   "away": 15
+  },
+  {
+   "week": 10,
+   "home": 8,
+   "away": 3
+  },
+  {
+   "week": 10,
+   "home": 12,
+   "away": 6
+  },
+  {
+   "week": 10,
+   "home": 2,
+   "away": 14
+  },
+  {
+   "week": 11,
+   "home": 17,
+   "away": 7
+  },
+  {
+   "week": 11,
+   "home": 13,
+   "away": 9
+  },
+  {
+   "week": 11,
+   "home": 15,
+   "away": 8
+  },
+  {
+   "week": 11,
+   "home": 3,
+   "away": 12
+  },
+  {
+   "week": 11,
+   "home": 6,
+   "away": 2
+  },
+  {
+   "week": 11,
+   "home": 14,
+   "away": 16
+  },
+  {
+   "week": 12,
+   "home": 17,
+   "away": 9
+  },
+  {
+   "week": 12,
+   "home": 13,
+   "away": 8
+  },
+  {
+   "week": 12,
+   "home": 15,
+   "away": 12
+  },
+  {
+   "week": 12,
+   "home": 3,
+   "away": 2
+  },
+  {
+   "week": 12,
+   "home": 6,
+   "away": 16
+  },
+  {
+   "week": 12,
+   "home": 14,
+   "away": 7
+  },
+  {
+   "week": 13,
+   "home": 8,
+   "away": 17
+  },
+  {
+   "week": 13,
+   "home": 12,
+   "away": 13
+  },
+  {
+   "week": 13,
+   "home": 2,
+   "away": 15
+  },
+  {
+   "week": 13,
+   "home": 16,
+   "away": 3
+  },
+  {
+   "week": 13,
+   "home": 7,
+   "away": 6
+  },
+  {
+   "week": 13,
+   "home": 9,
+   "away": 14
+  },
+  {
+   "week": 14,
+   "home": 14,
+   "away": 16
+  },
+  {
+   "week": 14,
+   "home": 6,
+   "away": 8
+  },
+  {
+   "week": 14,
+   "home": 15,
+   "away": 12
+  },
+  {
+   "week": 14,
+   "home": 3,
+   "away": 7
+  },
+  {
+   "week": 14,
+   "home": 17,
+   "away": 2
+  },
+  {
+   "week": 14,
+   "home": 13,
+   "away": 9
+  }
+ ],
  "standings": [
   {
    "team": 13,
@@ -942,5 +1364,5 @@
   5
  ],
  "live_week": null,
- "updated": "2026-10-19T14:49+00:00"
+ "updated": "2026-10-19T14:54+00:00"
 }

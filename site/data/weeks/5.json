@@ -174,7 +174,8 @@
        "done": true
       }
      ],
-     "optimal": 132.1
+     "optimal": 132.1,
+     "proj_total": 114.58
     },
     {
      "team": 7,
@@ -335,20 +336,22 @@
        "done": true
       }
      ],
-     "optimal": 119.0
+     "optimal": 119.0,
+     "proj_total": 109.68
     }
    ],
    "late": null,
    "late_margin": null,
    "headline": "Oops cruises past Dena's Team \ud83c\udfc8",
    "article": [
-    "Oops beat Dena's Team \ud83c\udfc8 132.10 to 117.00 in Week 5, a comfortable win decided by 15.10 points.",
-    "Drake Maye carried Oops with 46.5 points, 24.9 over his projection. Malik Nabers (23.6) and Aaron Jones Sr. (17.2) chipped in.",
-    "For Dena's Team \ud83c\udfc8, Brock Purdy led the way with 19.6.",
+    "Oops beat Dena's Team \ud83c\udfc8 132.10 to 117.00 in Week 5, a solid win decided by 15.10 points.",
+    "Oops put up 132.10 this week, 17.5 over their projected 114.6. Drake Maye carried them with 46.5 points, over a third of the team's total, 24.9 over his projection. Malik Nabers (23.6) and Aaron Jones Sr. (17.2) were the other big contributors.",
+    "Dena's Team \ud83c\udfc8 put up 117.00 this week, 7.3 over their projected 109.7. Brock Purdy led the way with 19.6, and Braelon Allen added 18.1.",
     "At quarterback, Drake Maye (46.5) outdueled Brock Purdy (19.6).",
-    "Oops moves to 3-2 (7th place). Dena's Team \ud83c\udfc8 falls to 2-3 (8th)."
+    "Oops moves to 3-2 (7th place). Dena's Team \ud83c\udfc8 falls to 2-3 (8th).",
+    "Up next in Week 6: Oops takes on Stroud and Proud (3-2), coming off a 17.9-point win over The Canberra Mob. Dena's Team \ud83c\udfc8 gets The Canberra Mob (1-4, losers of 4 straight), coming off a 17.9-point loss to Stroud and Proud."
    ],
-   "story": "Oops beat Dena's Team \ud83c\udfc8 132.10 to 117.00 in Week 5, a comfortable win decided by 15.10 points. Drake Maye carried Oops with 46.5 points, 24.9 over his projection. Malik Nabers (23.6) and Aaron Jones Sr. (17.2) chipped in."
+   "story": "Oops beat Dena's Team \ud83c\udfc8 132.10 to 117.00 in Week 5, a solid win decided by 15.10 points. Oops put up 132.10 this week, 17.5 over their projected 114.6. Drake Maye carried them with 46.5 points, over a third of the team's total, 24.9 over his projection. Malik Nabers (23.6) and Aaron Jones Sr. (17.2) were the other big contributors."
   },
   {
    "winner": 17,
@@ -529,7 +532,8 @@
        "done": true
       }
      ],
-     "optimal": 134.6
+     "optimal": 134.6,
+     "proj_total": 115.2
     },
     {
      "team": 14,
@@ -701,21 +705,23 @@
        "done": true
       }
      ],
-     "optimal": 84.0
+     "optimal": 84.0,
+     "proj_total": 97.2
     }
    ],
    "late": null,
    "late_margin": null,
    "headline": "Stroud and Proud takes care of The Canberra Mob",
    "article": [
-    "Stroud and Proud beat The Canberra Mob 87.90 to 70.00 in Week 5, a comfortable win decided by 17.90 points.",
-    "Jaxon Smith-Njigba carried Stroud and Proud with 20.3 points, 3.5 over his projection. Sam LaPorta (17.3) and Will Reichard (13.0) chipped in.",
-    "For The Canberra Mob, Kyler Murray led the way with 20.1. The bigger story was CeeDee Lamb, who managed 1.9 on a 15.5 projection.",
+    "Stroud and Proud beat The Canberra Mob 87.90 to 70.00 in Week 5, a solid win decided by 17.90 points.",
+    "Stroud and Proud managed 87.90 this week, 27.3 under their projected 115.2 and the 3rd-lowest score of the week. Jaxon Smith-Njigba carried them with 20.3 points, 3.5 over his projection. Sam LaPorta (17.3) and Will Reichard (13.0) were the other big contributors.",
+    "The Canberra Mob managed 70.00 this week, 27.2 under their projected 97.2 and the 2nd-lowest score of the week. Kyler Murray led the way with 20.1, and Matthew Golden added 17.3. The letdown was CeeDee Lamb, who managed 1.9 on a 15.5 projection.",
     "The Canberra Mob left 14.00 points on the bench, with 49ers D/ST (15.0) sitting out.",
     "At quarterback, Kyler Murray (20.1) outdueled Tyler Shough (-1.0).",
-    "Stroud and Proud moves to 3-2 (3rd place). The Canberra Mob falls to 1-4 (12th) and has now lost 4 in a row."
+    "Stroud and Proud moves to 3-2 (3rd place). The Canberra Mob falls to 1-4 (12th) and has now lost 4 in a row.",
+    "Up next in Week 6: Stroud and Proud takes on Oops (3-2), coming off a 15.1-point win over Dena's Team \ud83c\udfc8. The Canberra Mob gets Dena's Team \ud83c\udfc8 (2-3), coming off a 15.1-point loss to Oops."
    ],
-   "story": "Stroud and Proud beat The Canberra Mob 87.90 to 70.00 in Week 5, a comfortable win decided by 17.90 points. Jaxon Smith-Njigba carried Stroud and Proud with 20.3 points, 3.5 over his projection. Sam LaPorta (17.3) and Will Reichard (13.0) chipped in."
+   "story": "Stroud and Proud beat The Canberra Mob 87.90 to 70.00 in Week 5, a solid win decided by 17.90 points. Stroud and Proud managed 87.90 this week, 27.3 under their projected 115.2 and the 3rd-lowest score of the week. Jaxon Smith-Njigba carried them with 20.3 points, 3.5 over his projection. Sam LaPorta (17.3) and Will Reichard (13.0) were the other big contributors."
   },
   {
    "winner": 2,
@@ -885,7 +891,8 @@
        "done": true
       }
      ],
-     "optimal": 150.1
+     "optimal": 150.1,
+     "proj_total": 113.65
     },
     {
      "team": 12,
@@ -1057,7 +1064,8 @@
        "done": true
       }
      ],
-     "optimal": 137.4
+     "optimal": 137.4,
+     "proj_total": 117.12
     }
    ],
    "late": "held",
@@ -1065,14 +1073,15 @@
    "headline": "King Henry handles The Dude Abides",
    "article": [
     "King Henry beat The Dude Abides 147.30 to 120.40 in Week 5, a comfortable win decided by 26.90 points. It came down to the final game of the week, with King Henry up just 11.10 heading into Monday night.",
-    "Jacoby Brissett carried King Henry with 30.1 points, 7.2 over his projection. Puka Nacua (29.2) and George Pickens (23.5) chipped in.",
-    "For The Dude Abides, Bucky Irving led the way with 30.5. The bigger story was Bo Nix, who managed 9.0 on a 19.0 projection.",
+    "King Henry put up 147.30 this week, 33.7 over their projected 113.7 and the 2nd-highest score of the week. Jacoby Brissett carried them with 30.1 points, 7.2 over his projection. Puka Nacua (29.2) and George Pickens (23.5) were the other big contributors.",
+    "Bucky Irving led The Dude Abides with 30.5, and Brock Bowers added 19.0. That would have beaten most teams this week. The Dude Abides just ran into King Henry. The letdown was Bo Nix, who managed 9.0 on a 19.0 projection.",
     "The Dude Abides left 17.00 points on the bench, with Isaiah Likely (26.9) sitting out.",
     "At quarterback, Jacoby Brissett (30.1) outdueled Bo Nix (9.0).",
     "On Monday night: Puka Nacua (29.2), Kyren Williams (16.6), Dalton Kincaid (3.2).",
-    "King Henry moves to 3-2 (6th place). The Dude Abides falls to 3-2 (5th)."
+    "King Henry moves to 3-2 (6th place). The Dude Abides falls to 3-2 (5th).",
+    "Up next in Week 6: King Henry takes on K9 Unit (4-1, winners of 3 straight), coming off a 41.0-point win over Ken. The Dude Abides gets Ken (1-4), coming off a 41.0-point loss to K9 Unit."
    ],
-   "story": "King Henry beat The Dude Abides 147.30 to 120.40 in Week 5, a comfortable win decided by 26.90 points. It came down to the final game of the week, with King Henry up just 11.10 heading into Monday night. Jacoby Brissett carried King Henry with 30.1 points, 7.2 over his projection. Puka Nacua (29.2) and George Pickens (23.5) chipped in."
+   "story": "King Henry beat The Dude Abides 147.30 to 120.40 in Week 5, a comfortable win decided by 26.90 points. It came down to the final game of the week, with King Henry up just 11.10 heading into Monday night. King Henry put up 147.30 this week, 33.7 over their projected 113.7 and the 2nd-highest score of the week. Jacoby Brissett carried them with 30.1 points, 7.2 over his projection. Puka Nacua (29.2) and George Pickens (23.5) were the other big contributors."
   },
   {
    "winner": 3,
@@ -1253,7 +1262,8 @@
        "done": true
       }
      ],
-     "optimal": 144.3
+     "optimal": 144.3,
+     "proj_total": 103.97
     },
     {
      "team": 15,
@@ -1425,7 +1435,8 @@
        "done": true
       }
      ],
-     "optimal": 91.1
+     "optimal": 91.1,
+     "proj_total": 100.46
     }
    ],
    "late": null,
@@ -1433,13 +1444,14 @@
    "headline": "K9 Unit runs over Ken",
    "article": [
     "K9 Unit beat Ken 129.30 to 88.30 in Week 5, a beatdown decided by 41.00 points.",
-    "Christian Watson carried K9 Unit with 34.3 points, 22.7 over his projection. Jordan Love (32.6) and Jameson Williams (17.7) chipped in.",
-    "For Ken, Trevor Lawrence led the way with 28.5. The bigger story was Chase Brown, who managed 5.5 on a 15.4 projection.",
+    "K9 Unit put up 129.30 this week, 25.3 over their projected 104.0. Christian Watson carried them with 34.3 points, about a quarter of the team's total, 22.7 over his projection. Jordan Love (32.6) and Jameson Williams (17.7) were the other big contributors.",
+    "Ken managed 88.30 this week, 12.2 under their projected 100.5. Trevor Lawrence led the way with 28.5, and Christian McCaffrey added 15.8. The letdown was Chase Brown, who managed 5.5 on a 15.4 projection.",
     "K9 Unit left 15.00 points on the bench, with Blake Corum (14.7) sitting out.",
     "At quarterback, Jordan Love (32.6) outdueled Trevor Lawrence (28.5).",
-    "K9 Unit moves to 4-1 (2nd place), winners of 3 straight. Ken falls to 1-4 (10th)."
+    "K9 Unit moves to 4-1 (2nd place), winners of 3 straight. Ken falls to 1-4 (10th).",
+    "Up next in Week 6: K9 Unit takes on King Henry (3-2), coming off a 26.9-point win over The Dude Abides. Ken gets The Dude Abides (3-2), coming off a 26.9-point loss to King Henry."
    ],
-   "story": "K9 Unit beat Ken 129.30 to 88.30 in Week 5, a beatdown decided by 41.00 points. Christian Watson carried K9 Unit with 34.3 points, 22.7 over his projection. Jordan Love (32.6) and Jameson Williams (17.7) chipped in."
+   "story": "K9 Unit beat Ken 129.30 to 88.30 in Week 5, a beatdown decided by 41.00 points. K9 Unit put up 129.30 this week, 25.3 over their projected 104.0. Christian Watson carried them with 34.3 points, about a quarter of the team's total, 22.7 over his projection. Jordan Love (32.6) and Jameson Williams (17.7) were the other big contributors."
   },
   {
    "winner": 16,
@@ -1609,7 +1621,8 @@
        "done": true
       }
      ],
-     "optimal": 169.2
+     "optimal": 169.2,
+     "proj_total": 113.77
     },
     {
      "team": 8,
@@ -1781,7 +1794,8 @@
        "done": true
       }
      ],
-     "optimal": 111.3
+     "optimal": 111.3,
+     "proj_total": 100.52
     }
    ],
    "late": null,
@@ -1789,12 +1803,13 @@
    "headline": "Slim Shiesties routs * Go Buckeyes",
    "article": [
     "Slim Shiesties beat * Go Buckeyes 144.10 to 102.50 in Week 5, a beatdown decided by 41.60 points.",
-    "Jared Goff carried Slim Shiesties with 34.1 points, 9.9 over his projection. Parker Washington (31.4) and James Cook III (22.3) chipped in.",
-    "For * Go Buckeyes, Matthew Stafford led the way with 33.0. The bigger story was Alvin Kamara, who managed 1.6 on a 9.7 projection.",
+    "Slim Shiesties put up 144.10 this week, 30.3 over their projected 113.8 and the 3rd-highest score of the week. Jared Goff carried them with 34.1 points, 9.9 over his projection. Parker Washington (31.4) and James Cook III (22.3) were the other big contributors.",
+    "Matthew Stafford led * Go Buckeyes with 33.0, and Spencer Shrader added 18.0. The letdown was Alvin Kamara, who managed 1.6 on a 9.7 projection.",
     "Slim Shiesties left 25.10 points on the bench, with Joe Burrow (33.0) sitting out.",
-    "Slim Shiesties moves to 3-2 (4th place). * Go Buckeyes falls to 1-4 (11th)."
+    "Slim Shiesties moves to 3-2 (4th place). * Go Buckeyes falls to 1-4 (11th).",
+    "Up next in Week 6: Slim Shiesties takes on Cleo's Purrrfect Lineup (1-4, losers of 3 straight), coming off a 101.5-point loss to I Call Gibbs. * Go Buckeyes gets I Call Gibbs (5-0, winners of 5 straight), coming off a 101.5-point win over Cleo's Purrrfect Lineup."
    ],
-   "story": "Slim Shiesties beat * Go Buckeyes 144.10 to 102.50 in Week 5, a beatdown decided by 41.60 points. Jared Goff carried Slim Shiesties with 34.1 points, 9.9 over his projection. Parker Washington (31.4) and James Cook III (22.3) chipped in."
+   "story": "Slim Shiesties beat * Go Buckeyes 144.10 to 102.50 in Week 5, a beatdown decided by 41.60 points. Slim Shiesties put up 144.10 this week, 30.3 over their projected 113.8 and the 3rd-highest score of the week. Jared Goff carried them with 34.1 points, 9.9 over his projection. Parker Washington (31.4) and James Cook III (22.3) were the other big contributors."
   },
   {
    "winner": 13,
@@ -1964,7 +1979,8 @@
        "done": true
       }
      ],
-     "optimal": 172.4
+     "optimal": 172.4,
+     "proj_total": 125.0
     },
     {
      "team": 6,
@@ -2125,7 +2141,8 @@
        "done": true
       }
      ],
-     "optimal": 65.5
+     "optimal": 65.5,
+     "proj_total": 97.22
     }
    ],
    "late": null,
@@ -2133,12 +2150,13 @@
    "headline": "I Call Gibbs runs over Cleo's Purrrfect Lineup",
    "article": [
     "I Call Gibbs beat Cleo's Purrrfect Lineup 166.70 to 65.20 in Week 5, a beatdown decided by 101.50 points.",
-    "Jaylen Warren carried I Call Gibbs with 41.8 points, 25.8 over his projection. Jahmyr Gibbs (35.2) and Josh Allen (32.1) chipped in.",
-    "For Cleo's Purrrfect Lineup, Dak Prescott led the way with 14.0. The bigger story was Jeremiyah Love, who managed 2.2 on a 13.2 projection.",
+    "I Call Gibbs put up 166.70 this week, 41.7 over their projected 125.0 and the highest score in the league. Jaylen Warren carried them with 41.8 points, about a quarter of the team's total, 25.8 over his projection. Jahmyr Gibbs (35.2) and Josh Allen (32.1) were the other big contributors.",
+    "Cleo's Purrrfect Lineup managed 65.20 this week, 32.0 under their projected 97.2 and the lowest score in the league. Dak Prescott led the way with 14.0, and Browns D/ST added 12.0. The letdown was Jeremiyah Love, who managed 2.2 on a 13.2 projection.",
     "At quarterback, Josh Allen (32.1) outdueled Dak Prescott (14.0).",
-    "I Call Gibbs moves to 5-0 (1st place), winners of 5 straight. Cleo's Purrrfect Lineup falls to 1-4 (9th) and has now lost 3 in a row."
+    "I Call Gibbs moves to 5-0 (1st place), winners of 5 straight. Cleo's Purrrfect Lineup falls to 1-4 (9th) and has now lost 3 in a row.",
+    "Up next in Week 6: I Call Gibbs takes on * Go Buckeyes (1-4), coming off a 41.6-point loss to Slim Shiesties. Cleo's Purrrfect Lineup gets Slim Shiesties (3-2), coming off a 41.6-point win over * Go Buckeyes."
    ],
-   "story": "I Call Gibbs beat Cleo's Purrrfect Lineup 166.70 to 65.20 in Week 5, a beatdown decided by 101.50 points. Jaylen Warren carried I Call Gibbs with 41.8 points, 25.8 over his projection. Jahmyr Gibbs (35.2) and Josh Allen (32.1) chipped in."
+   "story": "I Call Gibbs beat Cleo's Purrrfect Lineup 166.70 to 65.20 in Week 5, a beatdown decided by 101.50 points. I Call Gibbs put up 166.70 this week, 41.7 over their projected 125.0 and the highest score in the league. Jaylen Warren carried them with 41.8 points, about a quarter of the team's total, 25.8 over his projection. Jahmyr Gibbs (35.2) and Josh Allen (32.1) were the other big contributors."
   }
  ],
  "awards": [

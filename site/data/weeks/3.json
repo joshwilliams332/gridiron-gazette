@@ -185,7 +185,8 @@
        "done": true
       }
      ],
-     "optimal": 159.6
+     "optimal": 159.6,
+     "proj_total": 118.27
     },
     {
      "team": 17,
@@ -346,7 +347,8 @@
        "done": true
       }
      ],
-     "optimal": 149.0
+     "optimal": 149.0,
+     "proj_total": 114.16
     }
    ],
    "late": null,
@@ -354,13 +356,14 @@
    "headline": "K9 Unit holds off Stroud and Proud in a 2.7-point thriller",
    "article": [
     "K9 Unit beat Stroud and Proud 142.20 to 139.50 in Week 3, a nail-biter decided by 2.70 points.",
-    "Bijan Robinson carried K9 Unit with 34.3 points, 16.9 over his projection. Jordan Love (22.0) and Kenneth Walker III (20.3) chipped in.",
-    "For Stroud and Proud, Tyler Shough led the way with 31.6. The bigger story was TreVeyon Henderson, who managed 3.4 on a 9.7 projection.",
+    "K9 Unit put up 142.20 this week, 23.9 over their projected 118.3 and the highest score in the league. Bijan Robinson carried them with 34.3 points, about a quarter of the team's total, 16.9 over his projection. Jordan Love (22.0) and Kenneth Walker III (20.3) were the other big contributors.",
+    "Stroud and Proud put up 139.50 this week, 25.3 over their projected 114.2 and the 2nd-highest score of the week. Tyler Shough led the way with 31.6, and Jaxon Smith-Njigba added 29.8. That would have beaten most teams this week. Stroud and Proud just ran into K9 Unit. The letdown was TreVeyon Henderson, who managed 3.4 on a 9.7 projection.",
     "K9 Unit left 17.40 points on the bench, with Kenyon Sadiq (20.0) sitting out.",
     "At quarterback, Tyler Shough (31.6) outdueled Jordan Love (22.0).",
-    "K9 Unit moves to 2-1 (2nd place). Stroud and Proud falls to 1-2 (6th)."
+    "K9 Unit moves to 2-1 (2nd place). Stroud and Proud falls to 1-2 (6th).",
+    "Up next in Week 4: K9 Unit takes on The Canberra Mob (1-2), coming off a 37.8-point loss to I Call Gibbs. Stroud and Proud gets Cleo's Purrrfect Lineup (1-2), coming off a 13.7-point loss to Ken."
    ],
-   "story": "K9 Unit beat Stroud and Proud 142.20 to 139.50 in Week 3, a nail-biter decided by 2.70 points. Bijan Robinson carried K9 Unit with 34.3 points, 16.9 over his projection. Jordan Love (22.0) and Kenneth Walker III (20.3) chipped in."
+   "story": "K9 Unit beat Stroud and Proud 142.20 to 139.50 in Week 3, a nail-biter decided by 2.70 points. K9 Unit put up 142.20 this week, 23.9 over their projected 118.3 and the highest score in the league. Bijan Robinson carried them with 34.3 points, about a quarter of the team's total, 16.9 over his projection. Jordan Love (22.0) and Kenneth Walker III (20.3) were the other big contributors."
   },
   {
    "winner": 12,
@@ -541,7 +544,8 @@
        "done": true
       }
      ],
-     "optimal": 120.0
+     "optimal": 120.0,
+     "proj_total": 106.15
     },
     {
      "team": 16,
@@ -713,20 +717,22 @@
        "done": true
       }
      ],
-     "optimal": 108.7
+     "optimal": 108.7,
+     "proj_total": 106.01
     }
    ],
    "late": null,
    "late_margin": null,
    "headline": "The Dude Abides takes care of Slim Shiesties",
    "article": [
-    "The Dude Abides beat Slim Shiesties 106.90 to 93.90 in Week 3, a close one decided by 13.00 points.",
-    "Bo Nix carried The Dude Abides with 27.7 points, 8.2 over his projection. Brock Bowers (22.6) and Ja'Marr Chase (20.3) chipped in.",
-    "For Slim Shiesties, Joe Burrow led the way with 28.3. The bigger story was Eagles D/ST, who managed -1.0 on a 8.3 projection.",
+    "The Dude Abides beat Slim Shiesties 106.90 to 93.90 in Week 3, a solid win decided by 13.00 points.",
+    "Bo Nix carried them with 27.7 points, about a quarter of the team's total, 8.2 over his projection. Brock Bowers (22.6) and Ja'Marr Chase (20.3) were the other big contributors.",
+    "Slim Shiesties managed 93.90 this week, 12.1 under their projected 106.0. Joe Burrow led the way with 28.3, and James Cook III added 19.4. The letdown was Eagles D/ST, who managed -1.0 on a 8.3 projection.",
     "Slim Shiesties left 14.80 points on the bench, with Jared Goff (22.6) sitting out. The best possible lineup would have scored 108.70: enough to win.",
-    "The Dude Abides moves to 2-1 (5th place). Slim Shiesties falls to 2-1 (3rd)."
+    "The Dude Abides moves to 2-1 (5th place). Slim Shiesties falls to 2-1 (3rd).",
+    "Up next in Week 4: The Dude Abides takes on * Go Buckeyes (1-2), coming off a 24.4-point win over Dena's Team \ud83c\udfc8. Slim Shiesties gets Oops (1-2), coming off a 33.5-point loss to King Henry."
    ],
-   "story": "The Dude Abides beat Slim Shiesties 106.90 to 93.90 in Week 3, a close one decided by 13.00 points. Bo Nix carried The Dude Abides with 27.7 points, 8.2 over his projection. Brock Bowers (22.6) and Ja'Marr Chase (20.3) chipped in."
+   "story": "The Dude Abides beat Slim Shiesties 106.90 to 93.90 in Week 3, a solid win decided by 13.00 points. Bo Nix carried them with 27.7 points, about a quarter of the team's total, 8.2 over his projection. Brock Bowers (22.6) and Ja'Marr Chase (20.3) were the other big contributors."
   },
   {
    "winner": 15,
@@ -907,7 +913,8 @@
        "done": true
       }
      ],
-     "optimal": 117.1
+     "optimal": 117.1,
+     "proj_total": 109.38
     },
     {
      "team": 6,
@@ -1068,21 +1075,23 @@
        "done": true
       }
      ],
-     "optimal": 117.3
+     "optimal": 117.3,
+     "proj_total": 109.73
     }
    ],
    "late": null,
    "late_margin": null,
    "headline": "Ken beats Cleo's Purrrfect Lineup",
    "article": [
-    "Ken beat Cleo's Purrrfect Lineup 110.40 to 96.70 in Week 3, a close one decided by 13.70 points.",
-    "Trevor Lawrence carried Ken with 25.5 points, 5.1 over his projection. George Kittle (23.2) and Christian McCaffrey (19.6) chipped in.",
-    "For Cleo's Purrrfect Lineup, Dak Prescott led the way with 20.9. The bigger story was Jonathan Taylor, who managed 8.2 on a 19.3 projection.",
+    "Ken beat Cleo's Purrrfect Lineup 110.40 to 96.70 in Week 3, a solid win decided by 13.70 points.",
+    "Trevor Lawrence carried them with 25.5 points, 5.1 over his projection. George Kittle (23.2) and Christian McCaffrey (19.6) were the other big contributors.",
+    "Cleo's Purrrfect Lineup managed 96.70 this week, 13.0 under their projected 109.7. Dak Prescott led the way with 20.9, and Chuba Hubbard added 13.0. The letdown was Jonathan Taylor, who managed 8.2 on a 19.3 projection.",
     "Cleo's Purrrfect Lineup left 20.60 points on the bench, with Jeremiyah Love (19.4) sitting out. The best possible lineup would have scored 117.30: enough to win.",
     "At quarterback, Trevor Lawrence (25.5) outdueled Dak Prescott (20.9).",
-    "Ken moves to 1-2 (8th place). Cleo's Purrrfect Lineup falls to 1-2 (7th)."
+    "Ken moves to 1-2 (8th place). Cleo's Purrrfect Lineup falls to 1-2 (7th).",
+    "Up next in Week 4: Ken takes on I Call Gibbs (3-0, winners of 3 straight), coming off a 37.8-point win over The Canberra Mob. Cleo's Purrrfect Lineup gets Stroud and Proud (1-2), coming off a 2.7-point loss to K9 Unit."
    ],
-   "story": "Ken beat Cleo's Purrrfect Lineup 110.40 to 96.70 in Week 3, a close one decided by 13.70 points. Trevor Lawrence carried Ken with 25.5 points, 5.1 over his projection. George Kittle (23.2) and Christian McCaffrey (19.6) chipped in."
+   "story": "Ken beat Cleo's Purrrfect Lineup 110.40 to 96.70 in Week 3, a solid win decided by 13.70 points. Trevor Lawrence carried them with 25.5 points, 5.1 over his projection. George Kittle (23.2) and Christian McCaffrey (19.6) were the other big contributors."
   },
   {
    "winner": 8,
@@ -1263,7 +1272,8 @@
        "done": true
       }
      ],
-     "optimal": 122.9
+     "optimal": 122.9,
+     "proj_total": 100.7
     },
     {
      "team": 7,
@@ -1424,21 +1434,23 @@
        "done": true
       }
      ],
-     "optimal": 110.8
+     "optimal": 110.8,
+     "proj_total": 108.82
     }
    ],
    "late": null,
    "late_margin": null,
    "headline": "* Go Buckeyes handles Dena's Team \ud83c\udfc8",
    "article": [
-    "* Go Buckeyes beat Dena's Team \ud83c\udfc8 106.30 to 81.90 in Week 3, a comfortable win decided by 24.40 points.",
-    "Drake London carried * Go Buckeyes with 23.9 points, 11.3 over his projection. Deebo Samuel Sr. (19.4) and Spencer Shrader (15.0) chipped in.",
-    "For Dena's Team \ud83c\udfc8, Javonte Williams led the way with 17.3. The bigger story was Justin Jefferson, who managed 4.2 on a 14.8 projection.",
+    "* Go Buckeyes beat Dena's Team \ud83c\udfc8 106.30 to 81.90 in Week 3, a solid win decided by 24.40 points.",
+    "* Go Buckeyes put up 106.30 this week, 5.6 over their projected 100.7. Drake London carried them with 23.9 points, 11.3 over his projection. Deebo Samuel Sr. (19.4) and Spencer Shrader (15.0) were the other big contributors.",
+    "Dena's Team \ud83c\udfc8 managed 81.90 this week, 26.9 under their projected 108.8 and the 2nd-lowest score of the week. Javonte Williams led the way with 17.3, and Zay Flowers added 12.9. The letdown was Justin Jefferson, who managed 4.2 on a 14.8 projection.",
     "Dena's Team \ud83c\udfc8 left 28.90 points on the bench, with Brock Purdy (41.4) sitting out. The best possible lineup would have scored 110.80: enough to win.",
     "At quarterback, Jalen Hurts (12.5) outdueled Daniel Jones (9.5).",
-    "* Go Buckeyes moves to 1-2 (11th place). Dena's Team \ud83c\udfc8 falls to 1-2 (10th)."
+    "* Go Buckeyes moves to 1-2 (11th place). Dena's Team \ud83c\udfc8 falls to 1-2 (10th).",
+    "Up next in Week 4: * Go Buckeyes takes on The Dude Abides (2-1), coming off a 13.0-point win over Slim Shiesties. Dena's Team \ud83c\udfc8 gets King Henry (2-1), coming off a 33.5-point win over Oops."
    ],
-   "story": "* Go Buckeyes beat Dena's Team \ud83c\udfc8 106.30 to 81.90 in Week 3, a comfortable win decided by 24.40 points. Drake London carried * Go Buckeyes with 23.9 points, 11.3 over his projection. Deebo Samuel Sr. (19.4) and Spencer Shrader (15.0) chipped in."
+   "story": "* Go Buckeyes beat Dena's Team \ud83c\udfc8 106.30 to 81.90 in Week 3, a solid win decided by 24.40 points. * Go Buckeyes put up 106.30 this week, 5.6 over their projected 100.7. Drake London carried them with 23.9 points, 11.3 over his projection. Deebo Samuel Sr. (19.4) and Spencer Shrader (15.0) were the other big contributors."
   },
   {
    "winner": 2,
@@ -1608,7 +1620,8 @@
        "done": true
       }
      ],
-     "optimal": 118.4
+     "optimal": 118.4,
+     "proj_total": 109.24
     },
     {
      "team": 9,
@@ -1769,7 +1782,8 @@
        "done": true
       }
      ],
-     "optimal": 82.6
+     "optimal": 82.6,
+     "proj_total": 116.46
     }
    ],
    "late": null,
@@ -1777,13 +1791,14 @@
    "headline": "King Henry runs over Oops",
    "article": [
     "King Henry beat Oops 104.90 to 71.40 in Week 3, a comfortable win decided by 33.50 points.",
-    "Lamar Jackson carried King Henry with 24.0 points, 0.0 under his projection. Derrick Henry (21.4) and Bhayshul Tuten (16.0) chipped in.",
-    "For Oops, Patrick Mahomes led the way with 19.1. The bigger story was Jadarian Price, who managed 0.7 on a 11.4 projection.",
+    "Lamar Jackson carried them with 24.0 points. Derrick Henry (21.4) and Bhayshul Tuten (16.0) were the other big contributors.",
+    "Oops managed 71.40 this week, 45.1 under their projected 116.5 and the lowest score in the league. Patrick Mahomes led the way with 19.1, and Aaron Jones Sr. added 11.7. The letdown was Jadarian Price, who managed 0.7 on a 11.4 projection.",
     "Oops left 11.20 points on the bench, with DK Metcalf (10.6) sitting out.",
     "At quarterback, Lamar Jackson (24.0) outdueled Patrick Mahomes (19.1).",
-    "King Henry moves to 2-1 (4th place). Oops falls to 1-2 (12th)."
+    "King Henry moves to 2-1 (4th place). Oops falls to 1-2 (12th).",
+    "Up next in Week 4: King Henry takes on Dena's Team \ud83c\udfc8 (1-2), coming off a 24.4-point loss to * Go Buckeyes. Oops gets Slim Shiesties (2-1), coming off a 13.0-point loss to The Dude Abides."
    ],
-   "story": "King Henry beat Oops 104.90 to 71.40 in Week 3, a comfortable win decided by 33.50 points. Lamar Jackson carried King Henry with 24.0 points, 0.0 under his projection. Derrick Henry (21.4) and Bhayshul Tuten (16.0) chipped in."
+   "story": "King Henry beat Oops 104.90 to 71.40 in Week 3, a comfortable win decided by 33.50 points. Lamar Jackson carried them with 24.0 points. Derrick Henry (21.4) and Bhayshul Tuten (16.0) were the other big contributors."
   },
   {
    "winner": 13,
@@ -1953,7 +1968,8 @@
        "done": true
       }
      ],
-     "optimal": 140.5
+     "optimal": 140.5,
+     "proj_total": 128.32
     },
     {
      "team": 14,
@@ -2125,20 +2141,22 @@
        "done": true
       }
      ],
-     "optimal": 102.9
+     "optimal": 102.9,
+     "proj_total": 93.68
     }
    ],
    "late": null,
    "late_margin": null,
    "headline": "I Call Gibbs flattens The Canberra Mob",
    "article": [
-    "I Call Gibbs beat The Canberra Mob 127.30 to 89.50 in Week 3, a beatdown decided by 37.80 points.",
-    "Jahmyr Gibbs carried I Call Gibbs with 37.9 points, 14.3 over his projection. Jaylen Warren (19.1) and Davante Adams (17.2) chipped in.",
-    "For The Canberra Mob, Harold Fannin Jr. led the way with 20.6. The bigger story was 49ers D/ST, who managed -1.0 on a 8.2 projection.",
+    "I Call Gibbs beat The Canberra Mob 127.30 to 89.50 in Week 3, a comfortable win decided by 37.80 points.",
+    "I Call Gibbs put up 127.30 this week, the 3rd-highest score of the week. Jahmyr Gibbs carried them with 37.9 points, about a quarter of the team's total, 14.3 over his projection. Jaylen Warren (19.1) and Davante Adams (17.2) were the other big contributors.",
+    "The Canberra Mob managed 89.50 this week, the 3rd-lowest score of the week. Harold Fannin Jr. led the way with 20.6, and Matthew Golden added 18.5. The letdown was 49ers D/ST, who managed -1.0 on a 8.2 projection.",
     "The Canberra Mob left 13.40 points on the bench, with Kyler Murray (12.7) sitting out.",
-    "I Call Gibbs moves to 3-0 (1st place), winners of 3 straight. The Canberra Mob falls to 1-2 (9th)."
+    "I Call Gibbs moves to 3-0 (1st place), winners of 3 straight. The Canberra Mob falls to 1-2 (9th).",
+    "Up next in Week 4: I Call Gibbs takes on Ken (1-2), coming off a 13.7-point win over Cleo's Purrrfect Lineup. The Canberra Mob gets K9 Unit (2-1), coming off a 2.7-point win over Stroud and Proud."
    ],
-   "story": "I Call Gibbs beat The Canberra Mob 127.30 to 89.50 in Week 3, a beatdown decided by 37.80 points. Jahmyr Gibbs carried I Call Gibbs with 37.9 points, 14.3 over his projection. Jaylen Warren (19.1) and Davante Adams (17.2) chipped in."
+   "story": "I Call Gibbs beat The Canberra Mob 127.30 to 89.50 in Week 3, a comfortable win decided by 37.80 points. I Call Gibbs put up 127.30 this week, the 3rd-highest score of the week. Jahmyr Gibbs carried them with 37.9 points, about a quarter of the team's total, 14.3 over his projection. Jaylen Warren (19.1) and Davante Adams (17.2) were the other big contributors."
   }
  ],
  "awards": [
