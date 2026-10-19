@@ -2,7 +2,6 @@ name: Publish the Gazette
 
 on:
   schedule:
-    - cron: "17 15 * * 1"   # Mondays ~11am ET: live issue, Sunday's games in, Monday night still to play
     - cron: "17 12 * * 2"   # Tuesdays ~8am ET: final issue after Monday Night Football
   workflow_dispatch:        # "Run workflow" button in the Actions tab
   push:

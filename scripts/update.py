@@ -101,7 +101,7 @@ def main():
     league_raw = get_league()
     league = recap.parse_league(league_raw, cfg)
     finished = recap.finished_weeks(league_raw)
-    live_week = recap.current_week(league_raw)
+    live_week = recap.current_week(league_raw) if cfg.get("live_issues") else None
     print(f"  {league['name']}: {len(league['teams'])} teams, {len(finished)} finished weeks"
           + (f", week {live_week} in progress" if live_week else ""))
     schedule = fixture.get("nfl", []) if args.fixture else nfl_schedule()
@@ -126,6 +126,11 @@ def main():
     if live:
         issue = recap.build_issue(live, weeks, league, week_notes.get(str(live["week"]), {}), live=True)
         (OUT / "weeks" / f"{live['week']}.json").write_text(json.dumps(issue, indent=1))
+    # Remove issues that are no longer published (e.g. an old live issue).
+    keep = {f"{w['week']}.json" for w in weeks} | ({f"{live['week']}.json"} if live else set())
+    for f in (OUT / "weeks").glob("*.json"):
+        if f.name not in keep:
+            f.unlink()
     league.pop("snapshots", None)  # already copied into each issue
     league["weeks"] = [w["week"] for w in weeks] + ([live["week"]] if live else [])
     league["live_week"] = live["week"] if live else None
