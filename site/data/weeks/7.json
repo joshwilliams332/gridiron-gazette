@@ -618,12 +618,12 @@
       {
        "name": "Kendre Miller",
        "pos": "RB",
-       "nfl": "NO",
+       "nfl": "",
        "slot": "RB",
        "starter": true,
        "pts": 4.3,
        "proj": 8.82,
-       "day": "Sunday",
+       "day": null,
        "done": true
       },
       {
@@ -779,7 +779,7 @@
     "At quarterback, Bo Nix (34.3) outdueled Geno Smith (29.0).",
     "Ken improves to 3-4 (8th place). King Henry drops to 3-4 (7th).",
     "Next week, Ken faces Slim Shiesties (4-3), who are coming off a 38.9-point loss to K9 Unit. Ken will be without Christian McCaffrey, Christian Kirk and George Kittle (bye), so the bench is about to get some work.",
-    "Next week, King Henry faces I Call Gibbs (7-0), who are coming off a 13.3-point win over The Dude Abides and have won 7 straight. King Henry will be without Kendre Miller (bye), so it's time to check the waiver wire."
+    "Next week, King Henry faces I Call Gibbs (7-0), who are coming off a 13.3-point win over The Dude Abides and have won 7 straight."
    ],
    "story": "Ken beat King Henry 99.10 to 81.60 in Week 7, a solid win decided by 17.50 points. Ken managed 99.10 this week, 10.1 under their projected 109.2. Bo Nix carried them with 34.3 points, over a third of the team's total, 15.2 over his projection. Christian McCaffrey (19.0) and Josh Jacobs (17.6) were the other big contributors."
   },
@@ -2233,7 +2233,7 @@
       {
        "name": "Keenan Allen",
        "pos": "WR",
-       "nfl": "IND",
+       "nfl": "SF",
        "slot": "FLEX",
        "starter": true,
        "pts": 4.6,
@@ -2367,7 +2367,7 @@
     "At quarterback, C.J. Stroud (20.4) outdueled Bryce Young (9.9).",
     "Stroud and Proud improves to 5-2 (3rd place), winners of 4 straight. * Go Buckeyes drops to 1-6 (12th) and has now lost 4 in a row.",
     "Next week, Stroud and Proud faces The Dude Abides (3-4), who are coming off a 13.3-point loss to I Call Gibbs and have lost 3 straight. Stroud and Proud will be without C.J. Stroud and Chris Olave (bye), so expect some waiver-wire shopping.",
-    "Next week, * Go Buckeyes faces The Canberra Mob (2-5), who are coming off a 25.8-point loss to Oops."
+    "Next week, * Go Buckeyes faces The Canberra Mob (2-5), who are coming off a 25.8-point loss to Oops. * Go Buckeyes will be without Keenan Allen (bye), so expect some waiver-wire shopping."
    ],
    "story": "Stroud and Proud beat * Go Buckeyes 106.40 to 62.50 in Week 7, a beatdown decided by 43.90 points. This one was over early. Stroud and Proud put up 106.40 this week, 7.7 under their projected 114.1. Jaxon Smith-Njigba carried them with 26.8 points, about a quarter of the team's total, 10.5 over his projection. Quinshon Judkins (22.9) and C.J. Stroud (20.4) were the other big contributors."
   }

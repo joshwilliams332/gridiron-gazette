@@ -726,7 +726,7 @@
       {
        "name": "Keenan Allen",
        "pos": "WR",
-       "nfl": "IND",
+       "nfl": "SF",
        "slot": "Bench",
        "starter": false,
        "pts": 0,
@@ -1506,12 +1506,12 @@
       {
        "name": "Kendre Miller",
        "pos": "RB",
-       "nfl": "NO",
+       "nfl": "",
        "slot": "Bench",
        "starter": false,
        "pts": 0.9,
        "proj": 8.17,
-       "day": "Monday",
+       "day": null,
        "done": true
       },
       {

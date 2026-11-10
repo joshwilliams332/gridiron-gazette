@@ -780,7 +780,7 @@
       {
        "name": "Jacoby Brissett",
        "pos": "QB",
-       "nfl": "ARI",
+       "nfl": "BAL",
        "slot": "QB",
        "starter": true,
        "pts": 30.1,
@@ -879,12 +879,12 @@
       {
        "name": "Kendre Miller",
        "pos": "RB",
-       "nfl": "NO",
+       "nfl": "",
        "slot": "Bench",
        "starter": false,
        "pts": 9.0,
        "proj": 7.15,
-       "day": "Sunday",
+       "day": null,
        "done": true
       },
       {
@@ -1845,7 +1845,7 @@
       {
        "name": "Keenan Allen",
        "pos": "WR",
-       "nfl": "IND",
+       "nfl": "SF",
        "slot": "Bench",
        "starter": false,
        "pts": 7.0,
