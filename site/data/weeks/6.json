@@ -1856,7 +1856,7 @@
       {
        "name": "Josh Downs",
        "pos": "WR",
-       "nfl": "IND",
+       "nfl": "KC",
        "slot": "Bench",
        "starter": false,
        "pts": 6.7,
@@ -2114,12 +2114,12 @@
       {
        "name": "Kirk Cousins",
        "pos": "QB",
-       "nfl": "LV",
+       "nfl": "MIN",
        "slot": "QB",
        "starter": true,
        "pts": 23.0,
        "proj": 22.62,
-       "day": "Sunday",
+       "day": null,
        "done": true
       },
       {

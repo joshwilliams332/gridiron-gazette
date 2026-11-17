@@ -3,7 +3,7 @@
  "live": false,
  "late_day": "Monday",
  "lead": 0,
- "headline": "The Canberra Mob stuns The Dude Abides on Monday night",
+ "headline": "The Canberra Mob outlasts The Dude Abides",
  "column": null,
  "games": [
   {
@@ -197,12 +197,12 @@
       {
        "name": "Kirk Cousins",
        "pos": "QB",
-       "nfl": "LV",
+       "nfl": "MIN",
        "slot": "QB",
        "starter": true,
        "pts": 14.0,
        "proj": 18.06,
-       "day": "Sunday",
+       "day": "Monday",
        "done": true
       },
       {
@@ -363,16 +363,16 @@
      "proj_total": 119.38
     }
    ],
-   "late": "comeback",
-   "late_margin": 0.2,
-   "headline": "The Canberra Mob stuns The Dude Abides on Monday night",
+   "late": "held",
+   "late_margin": 13.8,
+   "headline": "The Canberra Mob outlasts The Dude Abides",
    "article": [
     "The Canberra Mob beat The Dude Abides 140.50 to 136.70 in Week 9, a nail-biter decided by 3.80 points.",
     "The Canberra Mob put up 140.50 this week, 40.4 over their projected 100.1 and the 2nd-highest score of the week. CeeDee Lamb carried them with 29.5 points, 11.8 over his projection. Matthew Golden (27.4) and Bills D/ST (16.0) were the other big contributors.",
     "The Dude Abides put up 136.70 this week, 17.3 over their projected 119.4 and the 3rd-highest score of the week. Ja'Marr Chase led the way with 27.5, and Bucky Irving added 26.5. The Dude Abides scored the 3rd-most points in the league this week and still lost. Brutal.",
     "The letdown for The Dude Abides was Adonai Mitchell, who managed 0.0 on a 9.5 projection.",
     "Here's the painful part for The Dude Abides: starting Devaughn Vele (2.7) instead of Adonai Mitchell (0.0) would have produced 145.60 points, enough to win.",
-    "Going into Monday night, The Canberra Mob trailed by 0.20 and needed a big night. Bills D/ST (16.0) delivered, while The Dude Abides got just 12.0 from Tyler Bass.",
+    "Going into Monday night, The Canberra Mob led by 13.80, and The Dude Abides still had Kirk Cousins and Tyler Bass to play. Kirk Cousins (14.0) and Tyler Bass (12.0) put in work, but The Canberra Mob's Bills D/ST (16.0) more than answered.",
     "The Canberra Mob improves to 4-5 (8th place). The Dude Abides drops to 4-5 (5th).",
     "Next week, The Canberra Mob faces King Henry (3-6), who are coming off a 13.3-point loss to Stroud and Proud and have lost 4 straight. The Canberra Mob will be without Tez Johnson (bye), so it's time to check the waiver wire.",
     "Next week, The Dude Abides faces Cleo's Purrrfect Lineup (3-6), who are coming off a 12.4-point win over * Go Buckeyes. The Dude Abides will be without Bucky Irving (bye), so expect some waiver-wire shopping."
@@ -2363,13 +2363,6 @@
    "team": 14,
    "value": "+3.80",
    "detail": "Survived The Dude Abides by 3.80."
-  },
-  {
-   "key": "comeback",
-   "title": "Monday Night Miracle",
-   "team": 14,
-   "value": "-0.20",
-   "detail": "Trailed The Dude Abides by 0.20 going into the final game and won."
   },
   {
    "key": "bench",

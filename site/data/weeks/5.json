@@ -846,12 +846,12 @@
       {
        "name": "Josh Downs",
        "pos": "WR",
-       "nfl": "IND",
+       "nfl": "KC",
        "slot": "FLEX",
        "starter": true,
        "pts": 6.2,
        "proj": 9.63,
-       "day": "Sunday",
+       "day": null,
        "done": true
       },
       {
